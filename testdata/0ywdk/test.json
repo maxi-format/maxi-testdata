@@ -1,0 +1,7 @@
+{
+  "id": "0ywdk",
+  "title": "String Format Annotations",
+  "description": "Tests parsing of scalar fields with format annotations: email, url, uuid, date, datetime, time, timestamp.",
+  "category": "valid",
+  "mode": "lax"
+}

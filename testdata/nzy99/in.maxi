@@ -1,0 +1,6 @@
+@version:1.0.0
+U:User(id:int|name|tags:str(>=3,<=20)[](>=1,<=5)|scores:int(>=0,<=100)[])
+###
+U(1|Julie|[dev,backend,api]|[95,87,92])
+U(2|Matt|[design]|[88])
+U(3|Anna|[frontend,react,typescript,css,html]|[90,85,95,88])

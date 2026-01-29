@@ -1,0 +1,129 @@
+{
+  "success": true,
+  "objects": {
+    "User": {
+      1: {
+        "id": 1,
+        "name": "Julie",
+        "email": "julie@maxi.org",
+        "createdAt": "2024-01-15T10:00:00Z",
+        "updatedAt": "2024-11-20T15:30:00Z",
+        "createdBy": 100,
+        "modifiedBy": 100,
+        "role": "admin",
+        "status": "active"
+      },
+      2: {
+        "id": 2,
+        "name": "Matt",
+        "email": "matt@maxi.org",
+        "createdAt": "2024-02-10T09:00:00Z",
+        "updatedAt": "2024-11-21T16:00:00Z",
+        "createdBy": 100,
+        "modifiedBy": 101,
+        "role": "user",
+        "status": "inactive"
+      }
+    }
+  },
+  "records": [
+    {
+      "type": "User",
+      "value": {
+        "id": 1,
+        "name": "Julie",
+        "email": "julie@maxi.org",
+        "createdAt": "2024-01-15T10:00:00Z",
+        "updatedAt": "2024-11-20T15:30:00Z",
+        "createdBy": 100,
+        "modifiedBy": 100,
+        "role": "admin",
+        "status": "active"
+      }
+    },
+    {
+      "type": "User",
+      "value": {
+        "id": 2,
+        "name": "Matt",
+        "email": "matt@maxi.org",
+        "createdAt": "2024-02-10T09:00:00Z",
+        "updatedAt": "2024-11-21T16:00:00Z",
+        "createdBy": 100,
+        "modifiedBy": 101,
+        "role": "user",
+        "status": "inactive"
+      }
+    }
+  ],
+  "record_validations": [
+    {
+      "description": "Record 1 User 1 name is Julie",
+      "path": "#/records/0/value/name",
+      "expected_value": "Julie"
+    },
+    {
+      "description": "Record 1 createdAt preserved as datetime string",
+      "path": "#/records/0/value/createdAt",
+      "expected_value": "2024-01-15T10:00:00Z"
+    },
+    {
+      "description": "Record 1 updatedAt preserved as datetime string",
+      "path": "#/records/0/value/updatedAt",
+      "expected_value": "2024-11-20T15:30:00Z"
+    },
+    {
+      "description": "Record 1 createdBy parsed as int",
+      "path": "#/records/0/value/createdBy",
+      "expected_value": 100
+    },
+    {
+      "description": "Record 1 modifiedBy parsed as int",
+      "path": "#/records/0/value/modifiedBy",
+      "expected_value": 100
+    },
+    {
+      "description": "Record 1 role is admin",
+      "path": "#/records/0/value/role",
+      "expected_value": "admin"
+    },
+    {
+      "description": "Record 1 status is active (default or explicit)",
+      "path": "#/records/0/value/status",
+      "expected_value": "active"
+    },
+    {
+      "description": "Record 2 status is inactive (overrides default active)",
+      "path": "#/records/1/value/status",
+      "expected_value": "inactive"
+    },
+    {
+      "description": "Record 2 modifiedBy parsed as int (101)",
+      "path": "#/records/1/value/modifiedBy",
+      "expected_value": 101
+    }
+  ],
+  "object_validations": [
+    {
+      "description": "User 1 email is julie@maxi.org",
+      "path": "#/objects/User/1/email",
+      "expected_value": "julie@maxi.org"
+    },
+    {
+      "description": "User 1 status is active",
+      "path": "#/objects/User/1/status",
+      "expected_value": "active"
+    },
+    {
+      "description": "User 2 role is user",
+      "path": "#/objects/User/2/role",
+      "expected_value": "user"
+    },
+    {
+      "description": "User 2 createdAt preserved",
+      "path": "#/objects/User/2/createdAt",
+      "expected_value": "2024-02-10T09:00:00Z"
+    }
+  ]
+}
+

@@ -1,0 +1,8 @@
+{
+  "id": "qizuj",
+  "title": "Cross-Schema Mutual References (users.mxs <-> orders.mxs)",
+  "description": "Tests mutual @schema inclusion across two .mxs files and reference fields both ways (User.orders -> Order, Order.user -> User).",
+  "category": "valid",
+  "mode": "lax"
+}
+

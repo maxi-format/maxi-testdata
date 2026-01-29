@@ -1,0 +1,111 @@
+{
+  "success": true,
+  "objects": {
+    "User": {
+      1: { "id": 1, "name": "John", "role": "user", "status": "active", "bio": "" },
+      2: { "id": 2, "name": "Julie", "role": "user", "status": "active", "bio": "" },
+      3: { "id": 3, "name": null, "role": "admin", "status": "inactive", "bio": "" },
+      4: {
+        "id": 4,
+        "name": "Matt",
+        "role": null,
+        "status": "pending",
+        "bio": "Software engineer"
+      },
+      5: { "id": 5, "name": "Anna", "role": "guest", "status": null, "bio": null }
+    }
+  },
+  "records": [
+    {
+      "type": "User",
+      "value": { "id": 1, "name": "John", "role": "user", "status": "active", "bio": "" }
+    },
+    {
+      "type": "User",
+      "value": { "id": 2, "name": "Julie", "role": "user", "status": "active", "bio": "" }
+    },
+    {
+      "type": "User",
+      "value": { "id": 3, "name": null, "role": "admin", "status": "inactive", "bio": "" }
+    },
+    {
+      "type": "User",
+      "value": {
+        "id": 4,
+        "name": "Matt",
+        "role": null,
+        "status": "pending",
+        "bio": "Software engineer"
+      }
+    },
+    {
+      "type": "User",
+      "value": { "id": 5, "name": "Anna", "role": "guest", "status": null, "bio": null }
+    }
+  ],
+  "record_validations": [
+    {
+      "description": "Record 1: defaults applied when only id provided",
+      "path": "#/records/0/value",
+      "expected_value": { "id": 1, "name": "John", "role": "user", "status": "active", "bio": "" }
+    },
+    {
+      "description": "Record 2: name overrides default, other defaults apply",
+      "path": "#/records/1/value",
+      "expected_value": { "id": 2, "name": "Julie", "role": "user", "status": "active", "bio": "" }
+    },
+    {
+      "description": "Record 3: explicit null name overrides default",
+      "path": "#/records/2/value/name",
+      "expected_value": null
+    },
+    {
+      "description": "Record 3: role and status set explicitly",
+      "path": "#/records/2/value/role",
+      "expected_value": "admin"
+    },
+    {
+      "description": "Record 3: bio default is empty string",
+      "path": "#/records/2/value/bio",
+      "expected_value": ""
+    },
+    {
+      "description": "Record 4: explicit null role overrides default",
+      "path": "#/records/3/value/role",
+      "expected_value": null
+    },
+    {
+      "description": "Record 4: bio set to 'Software engineer'",
+      "path": "#/records/3/value/bio",
+      "expected_value": "Software engineer"
+    },
+    {
+      "description": "Record 5: explicit null status overrides required default",
+      "path": "#/records/4/value/status",
+      "expected_value": null
+    },
+    {
+      "description": "Record 5: explicit null bio overrides default empty string",
+      "path": "#/records/4/value/bio",
+      "expected_value": null
+    }
+  ],
+  "object_validations": [
+    {
+      "description": "User 1 has all defaults",
+      "path": "#/objects/User/1",
+      "expected_value": { "id": 1, "name": "John", "role": "user", "status": "active", "bio": "" }
+    },
+    {
+      "description": "User 4 role is null (explicit override)",
+      "path": "#/objects/User/4/role",
+      "expected_value": null
+    },
+    {
+      "description": "User 5 status is null (explicit override of required default)",
+      "path": "#/objects/User/5/status",
+      "expected_value": null
+    }
+  ]
+}
+

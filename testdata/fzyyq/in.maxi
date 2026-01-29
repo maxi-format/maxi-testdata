@@ -1,0 +1,11 @@
+@version:1.0.0
+F:File(
+  id:int|
+  filename(!)|
+  data:bytes(>=1,mime:application/pdf)|
+  thumbnail:bytes@base64(mime:[image/png,image/jpg])|
+  signature:bytes@hex(<=64)
+)
+###
+F(1|report.pdf|SGVsbG8gV29ybGQh|iVBORw0KGg=|48656c6c6f)
+F(2|doc.pdf|UERGRmlsZQ==|/9j/4AAQSkZJRg==|576f726c64)

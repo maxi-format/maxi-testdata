@@ -1,0 +1,8 @@
+{
+  "id": "w7smg",
+  "title": "Pattern Constraints (username/phone/zipCode)",
+  "description": "Parses scalar fields with regex/pattern constraints and length constraints; this testcase is valid and should parse successfully.",
+  "category": "valid",
+  "mode": "lax"
+}
+

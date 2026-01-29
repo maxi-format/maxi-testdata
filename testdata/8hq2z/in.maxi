@@ -1,0 +1,16 @@
+@version:1.0.0
+
+U:User(id:int|name|email)
+A:Address(id:int|street|city|zip)
+O:Order(id:int|user:U|shipTo:A|total:decimal)
+
+###
+U(1|Julie|julie@maxi.org)
+U(2|Matt|matt@maxi.org)
+A(1|123 Main St|NYC|10001)
+A(2|456 Oak Ave|LA|90001)
+
+O(100|1|1|99.99)
+O(101|(3|Anna|anna@maxi.org)|2|149.50)
+O(102|2|(3|789 Elm|SF|94102)|199.99)
+O(103|(4|Bob|bob@maxi.org)|(4|321 Pine|SEA|98101)|249.99)

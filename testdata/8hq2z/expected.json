@@ -1,0 +1,256 @@
+{
+  "success": true,
+  "objects": {
+    "User": {
+      1: {
+        "id": 1,
+        "name": "Julie",
+        "email": "julie@maxi.org"
+      },
+      2: {
+        "id": 2,
+        "name": "Matt",
+        "email": "matt@maxi.org"
+      },
+      3: {
+        "id": 3,
+        "name": "Anna",
+        "email": "anna@maxi.org"
+      },
+      4: {
+        "id": 4,
+        "name": "Bob",
+        "email": "bob@maxi.org"
+      }
+    },
+    "Address": {
+      1: {
+        "id": 1,
+        "street": "123 Main St",
+        "city": "NYC",
+        "zip": "10001"
+      },
+      2: {
+        "id": 2,
+        "street": "456 Oak Ave",
+        "city": "LA",
+        "zip": "90001"
+      },
+      3: {
+        "id": 3,
+        "street": "789 Elm",
+        "city": "SF",
+        "zip": "94102"
+      },
+      4: {
+        "id": 4,
+        "street": "321 Pine",
+        "city": "SEA",
+        "zip": "98101"
+      }
+    },
+    "Order": {
+      100: {
+        "id": 100,
+        "user": 1,
+        "shipTo": 1,
+        "total": 99.99
+      },
+      101: {
+        "id": 101,
+        "user": 3,
+        "shipTo": 2,
+        "total": 149.5
+      },
+      102: {
+        "id": 102,
+        "user": 2,
+        "shipTo": 3,
+        "total": 199.99
+      },
+      103: {
+        "id": 103,
+        "user": 4,
+        "shipTo": 4,
+        "total": 249.99
+      }
+    }
+  },
+  "records": [
+    {
+      "type": "User",
+      "value": { "id": 1, "name": "Julie", "email": "julie@maxi.org" }
+    },
+    {
+      "type": "User",
+      "value": { "id": 2, "name": "Matt", "email": "matt@maxi.org" }
+    },
+    {
+      "type": "Address",
+      "value": { "id": 1, "street": "123 Main St", "city": "NYC", "zip": "10001" }
+    },
+    {
+      "type": "Address",
+      "value": { "id": 2, "street": "456 Oak Ave", "city": "LA", "zip": "90001" }
+    },
+    {
+      "type": "Order",
+      "value": { "id": 100, "user": 1, "shipTo": 1, "total": 99.99 }
+    },
+    {
+      "type": "Order",
+      "value": {
+        "id": 101,
+        "user": { "id": 3, "name": "Anna", "email": "anna@maxi.org" },
+        "shipTo": 2,
+        "total": 149.5
+      }
+    },
+    {
+      "type": "Order",
+      "value": {
+        "id": 102,
+        "user": 2,
+        "shipTo": { "id": 3, "street": "789 Elm", "city": "SF", "zip": "94102" },
+        "total": 199.99
+      }
+    },
+    {
+      "type": "Order",
+      "value": {
+        "id": 103,
+        "user": { "id": 4, "name": "Bob", "email": "bob@maxi.org" },
+        "shipTo": { "id": 4, "street": "321 Pine", "city": "SEA", "zip": "98101" },
+        "total": 249.99
+      }
+    }
+  ],
+  "record_validations": [
+    {
+      "description": "Record 1 is User(1,Julie,...)",
+      "path": "#/records/0/value/name",
+      "expected_value": "Julie"
+    },
+    {
+      "description": "Record 5 Order 100 has user id 1 (no ref resolving)",
+      "path": "#/records/4/value/user",
+      "expected_value": 1
+    },
+    {
+      "description": "Record 6 Order 101 has inline user object with id 3 (no ref resolving)",
+      "path": "#/records/5/value/user/id",
+      "expected_value": 3
+    },
+    {
+      "description": "Record 7 Order 102 has inline shipTo object with city SF (no ref resolving)",
+      "path": "#/records/6/value/shipTo/city",
+      "expected_value": "SF"
+    },
+    {
+      "description": "Record 8 Order 103 total is 249.99 (no ref resolving)",
+      "path": "#/records/7/value/total",
+      "expected_value": 249.99
+    },
+    {
+      "description": "Record 6 Order 101 total preserves scale (149.50 -> 149.5)",
+      "path": "#/records/5/value/total",
+      "expected_value": 149.5
+    },
+    {
+      "description": "Record 7 Order 102 still has user id 2 even though shipTo is inline",
+      "path": "#/records/6/value/user",
+      "expected_value": 2
+    },
+    {
+      "description": "Record 8 Order 103 has inline shipTo address id 4 (no ref resolving)",
+      "path": "#/records/7/value/shipTo/id",
+      "expected_value": 4
+    }
+  ],
+  "object_validations": [
+    {
+      "description": "Order 100 user reference is id 1",
+      "path": "#/objects/Order/100/user",
+      "expected_value": 1
+    },
+    {
+      "description": "Order 100 shipTo reference is id 1",
+      "path": "#/objects/Order/100/shipTo",
+      "expected_value": 1
+    },
+    {
+      "description": "Order 100 total is 99.99",
+      "path": "#/objects/Order/100/total",
+      "expected_value": 99.99
+    },
+    {
+      "description": "Order 101 user reference comes from inline User id 3",
+      "path": "#/objects/Order/101/user",
+      "expected_value": 3
+    },
+    {
+      "description": "Order 101 shipTo reference is id 2",
+      "path": "#/objects/Order/101/shipTo",
+      "expected_value": 2
+    },
+    {
+      "description": "Order 101 total is 149.5",
+      "path": "#/objects/Order/101/total",
+      "expected_value": 149.5
+    },
+    {
+      "description": "Order 102 user reference is id 2",
+      "path": "#/objects/Order/102/user",
+      "expected_value": 2
+    },
+    {
+      "description": "Order 102 shipTo reference comes from inline Address id 3",
+      "path": "#/objects/Order/102/shipTo",
+      "expected_value": 3
+    },
+    {
+      "description": "Order 102 total is 199.99",
+      "path": "#/objects/Order/102/total",
+      "expected_value": 199.99
+    },
+    {
+      "description": "Order 103 user reference comes from inline User id 4",
+      "path": "#/objects/Order/103/user",
+      "expected_value": 4
+    },
+    {
+      "description": "Order 103 shipTo reference comes from inline Address id 4",
+      "path": "#/objects/Order/103/shipTo",
+      "expected_value": 4
+    },
+    {
+      "description": "Order 103 total is 249.99",
+      "path": "#/objects/Order/103/total",
+      "expected_value": 249.99
+    },
+    {
+      "description": "Order 100 user name is Julie (follow ref)",
+      "path": "#/objects/Order/100/user/name",
+      "follow_references": true,
+      "expected_value": "Julie"
+    },
+    {
+      "description": "Order 101 user name is Anna (follow ref)",
+      "path": "#/objects/Order/101/user/name",
+      "follow_references": true,
+      "expected_value": "Anna"
+    },
+    {
+      "description": "Order 102 user email is matt@maxi.org (follow ref)",
+      "path": "#/objects/Order/102/user/email",
+      "follow_references": true,
+      "expected_value": "matt@maxi.org"
+    },
+    {
+      "description": "Order 103 shipTo city is SEA (follow ref)",
+      "path": "#/objects/Order/103/shipTo/city",
+      "follow_references": true,
+      "expected_value": "SEA"
+    }
+  ]
+}

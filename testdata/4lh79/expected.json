@@ -1,0 +1,93 @@
+{
+  "success": true,
+  "objects": {
+    "Config": {
+      1: {
+        "id": 1,
+        "settings": { "timeout": 30, "retries": 3, "maxConnections": 100 },
+        "metadata": { "version": "1.0", "author": "Julie" }
+      },
+      2: {
+        "id": 2,
+        "settings": { "debug": 1 },
+        "metadata": {}
+      },
+      3: {
+        "id": 3,
+        "settings": { "level": 5, "speed": 75, "volume": 50 },
+        "metadata": { "theme": "dark", "language": "en" }
+      }
+    }
+  },
+  "records": [
+    {
+      "type": "Config",
+      "value": {
+        "id": 1,
+        "settings": { "timeout": 30, "retries": 3, "maxConnections": 100 },
+        "metadata": { "version": "1.0", "author": "Julie" }
+      }
+    },
+    {
+      "type": "Config",
+      "value": { "id": 2, "settings": { "debug": 1 }, "metadata": {} }
+    },
+    {
+      "type": "Config",
+      "value": {
+        "id": 3,
+        "settings": { "level": 5, "speed": 75, "volume": 50 },
+        "metadata": { "theme": "dark", "language": "en" }
+      }
+    }
+  ],
+  "record_validations": [
+    {
+      "description": "Record 1 settings.timeout is 30",
+      "path": "#/records/0/value/settings/timeout",
+      "expected_value": 30
+    },
+    {
+      "description": "Record 1 settings.maxConnections is 100",
+      "path": "#/records/0/value/settings/maxConnections",
+      "expected_value": 100
+    },
+    {
+      "description": "Record 1 metadata.author is Julie",
+      "path": "#/records/0/value/metadata/author",
+      "expected_value": "Julie"
+    },
+    {
+      "description": "Record 2 settings.debug is 1",
+      "path": "#/records/1/value/settings/debug",
+      "expected_value": 1
+    },
+    {
+      "description": "Record 2 metadata is empty object",
+      "path": "#/records/1/value/metadata",
+      "expected_value": {}
+    },
+    {
+      "description": "Record 3 metadata.theme is dark",
+      "path": "#/records/2/value/metadata/theme",
+      "expected_value": "dark"
+    }
+  ],
+  "object_validations": [
+    {
+      "description": "Config 1 settings.retries is 3",
+      "path": "#/objects/Config/1/settings/retries",
+      "expected_value": 3
+    },
+    {
+      "description": "Config 3 settings.speed is 75",
+      "path": "#/objects/Config/3/settings/speed",
+      "expected_value": 75
+    },
+    {
+      "description": "Config 2 metadata is empty object",
+      "path": "#/objects/Config/2/metadata",
+      "expected_value": {}
+    }
+  ]
+}

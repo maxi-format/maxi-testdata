@@ -1,0 +1,79 @@
+{
+  "success": true,
+  "objects": {
+    "User": {
+      1: { "id": 1, "name": "Julie", "email": "julie@maxi.org", "orders": [100, 101] },
+      2: { "id": 2, "name": "Matt", "email": "matt@maxi.org", "orders": [102] }
+    },
+    "Order": {
+      100: { "id": 100, "user": 1, "total": 99.99, "status": "shipped" },
+      101: { "id": 101, "user": 1, "total": 149.5, "status": "pending" },
+      102: { "id": 102, "user": 2, "total": 199.99, "status": "delivered" }
+    }
+  },
+  "records": [
+    { "type": "User", "value": { "id": 1, "name": "Julie", "email": "julie@maxi.org", "orders": [100, 101] } },
+    { "type": "User", "value": { "id": 2, "name": "Matt", "email": "matt@maxi.org", "orders": [102] } },
+    { "type": "Order", "value": { "id": 100, "user": 1, "total": 99.99, "status": "shipped" } },
+    { "type": "Order", "value": { "id": 101, "user": 1, "total": 149.5, "status": "pending" } },
+    { "type": "Order", "value": { "id": 102, "user": 2, "total": 199.99, "status": "delivered" } }
+  ],
+  "record_validations": [
+    {
+      "description": "Record 1 User 1 orders are [100,101] (no ref resolving)",
+      "path": "#/records/0/value/orders",
+      "expected_value": [100, 101]
+    },
+    {
+      "description": "Record 3 Order 100 user is id 1 (no ref resolving)",
+      "path": "#/records/2/value/user",
+      "expected_value": 1
+    },
+    {
+      "description": "Record 4 Order 101 total preserves scale (149.50 -> 149.5)",
+      "path": "#/records/3/value/total",
+      "expected_value": 149.5
+    },
+    {
+      "description": "Record 5 Order 102 status is delivered",
+      "path": "#/records/4/value/status",
+      "expected_value": "delivered"
+    }
+  ],
+  "object_validations": [
+    {
+      "description": "User 1 orders include 100 then 101",
+      "path": "#/objects/User/1/orders",
+      "expected_value": [100, 101]
+    },
+    {
+      "description": "Order 101 user reference is id 1",
+      "path": "#/objects/Order/101/user",
+      "expected_value": 1
+    },
+    {
+      "description": "Order 102 user reference is id 2",
+      "path": "#/objects/Order/102/user",
+      "expected_value": 2
+    },
+    {
+      "description": "Order 100 user name is Julie (follow ref)",
+      "path": "#/objects/Order/100/user/name",
+      "follow_references": true,
+      "expected_value": "Julie"
+    },
+    {
+      "description": "Order 102 user email is matt@maxi.org (follow ref)",
+      "path": "#/objects/Order/102/user/email",
+      "follow_references": true,
+      "expected_value": "matt@maxi.org"
+    },
+    {
+      "description": "User 1 first order status is shipped (follow ref)",
+      "path": "#/objects/User/1/orders/0/status",
+      "follow_references": true,
+      "expected_value": "shipped"
+    }
+  ]
+}
+

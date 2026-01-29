@@ -1,0 +1,80 @@
+{
+  "success": true,
+  "objects": {
+    "Person": {
+      1: {
+        "id": 1,
+        "name": "Alice",
+        "spouse": 2
+      },
+      2: {
+        "id": 2,
+        "name": "Bob",
+        "spouse": 1
+      },
+      3: {
+        "id": 3,
+        "name": "Charlie",
+        "spouse": null
+      }
+    }
+  },
+  "records": [
+    { "type": "Person", "value": { "id": 1, "name": "Alice", "spouse": 2 } },
+    { "type": "Person", "value": { "id": 2, "name": "Bob", "spouse": 1 } },
+    { "type": "Person", "value": { "id": 3, "name": "Charlie", "spouse": null } }
+  ],
+  "record_validations": [
+    {
+      "description": "Record 1 is Person(1,Alice,2) (no ref resolving)",
+      "path": "#/records/0/value/spouse",
+      "expected_value": 2
+    },
+    {
+      "description": "Record 3 Person(3,Charlie) has spouse null due to omitted trailing field",
+      "path": "#/records/2/value/spouse",
+      "expected_value": null
+    }
+  ],
+  "object_validations": [
+    {
+      "description": "Alice's spouse is id 2 (Bob)",
+      "path": "#/objects/Person/1/spouse",
+      "expected_value": 2
+    },
+    {
+      "description": "Bob's spouse is id 1 (Alice)",
+      "path": "#/objects/Person/2/spouse",
+      "expected_value": 1
+    },
+    {
+      "description": "Alice's spouse is Bob (follow ref)",
+      "path": "#/objects/Person/1/spouse/name",
+      "follow_references": true,
+      "expected_value": "Bob"
+    },
+    {
+      "description": "Bob's spouse is Alice (follow ref)",
+      "path": "#/objects/Person/2/spouse/name",
+      "follow_references": true,
+      "expected_value": "Alice"
+    },
+    {
+      "description": "Bob's spouse spouse is himself (Alice's spouse) (follow ref)",
+      "path": "#/objects/Person/2/spouse/spouse/name",
+      "follow_references": true,
+      "expected_value": "Bob"
+    },
+    {
+      "description": "Charlie has no spouse",
+      "path": "#/objects/Person/3/spouse",
+      "expected_value": null
+    },
+    {
+      "description": "Charlie has no spouse",
+      "path": "#/objects/Person/3/spouse",
+      "follow_references": true,
+      "expected_value": null
+    }
+  ]
+}

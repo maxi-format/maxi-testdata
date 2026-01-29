@@ -1,0 +1,12 @@
+@version:1.0.0
+R:Record(
+  id:int|
+  value1|
+  value2=default|
+  value3(!)|
+  value4=required_default(!)
+)
+###
+R(1|||test|keep_default)
+R(2|||test|keep_default)
+R(3|present||test|override)

@@ -1,0 +1,94 @@
+{
+  "success": true,
+  "objects": {
+    "User": {
+      1: {
+        "id": 1,
+        "username": "julie_123",
+        "phone": "+12345678901",
+        "zipCode": 12345
+      },
+      2: {
+        "id": 2,
+        "username": "matt_dev",
+        "phone": 5551234567,
+        "zipCode": "12345-6789"
+      },
+      3: {
+        "id": 3,
+        "username": "anna2024",
+        "phone": "+447123456789",
+        "zipCode": 90210
+      }
+    }
+  },
+  "records": [
+    {
+      "type": "User",
+      "value": {
+        "id": 1,
+        "username": "julie_123",
+        "phone": "+12345678901",
+        "zipCode": 12345
+      }
+    },
+    {
+      "type": "User",
+      "value": {
+        "id": 2,
+        "username": "matt_dev",
+        "phone": 5551234567,
+        "zipCode": "12345-6789"
+      }
+    },
+    {
+      "type": "User",
+      "value": {
+        "id": 3,
+        "username": "anna2024",
+        "phone": "+447123456789",
+        "zipCode": 90210
+      }
+    }
+  ],
+  "record_validations": [
+    {
+      "description": "Record 1 username preserved",
+      "path": "#/records/0/value/username",
+      "expected_value": "julie_123"
+    },
+    {
+      "description": "Record 1 phone preserved (international format)",
+      "path": "#/records/0/value/phone",
+      "expected_value": "+12345678901"
+    },
+    {
+      "description": "Record 2 zipCode preserved (ZIP+4)",
+      "path": "#/records/1/value/zipCode",
+      "expected_value": "12345-6789"
+    },
+    {
+      "description": "Record 3 phone preserved (UK format with +)",
+      "path": "#/records/2/value/phone",
+      "expected_value": "+447123456789"
+    }
+  ],
+  "object_validations": [
+    {
+      "description": "User 1 id is 1",
+      "path": "#/objects/User/1/id",
+      "expected_value": 1
+    },
+    {
+      "description": "User 2 username preserved",
+      "path": "#/objects/User/2/username",
+      "expected_value": "matt_dev"
+    },
+    {
+      "description": "User 3 zipCode preserved",
+      "path": "#/objects/User/3/zipCode",
+      "expected_value": 90210
+    }
+  ]
+}
+

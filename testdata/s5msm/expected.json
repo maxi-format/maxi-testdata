@@ -1,0 +1,115 @@
+{
+  "success": true,
+  "objects": {
+    "Record": {
+      1: {
+        "id": 1,
+        "value1": null,
+        "value2": "default",
+        "value3": "test",
+        "value4": "keep_default"
+      },
+      2: {
+        "id": 2,
+        "value1": null,
+        "value2": "default",
+        "value3": "test",
+        "value4": "keep_default"
+      },
+      3: {
+        "id": 3,
+        "value1": "present",
+        "value2": "default",
+        "value3": "test",
+        "value4": "override"
+      }
+    }
+  },
+  "records": [
+    {
+      "type": "Record",
+      "value": {
+        "id": 1,
+        "value1": null,
+        "value2": "default",
+        "value3": "test",
+        "value4": "keep_default"
+      }
+    },
+    {
+      "type": "Record",
+      "value": {
+        "id": 2,
+        "value1": null,
+        "value2": "default",
+        "value3": "test",
+        "value4": "keep_default"
+      }
+    },
+    {
+      "type": "Record",
+      "value": {
+        "id": 3,
+        "value1": "present",
+        "value2": "default",
+        "value3": "test",
+        "value4": "override"
+      }
+    }
+  ],
+  "record_validations": [
+    {
+      "description": "Record 1 value1 is empty -> null",
+      "path": "#/records/0/value/value1",
+      "expected_value": null
+    },
+    {
+      "description": "Record 1 value2 default applied when empty",
+      "path": "#/records/0/value/value2",
+      "expected_value": "default"
+    },
+    {
+      "description": "Record 1 value3 required field present",
+      "path": "#/records/0/value/value3",
+      "expected_value": "test"
+    },
+    {
+      "description": "Record 1 value4 required field present",
+      "path": "#/records/0/value/value4",
+      "expected_value": "keep_default"
+    },
+    {
+      "description": "Record 3 value1 explicitly set to 'present'",
+      "path": "#/records/2/value/value1",
+      "expected_value": "present"
+    },
+    {
+      "description": "Record 3 value2 is still default when empty",
+      "path": "#/records/2/value/value2",
+      "expected_value": "default"
+    },
+    {
+      "description": "Record 3 value4 overridden",
+      "path": "#/records/2/value/value4",
+      "expected_value": "override"
+    }
+  ],
+  "object_validations": [
+    {
+      "description": "Object Record 2 value2 is default",
+      "path": "#/objects/Record/2/value2",
+      "expected_value": "default"
+    },
+    {
+      "description": "Object Record 1 value1 is null",
+      "path": "#/objects/Record/1/value1",
+      "expected_value": null
+    },
+    {
+      "description": "Object Record 3 value4 is override",
+      "path": "#/objects/Record/3/value4",
+      "expected_value": "override"
+    }
+  ]
+}
+

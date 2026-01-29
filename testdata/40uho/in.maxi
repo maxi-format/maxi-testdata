@@ -1,0 +1,23 @@
+@version:1.0.0
+O:Order(
+  id:int|
+  customer|
+  items:map<str,int>|
+  shipping|
+  notes
+)
+###
+O(
+  1|
+  Julie Miller|
+  {widget:2,gadget:1,tool:3}|
+  123 Main St, NYC, NY 10001|
+  "Please deliver before 5pm. Ring doorbell twice."
+)
+O(
+  2|
+  Matt Smith|
+  {book:5,pen:10}|
+  456 Oak Ave, LA, CA 90001|
+  "Leave at reception"
+)

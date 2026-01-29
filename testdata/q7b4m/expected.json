@@ -1,0 +1,94 @@
+{
+  "success": true,
+  "objects": {
+    "User": {
+      1: {
+        "id": 1,
+        "name": "Julie Miller"
+      },
+      2: {
+        "id": 2,
+        "name": "Matt Smith"
+      }
+    },
+    "Order": {
+      100: {
+        "id": 100,
+        "user": 1,
+        "total": 99.99
+      },
+      101: {
+        "id": 101,
+        "user": 2,
+        "total": 149.5
+      }
+    }
+  },
+  "records": [
+    { "type": "User", "value": { "id": 1, "name": "Julie Miller" } },
+    { "type": "User", "value": { "id": 2, "name": "Matt Smith" } },
+    { "type": "Order", "value": { "id": 100, "user": 1, "total": 99.99 } },
+    { "type": "Order", "value": { "id": 101, "user": 2, "total": 149.5 } }
+  ],
+  "record_validations": [
+    {
+      "description": "Record 1 is User(1,Julie Miller)",
+      "path": "#/records/0/value/name",
+      "expected_value": "Julie Miller"
+    },
+    {
+      "description": "Record 3 Order 100 has user id 1 (no ref resolving)",
+      "path": "#/records/2/value/user",
+      "expected_value": 1
+    },
+    {
+      "description": "Record 4 Order 101 total preserves scale (149.50 -> 149.5)",
+      "path": "#/records/3/value/total",
+      "expected_value": 149.5
+    }
+  ],
+  "object_validations": [
+    {
+      "description": "Order 100 user reference is id 1",
+      "path": "#/objects/Order/100/user",
+      "expected_value": 1
+    },
+    {
+      "description": "Order 101 user reference is id 2",
+      "path": "#/objects/Order/101/user",
+      "expected_value": 2
+    },
+    {
+      "description": "Order 100 total is 99.99",
+      "path": "#/objects/Order/100/total",
+      "expected_value": 99.99
+    },
+    {
+      "description": "Order 101 total is 149.5",
+      "path": "#/objects/Order/101/total",
+      "expected_value": 149.5
+    },
+    {
+      "description": "User 1 name is Julie Miller",
+      "path": "#/objects/User/1/name",
+      "expected_value": "Julie Miller"
+    },
+    {
+      "description": "User 2 name is Matt Smith",
+      "path": "#/objects/User/2/name",
+      "expected_value": "Matt Smith"
+    },
+    {
+      "description": "Order 100 user is Julie Miller (follow ref)",
+      "path": "#/objects/Order/100/user/name",
+      "follow_references": true,
+      "expected_value": "Julie Miller"
+    },
+    {
+      "description": "Order 101 user is Matt Smith (follow ref)",
+      "path": "#/objects/Order/101/user/name",
+      "follow_references": true,
+      "expected_value": "Matt Smith"
+    }
+  ]
+}

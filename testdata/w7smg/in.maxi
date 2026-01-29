@@ -1,0 +1,11 @@
+@version:1.0.0
+U:User(
+  id:int|
+  username(>=3,<=20,pattern:^[a-zA-Z0-9_]+$)|
+  phone(pattern:^\+?[0-9]{10,15}$)|
+  zipCode(pattern:^\d{5}(-\d{4})?$)
+)
+###
+U(1|julie_123|+12345678901|12345)
+U(2|matt_dev|5551234567|12345-6789)
+U(3|anna2024|+447123456789|90210)

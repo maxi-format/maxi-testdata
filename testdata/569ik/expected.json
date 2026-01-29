@@ -1,0 +1,106 @@
+{
+  "success": true,
+  "objects": {
+    "Person": {
+      1: { "id": 1, "name": "John", "status": null, "type": "person" }
+    },
+    "Employee": {
+      2: {
+        "id": 2,
+        "name": "Julie",
+        "status": null,
+        "type": "employee",
+        "employeeId": 1001,
+        "department": "Engineering"
+      }
+    },
+    "Contractor": {
+      3: {
+        "id": 3,
+        "name": "Matt",
+        "status": null,
+        "type": "contractor",
+        "contractId": "C-2024-001",
+        "endDate": "2024-12-31"
+      }
+    }
+  },
+  "records": [
+    {
+      "type": "Person",
+      "value": { "id": 1, "name": "John", "status": null, "type": "person" }
+    },
+    {
+      "type": "Employee",
+      "value": {
+        "id": 2,
+        "name": "Julie",
+        "status": null,
+        "type": "employee",
+        "employeeId": 1001,
+        "department": "Engineering"
+      }
+    },
+    {
+      "type": "Contractor",
+      "value": {
+        "id": 3,
+        "name": "Matt",
+        "status": null,
+        "type": "contractor",
+        "contractId": "C-2024-001",
+        "endDate": "2024-12-31"
+      }
+    }
+  ],
+  "record_validations": [
+    {
+      "description": "Record 1 Person(1) status is explicit null (~) overriding default 'active'",
+      "path": "#/records/0/value/status",
+      "expected_value": null
+    },
+    {
+      "description": "Record 2 Employee(2) status is explicit null (~) overriding default 'employed'",
+      "path": "#/records/1/value/status",
+      "expected_value": null
+    },
+    {
+      "description": "Record 2 Employee(2) employeeId parsed as int",
+      "path": "#/records/1/value/employeeId",
+      "expected_value": 1001
+    },
+    {
+      "description": "Record 3 Contractor(3) status is explicit null (~) overriding default 'contract'",
+      "path": "#/records/2/value/status",
+      "expected_value": null
+    },
+    {
+      "description": "Record 3 Contractor(3) endDate preserved as date string",
+      "path": "#/records/2/value/endDate",
+      "expected_value": "2024-12-31"
+    }
+  ],
+  "object_validations": [
+    {
+      "description": "Person 1 type is 'person'",
+      "path": "#/objects/Person/1/type",
+      "expected_value": "person"
+    },
+    {
+      "description": "Employee 2 department is Engineering",
+      "path": "#/objects/Employee/2/department",
+      "expected_value": "Engineering"
+    },
+    {
+      "description": "Employee 2 status remained null (default overridden)",
+      "path": "#/objects/Employee/2/status",
+      "expected_value": null
+    },
+    {
+      "description": "Contractor 3 contractId preserved",
+      "path": "#/objects/Contractor/3/contractId",
+      "expected_value": "C-2024-001"
+    }
+  ]
+}
+

@@ -1,0 +1,8 @@
+@version:1.0.0
+@schema:users.mxs
+###
+U(1|Julie|julie@maxi.org|[100,101])
+U(2|Matt|matt@maxi.org|[102])
+O(100|1|99.99|shipped)
+O(101|1|149.50|pending)
+O(102|2|199.99|delivered)

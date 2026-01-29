@@ -1,0 +1,2 @@
+@schema:orders.mxs
+U:User(id:int|name|email|orders:Order[])

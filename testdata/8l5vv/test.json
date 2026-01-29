@@ -1,0 +1,8 @@
+{
+  "id": "8l5vv",
+  "title": "Nested Inline Objects (multi-level)",
+  "description": "Tests nested inline objects across multiple types: Department has inline Company; User has inline Department which has inline Company; resolved graph uses IDs with optional follow_references traversal.",
+  "category": "valid",
+  "mode": "lax"
+}
+

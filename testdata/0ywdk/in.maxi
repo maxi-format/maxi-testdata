@@ -1,0 +1,15 @@
+@version:1.0.0
+U:User(
+  id:int|
+  name|
+  email:str@email|
+  website:str@url|
+  userId:str@uuid|
+  birthDate:str@date|
+  createdAt:str@datetime|
+  loginTime:str@time|
+  lastLogin:int@timestamp
+)
+###
+U(1|Julie|julie@maxi.org|https://example.com|550e8400-e29b-41d4-a716-446655440000|1990-05-15|2024-01-15T10:30:00Z|14:30:00|1704192600)
+U(2|Matt|matt@maxi.org|https://test.org|6ba7b810-9dad-11d1-80b4-00c04fd430c8|1985-12-01|2024-02-20T08:15:30Z|08:15:30|1708416930)

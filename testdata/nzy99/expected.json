@@ -1,0 +1,104 @@
+{
+  "success": true,
+  "objects": {
+    "User": {
+      1: {
+        "id": 1,
+        "name": "Julie",
+        "tags": ["dev", "backend", "api"],
+        "scores": [95, 87, 92]
+      },
+      2: {
+        "id": 2,
+        "name": "Matt",
+        "tags": ["design"],
+        "scores": [88]
+      },
+      3: {
+        "id": 3,
+        "name": "Anna",
+        "tags": ["frontend", "react", "typescript", "css", "html"],
+        "scores": [90, 85, 95, 88]
+      }
+    }
+  },
+  "records": [
+    {
+      "type": "User",
+      "value": {
+        "id": 1,
+        "name": "Julie",
+        "tags": ["dev", "backend", "api"],
+        "scores": [95, 87, 92]
+      }
+    },
+    {
+      "type": "User",
+      "value": { "id": 2, "name": "Matt", "tags": ["design"], "scores": [88] }
+    },
+    {
+      "type": "User",
+      "value": {
+        "id": 3,
+        "name": "Anna",
+        "tags": ["frontend", "react", "typescript", "css", "html"],
+        "scores": [90, 85, 95, 88]
+      }
+    }
+  ],
+  "record_validations": [
+    {
+      "description": "Record 1 tags[0] is dev",
+      "path": "#/records/0/value/tags/0",
+      "expected_value": "dev"
+    },
+    {
+      "description": "Record 1 tags length is 3",
+      "path": "#/records/0/value/tags",
+      "expected_value": ["dev", "backend", "api"]
+    },
+    {
+      "description": "Record 1 scores[2] is 92",
+      "path": "#/records/0/value/scores/2",
+      "expected_value": 92
+    },
+    {
+      "description": "Record 2 tags is single-element array [design]",
+      "path": "#/records/1/value/tags",
+      "expected_value": ["design"]
+    },
+    {
+      "description": "Record 2 scores[0] is 88",
+      "path": "#/records/1/value/scores/0",
+      "expected_value": 88
+    },
+    {
+      "description": "Record 3 tags[4] is html (max tag count example)",
+      "path": "#/records/2/value/tags/4",
+      "expected_value": "html"
+    },
+    {
+      "description": "Record 3 scores[1] is 85",
+      "path": "#/records/2/value/scores/1",
+      "expected_value": 85
+    }
+  ],
+  "object_validations": [
+    {
+      "description": "User 1 name is Julie",
+      "path": "#/objects/User/1/name",
+      "expected_value": "Julie"
+    },
+    {
+      "description": "User 3 tags preserved in order",
+      "path": "#/objects/User/3/tags",
+      "expected_value": ["frontend", "react", "typescript", "css", "html"]
+    },
+    {
+      "description": "User 2 scores preserved",
+      "path": "#/objects/User/2/scores",
+      "expected_value": [88]
+    }
+  ]
+}
+

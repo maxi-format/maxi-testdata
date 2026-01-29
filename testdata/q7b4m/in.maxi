@@ -1,0 +1,8 @@
+@version:1.0.0
+U:User(id:int|name)
+O:Order(id:int|user:U|total:decimal)
+###
+U(1|Julie Miller)
+U(2|Matt Smith)
+O(100|1|99.99)
+O(101|2|149.50)

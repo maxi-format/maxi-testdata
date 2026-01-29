@@ -1,0 +1,88 @@
+{
+  "success": true,
+  "objects": {
+    "Order": {
+      1: {
+        "id": 1,
+        "customer": "Julie Miller",
+        "items": { "widget": 2, "gadget": 1, "tool": 3 },
+        "shipping": "123 Main St, NYC, NY 10001",
+        "notes": "Please deliver before 5pm. Ring doorbell twice."
+      },
+      2: {
+        "id": 2,
+        "customer": "Matt Smith",
+        "items": { "book": 5, "pen": 10 },
+        "shipping": "456 Oak Ave, LA, CA 90001",
+        "notes": "Leave at reception"
+      }
+    }
+  },
+  "records": [
+    {
+      "type": "Order",
+      "value": {
+        "id": 1,
+        "customer": "Julie Miller",
+        "items": { "widget": 2, "gadget": 1, "tool": 3 },
+        "shipping": "123 Main St, NYC, NY 10001",
+        "notes": "Please deliver before 5pm. Ring doorbell twice."
+      }
+    },
+    {
+      "type": "Order",
+      "value": {
+        "id": 2,
+        "customer": "Matt Smith",
+        "items": { "book": 5, "pen": 10 },
+        "shipping": "456 Oak Ave, LA, CA 90001",
+        "notes": "Leave at reception"
+      }
+    }
+  ],
+  "record_validations": [
+    {
+      "description": "Record 1 id is 1",
+      "path": "#/records/0/value/id",
+      "expected_value": 1
+    },
+    {
+      "description": "Record 1 items.widget is 2",
+      "path": "#/records/0/value/items/widget",
+      "expected_value": 2
+    },
+    {
+      "description": "Record 1 items.tool is 3",
+      "path": "#/records/0/value/items/tool",
+      "expected_value": 3
+    },
+    {
+      "description": "Record 1 notes preserves punctuation and unquotes string",
+      "path": "#/records/0/value/notes",
+      "expected_value": "Please deliver before 5pm. Ring doorbell twice."
+    },
+    {
+      "description": "Record 2 items.pen is 10",
+      "path": "#/records/1/value/items/pen",
+      "expected_value": 10
+    },
+    {
+      "description": "Record 2 notes is 'Leave at reception'",
+      "path": "#/records/1/value/notes",
+      "expected_value": "Leave at reception"
+    }
+  ],
+  "object_validations": [
+    {
+      "description": "Order 1 customer is Julie Miller",
+      "path": "#/objects/Order/1/customer",
+      "expected_value": "Julie Miller"
+    },
+    {
+      "description": "Order 2 shipping preserved",
+      "path": "#/objects/Order/2/shipping",
+      "expected_value": "456 Oak Ave, LA, CA 90001"
+    }
+  ]
+}
+

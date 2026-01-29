@@ -1,0 +1,8 @@
+{
+  "id": "z3ond",
+  "title": "Decimal Constraints + Precision/Scale Edge Cases",
+  "description": "Parses decimals with different constraint syntaxes (>=0, precision/scale, fraction-only precision) and trailing-dot numbers like 500. and 999..",
+  "category": "valid",
+  "mode": "lax"
+}
+

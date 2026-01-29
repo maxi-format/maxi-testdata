@@ -1,0 +1,10 @@
+@version:1.0.0
+D:Data(
+  id:int|
+  matrix:int[][](>=2,<=10)|
+  configs:map<str,map<str,int>>|
+  records:map<int,str[]>
+)
+###
+D(1|[[1,2,3],[4,5,6],[7,8,9]]|{db:{timeout:30,pool:10},cache:{ttl:60}}|{1:[a,b,c],2:[x,y,z]})
+D(2|[[10,20],[30,40]]|{api:{limit:100,offset:0}}|{})

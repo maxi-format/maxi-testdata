@@ -1,0 +1,8 @@
+{
+  "id": "s5msm",
+  "title": "Defaults + Required Fields + Empty Semantics",
+  "description": "Tests empty field -> null, defaults applied to empty fields, and required fields marked with (!).",
+  "category": "valid",
+  "mode": "lax"
+}
+

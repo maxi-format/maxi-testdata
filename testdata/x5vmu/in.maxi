@@ -1,0 +1,14 @@
+@version:1.0.0
+U:User(
+  id:int|
+  name="John"|
+  role=user|
+  status=active(!)|
+  bio=""
+)
+###
+U(1)
+U(2|Julie)
+U(3|~|admin|inactive)
+U(4|Matt|~|pending|"Software engineer")
+U(5|Anna|guest|~|~)

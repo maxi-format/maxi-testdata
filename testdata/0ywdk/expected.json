@@ -1,0 +1,128 @@
+{
+  "success": true,
+  "objects": {
+    "User": {
+      1: {
+        "id": 1,
+        "name": "Julie",
+        "email": "julie@maxi.org",
+        "website": "https://example.com",
+        "userId": "550e8400-e29b-41d4-a716-446655440000",
+        "birthDate": "1990-05-15",
+        "createdAt": "2024-01-15T10:30:00Z",
+        "loginTime": "14:30:00",
+        "lastLogin": 1704192600
+      },
+      2: {
+        "id": 2,
+        "name": "Matt",
+        "email": "matt@maxi.org",
+        "website": "https://test.org",
+        "userId": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+        "birthDate": "1985-12-01",
+        "createdAt": "2024-02-20T08:15:30Z",
+        "loginTime": "08:15:30",
+        "lastLogin": 1708416930
+      }
+    }
+  },
+  "records": [
+    {
+      "type": "User",
+      "value": {
+        "id": 1,
+        "name": "Julie",
+        "email": "julie@maxi.org",
+        "website": "https://example.com",
+        "userId": "550e8400-e29b-41d4-a716-446655440000",
+        "birthDate": "1990-05-15",
+        "createdAt": "2024-01-15T10:30:00Z",
+        "loginTime": "14:30:00",
+        "lastLogin": 1704192600
+      }
+    },
+    {
+      "type": "User",
+      "value": {
+        "id": 2,
+        "name": "Matt",
+        "email": "matt@maxi.org",
+        "website": "https://test.org",
+        "userId": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+        "birthDate": "1985-12-01",
+        "createdAt": "2024-02-20T08:15:30Z",
+        "loginTime": "08:15:30",
+        "lastLogin": 1708416930
+      }
+    }
+  ],
+  "record_validations": [
+    {
+      "description": "Record 1 is User named Julie",
+      "path": "#/records/0/value/name",
+      "expected_value": "Julie"
+    },
+    {
+      "description": "Record 1 email preserved",
+      "path": "#/records/0/value/email",
+      "expected_value": "julie@maxi.org"
+    },
+    {
+      "description": "Record 1 website preserved",
+      "path": "#/records/0/value/website",
+      "expected_value": "https://example.com"
+    },
+    {
+      "description": "Record 1 uuid preserved",
+      "path": "#/records/0/value/userId",
+      "expected_value": "550e8400-e29b-41d4-a716-446655440000"
+    },
+    {
+      "description": "Record 1 date preserved",
+      "path": "#/records/0/value/birthDate",
+      "expected_value": "1990-05-15"
+    },
+    {
+      "description": "Record 1 datetime preserved",
+      "path": "#/records/0/value/createdAt",
+      "expected_value": "2024-01-15T10:30:00Z"
+    },
+    {
+      "description": "Record 1 time preserved",
+      "path": "#/records/0/value/loginTime",
+      "expected_value": "14:30:00"
+    },
+    {
+      "description": "Record 1 timestamp parsed as int",
+      "path": "#/records/0/value/lastLogin",
+      "expected_value": 1704192600
+    },
+    {
+      "description": "Record 2 is User named Matt",
+      "path": "#/records/1/value/name",
+      "expected_value": "Matt"
+    },
+    {
+      "description": "Record 2 time preserved with leading zeros",
+      "path": "#/records/1/value/loginTime",
+      "expected_value": "08:15:30"
+    }
+  ],
+  "object_validations": [
+    {
+      "description": "User 1 id is 1",
+      "path": "#/objects/User/1/id",
+      "expected_value": 1
+    },
+    {
+      "description": "User 1 createdAt is preserved",
+      "path": "#/objects/User/1/createdAt",
+      "expected_value": "2024-01-15T10:30:00Z"
+    },
+    {
+      "description": "User 2 lastLogin is an int timestamp",
+      "path": "#/objects/User/2/lastLogin",
+      "expected_value": 1708416930
+    }
+  ]
+}

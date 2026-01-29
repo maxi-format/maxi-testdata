@@ -1,0 +1,88 @@
+{
+  "success": true,
+  "objects": {
+    "File": {
+      1: {
+        "id": 1,
+        "filename": "report.pdf",
+        "data": "SGVsbG8gV29ybGQh",
+        "thumbnail_base64": "iVBORw0KGg==",
+        "signature_hex": "48656c6c6f"
+      },
+      2: {
+        "id": 2,
+        "filename": "doc.pdf",
+        "data": "UERGRmlsZQ==",
+        "thumbnail_base64": "/9j/4AAQSkZJRg==",
+        "signature_hex": "576f726c64"
+      }
+    }
+  },
+  "records": [
+    {
+      "type": "File",
+      "value": {
+        "id": 1,
+        "filename": "report.pdf",
+        "data": "SGVsbG8gV29ybGQh",
+        "thumbnail_base64": "iVBORw0KGg==",
+        "signature_hex": "48656c6c6f"
+      }
+    },
+    {
+      "type": "File",
+      "value": {
+        "id": 2,
+        "filename": "doc.pdf",
+        "data": "UERGRmlsZQ==",
+        "thumbnail_base64": "/9j/4AAQSkZJRg==",
+        "signature_hex": "576f726c64"
+      }
+    }
+  ],
+  "record_validations": [
+    {
+      "description": "Record 1 filename is report.pdf",
+      "path": "#/records/0/value/filename",
+      "expected_value": "report.pdf"
+    },
+    {
+      "description": "Record 1 data bytes payload preserved as string",
+      "path": "#/records/0/value/data",
+      "expected_value": "SGVsbG8gV29ybGQh"
+    },
+    {
+      "description": "Record 1 thumbnail base64 preserved",
+      "path": "#/records/0/value/thumbnail_base64",
+      "expected_value": "iVBORw0KGg=="
+    },
+    {
+      "description": "Record 1 signature hex preserved (<=64 constraint covered by short value)",
+      "path": "#/records/0/value/signature_hex",
+      "expected_value": "48656c6c6f"
+    },
+    {
+      "description": "Record 2 filename is doc.pdf",
+      "path": "#/records/1/value/filename",
+      "expected_value": "doc.pdf"
+    },
+    {
+      "description": "Record 2 thumbnail base64 preserved (jpg header prefix)",
+      "path": "#/records/1/value/thumbnail_base64",
+      "expected_value": "/9j/4AAQSkZJRg=="
+    }
+  ],
+  "object_validations": [
+    {
+      "description": "File 1 id is 1",
+      "path": "#/objects/File/1/id",
+      "expected_value": 1
+    },
+    {
+      "description": "File 2 signature hex preserved",
+      "path": "#/objects/File/2/signature_hex",
+      "expected_value": "576f726c64"
+    }
+  ]
+}
+

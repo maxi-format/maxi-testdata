@@ -1,0 +1,9 @@
+@version:1.0.0
+U:User(id:int|name|role:enum[admin,user,guest]|status:enum<int>[0,1,2])
+P:Product(id:int|name|priority:enum<str>[low,medium,high])
+###
+U(1|Julie|admin|1)
+U(2|Matt|user|0)
+U(3|Anna|guest|2)
+P(100|Widget|high)
+P(101|Gadget|low)

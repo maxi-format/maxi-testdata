@@ -1,0 +1,7 @@
+{
+  "id": "5m4mf",
+  "title": "Nested Arrays + Nested Maps",
+  "description": "Parses int[][] matrices, map<str,map<str,int>> configs, and map<int,str[]> records including an empty map.",
+  "category": "valid",
+  "mode": "lax"
+}

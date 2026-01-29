@@ -1,0 +1,121 @@
+{
+  "success": true,
+  "objects": {
+    "Company": {
+      1: { "id": 1, "name": "ACME Corp", "address": "123 Main St" },
+      2: { "id": 2, "name": "Beta Inc", "address": "456 Oak Ave" },
+      3: { "id": 3, "name": "Gamma Ltd", "address": "789 Elm St" },
+      4: { "id": 4, "name": "Delta Co", "address": "321 Pine St" }
+    },
+    "Department": {
+      1: { "id": 1, "name": "Engineering", "company": 3 },
+      2: { "id": 2, "name": "Design", "company": 2 },
+      3: { "id": 3, "name": "Marketing", "company": 4 }
+    },
+    "User": {
+      1: { "id": 1, "name": "Julie", "email": "julie@maxi.org", "department": 3 },
+      2: { "id": 2, "name": "Matt", "email": "matt@maxi.org", "department": 1 }
+    }
+  },
+  "records": [
+    { "type": "Company", "value": { "id": 1, "name": "ACME Corp", "address": "123 Main St" } },
+    { "type": "Company", "value": { "id": 2, "name": "Beta Inc", "address": "456 Oak Ave" } },
+    {
+      "type": "Department",
+      "value": {
+        "id": 1,
+        "name": "Engineering",
+        "company": { "id": 3, "name": "Gamma Ltd", "address": "789 Elm St" }
+      }
+    },
+    { "type": "Department", "value": { "id": 2, "name": "Design", "company": 2 } },
+    {
+      "type": "User",
+      "value": {
+        "id": 1,
+        "name": "Julie",
+        "email": "julie@maxi.org",
+        "department": {
+          "id": 3,
+          "name": "Marketing",
+          "company": { "id": 4, "name": "Delta Co", "address": "321 Pine St" }
+        }
+      }
+    },
+    { "type": "User", "value": { "id": 2, "name": "Matt", "email": "matt@maxi.org", "department": 1 } }
+  ],
+  "record_validations": [
+    {
+      "description": "Record 3 Department 1 has inline company with id 3 (no ref resolving)",
+      "path": "#/records/2/value/company/id",
+      "expected_value": 3
+    },
+    {
+      "description": "Record 5 User 1 has inline department with id 3 (no ref resolving)",
+      "path": "#/records/4/value/department/id",
+      "expected_value": 3
+    },
+    {
+      "description": "Record 5 User 1 department has inline company with name Delta Co (no ref resolving)",
+      "path": "#/records/4/value/department/company/name",
+      "expected_value": "Delta Co"
+    },
+    {
+      "description": "Record 4 Department 2 references company id 2 (no ref resolving)",
+      "path": "#/records/3/value/company",
+      "expected_value": 2
+    },
+    {
+      "description": "Record 6 User 2 references department id 1 (no ref resolving)",
+      "path": "#/records/5/value/department",
+      "expected_value": 1
+    }
+  ],
+  "object_validations": [
+    {
+      "description": "Department 1 company reference comes from inline Company id 3",
+      "path": "#/objects/Department/1/company",
+      "expected_value": 3
+    },
+    {
+      "description": "User 1 department reference comes from inline Department id 3",
+      "path": "#/objects/User/1/department",
+      "expected_value": 3
+    },
+    {
+      "description": "User 2 department reference is id 1",
+      "path": "#/objects/User/2/department",
+      "expected_value": 1
+    },
+    {
+      "description": "Department 2 company reference is id 2",
+      "path": "#/objects/Department/2/company",
+      "expected_value": 2
+    },
+    {
+      "description": "User 1 department name is Marketing (follow ref)",
+      "path": "#/objects/User/1/department/name",
+      "follow_references": true,
+      "expected_value": "Marketing"
+    },
+    {
+      "description": "User 1 department company name is Delta Co (follow ref)",
+      "path": "#/objects/User/1/department/company/name",
+      "follow_references": true,
+      "expected_value": "Delta Co"
+    },
+    {
+      "description": "Department 1 company address is 789 Elm St (follow ref)",
+      "path": "#/objects/Department/1/company/address",
+      "follow_references": true,
+      "expected_value": "789 Elm St"
+    },
+    {
+      "description": "User 2 department company name is Gamma Ltd (follow ref)",
+      "path": "#/objects/User/2/department/company/name",
+      "follow_references": true,
+      "expected_value": "Gamma Ltd"
+    }
+  ]
+}
+

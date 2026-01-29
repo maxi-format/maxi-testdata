@@ -1,0 +1,8 @@
+@version:1.0.0
+TS:TimeStamp(createdAt:str@datetime|updatedAt:str@datetime)
+P:Person(id:int|name|email)
+A:Auditable(createdBy:int|modifiedBy:int)
+U:User<P,TS,A>(role|status=active)
+###
+U(1|Julie|julie@maxi.org|2024-01-15T10:00:00Z|2024-11-20T15:30:00Z|100|100|admin|active)
+U(2|Matt|matt@maxi.org|2024-02-10T09:00:00Z|2024-11-21T16:00:00Z|100|101|user|inactive)

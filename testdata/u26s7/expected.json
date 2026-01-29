@@ -1,0 +1,71 @@
+{
+  "success": true,
+  "objects": {
+    "User": {
+      1: { "id": 1, "name": "Julie", "role": "admin", "status": 1 },
+      2: { "id": 2, "name": "Matt", "role": "user", "status": 0 },
+      3: { "id": 3, "name": "Anna", "role": "guest", "status": 2 }
+    },
+    "Product": {
+      100: { "id": 100, "name": "Widget", "priority": "high" },
+      101: { "id": 101, "name": "Gadget", "priority": "low" }
+    }
+  },
+  "records": [
+    { "type": "User", "value": { "id": 1, "name": "Julie", "role": "admin", "status": 1 } },
+    { "type": "User", "value": { "id": 2, "name": "Matt", "role": "user", "status": 0 } },
+    { "type": "User", "value": { "id": 3, "name": "Anna", "role": "guest", "status": 2 } },
+    { "type": "Product", "value": { "id": 100, "name": "Widget", "priority": "high" } },
+    { "type": "Product", "value": { "id": 101, "name": "Gadget", "priority": "low" } }
+  ],
+  "record_validations": [
+    {
+      "description": "Record 1 User 1 role is admin",
+      "path": "#/records/0/value/role",
+      "expected_value": "admin"
+    },
+    {
+      "description": "Record 2 User 2 status parsed as int 0",
+      "path": "#/records/1/value/status",
+      "expected_value": 0
+    },
+    {
+      "description": "Record 3 User 3 status parsed as int 2",
+      "path": "#/records/2/value/status",
+      "expected_value": 2
+    },
+    {
+      "description": "Record 4 Product 100 priority is high",
+      "path": "#/records/3/value/priority",
+      "expected_value": "high"
+    },
+    {
+      "description": "Record 5 Product 101 name is Gadget",
+      "path": "#/records/4/value/name",
+      "expected_value": "Gadget"
+    }
+  ],
+  "object_validations": [
+    {
+      "description": "User 2 role is user",
+      "path": "#/objects/User/2/role",
+      "expected_value": "user"
+    },
+    {
+      "description": "User 1 status is 1",
+      "path": "#/objects/User/1/status",
+      "expected_value": 1
+    },
+    {
+      "description": "Product 100 name is Widget",
+      "path": "#/objects/Product/100/name",
+      "expected_value": "Widget"
+    },
+    {
+      "description": "Product 101 priority is low",
+      "path": "#/objects/Product/101/priority",
+      "expected_value": "low"
+    }
+  ]
+}
+

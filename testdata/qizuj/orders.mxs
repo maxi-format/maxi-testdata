@@ -1,0 +1,2 @@
+@schema:users.mxs
+O:Order(id:int|user:User|total:decimal|status)

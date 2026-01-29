@@ -1,0 +1,11 @@
+@version:1.0.0
+C:Company(id:int|name|address)
+D:Department(id:int|name|company:C)
+U:User(id:int|name|email|department:D)
+###
+C(1|ACME Corp|123 Main St)
+C(2|Beta Inc|456 Oak Ave)
+D(1|Engineering|(3|Gamma Ltd|789 Elm St))
+D(2|Design|2)
+U(1|Julie|julie@maxi.org|(3|Marketing|(4|Delta Co|321 Pine St)))
+U(2|Matt|matt@maxi.org|1)
