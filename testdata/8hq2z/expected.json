@@ -2,47 +2,47 @@
   "success": true,
   "objects": {
     "User": {
-      1: {
+      "1": {
         "id": 1,
         "name": "Julie",
         "email": "julie@maxi.org"
       },
-      2: {
+      "2": {
         "id": 2,
         "name": "Matt",
         "email": "matt@maxi.org"
       },
-      3: {
+      "3": {
         "id": 3,
         "name": "Anna",
         "email": "anna@maxi.org"
       },
-      4: {
+      "4": {
         "id": 4,
         "name": "Bob",
         "email": "bob@maxi.org"
       }
     },
     "Address": {
-      1: {
+      "1": {
         "id": 1,
         "street": "123 Main St",
         "city": "NYC",
         "zip": "10001"
       },
-      2: {
+      "2": {
         "id": 2,
         "street": "456 Oak Ave",
         "city": "LA",
         "zip": "90001"
       },
-      3: {
+      "3": {
         "id": 3,
         "street": "789 Elm",
         "city": "SF",
         "zip": "94102"
       },
-      4: {
+      "4": {
         "id": 4,
         "street": "321 Pine",
         "city": "SEA",
@@ -50,25 +50,25 @@
       }
     },
     "Order": {
-      100: {
+      "100": {
         "id": 100,
         "user": 1,
         "shipTo": 1,
         "total": 99.99
       },
-      101: {
+      "101": {
         "id": 101,
         "user": 3,
         "shipTo": 2,
         "total": 149.5
       },
-      102: {
+      "102": {
         "id": 102,
         "user": 2,
         "shipTo": 3,
         "total": 199.99
       },
-      103: {
+      "103": {
         "id": 103,
         "user": 4,
         "shipTo": 4,

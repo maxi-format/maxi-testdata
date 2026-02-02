@@ -2,21 +2,21 @@
   "success": true,
   "objects": {
     "Record": {
-      1: {
+      "1": {
         "id": 1,
         "value1": null,
         "value2": "default",
         "value3": "test",
         "value4": "keep_default"
       },
-      2: {
+      "2": {
         "id": 2,
         "value1": null,
         "value2": "default",
         "value3": "test",
         "value4": "keep_default"
       },
-      3: {
+      "3": {
         "id": 3,
         "value1": "present",
         "value2": "default",

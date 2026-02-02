@@ -2,19 +2,19 @@
   "success": true,
   "objects": {
     "User": {
-      1: {
+      "1": {
         "id": 1,
         "username": "julie_123",
         "phone": "+12345678901",
         "zipCode": 12345
       },
-      2: {
+      "2": {
         "id": 2,
         "username": "matt_dev",
         "phone": 5551234567,
         "zipCode": "12345-6789"
       },
-      3: {
+      "3": {
         "id": 3,
         "username": "anna2024",
         "phone": "+447123456789",

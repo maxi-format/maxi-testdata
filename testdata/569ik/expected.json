@@ -2,10 +2,10 @@
   "success": true,
   "objects": {
     "Person": {
-      1: { "id": 1, "name": "John", "status": null, "type": "person" }
+      "1": { "id": 1, "name": "John", "status": null, "type": "person" }
     },
     "Employee": {
-      2: {
+      "2": {
         "id": 2,
         "name": "Julie",
         "status": null,
@@ -15,7 +15,7 @@
       }
     },
     "Contractor": {
-      3: {
+      "3": {
         "id": 3,
         "name": "Matt",
         "status": null,

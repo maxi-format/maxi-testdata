@@ -2,13 +2,13 @@
   "success": true,
   "objects": {
     "User": {
-      1: { "id": 1, "name": "Julie", "email": "julie@maxi.org", "orders": [100, 101] },
-      2: { "id": 2, "name": "Matt", "email": "matt@maxi.org", "orders": [102] }
+      "1": { "id": 1, "name": "Julie", "email": "julie@maxi.org", "orders": [100, 101] },
+      "2": { "id": 2, "name": "Matt", "email": "matt@maxi.org", "orders": [102] }
     },
     "Order": {
-      100: { "id": 100, "user": 1, "total": 99.99, "status": "shipped" },
-      101: { "id": 101, "user": 1, "total": 149.5, "status": "pending" },
-      102: { "id": 102, "user": 2, "total": 199.99, "status": "delivered" }
+      "100": { "id": 100, "user": 1, "total": 99.99, "status": "shipped" },
+      "101": { "id": 101, "user": 1, "total": 149.5, "status": "pending" },
+      "102": { "id": 102, "user": 2, "total": 199.99, "status": "delivered" }
     }
   },
   "records": [

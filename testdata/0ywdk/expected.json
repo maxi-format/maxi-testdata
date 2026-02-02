@@ -2,7 +2,7 @@
   "success": true,
   "objects": {
     "User": {
-      1: {
+      "1": {
         "id": 1,
         "name": "Julie",
         "email": "julie@maxi.org",
@@ -13,7 +13,7 @@
         "loginTime": "14:30:00",
         "lastLogin": 1704192600
       },
-      2: {
+      "2": {
         "id": 2,
         "name": "Matt",
         "email": "matt@maxi.org",

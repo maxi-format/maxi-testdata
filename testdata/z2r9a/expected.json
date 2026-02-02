@@ -2,17 +2,17 @@
   "success": true,
   "objects": {
     "Person": {
-      1: {
+      "1": {
         "id": 1,
         "name": "Alice",
         "spouse": 2
       },
-      2: {
+      "2": {
         "id": 2,
         "name": "Bob",
         "spouse": 1
       },
-      3: {
+      "3": {
         "id": 3,
         "name": "Charlie",
         "spouse": null

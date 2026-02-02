@@ -2,13 +2,13 @@
   "success": true,
   "objects": {
     "User": {
-      1: { "id": 1, "name": "Julie", "role": "admin", "status": 1 },
-      2: { "id": 2, "name": "Matt", "role": "user", "status": 0 },
-      3: { "id": 3, "name": "Anna", "role": "guest", "status": 2 }
+      "1": { "id": 1, "name": "Julie", "role": "admin", "status": 1 },
+      "2": { "id": 2, "name": "Matt", "role": "user", "status": 0 },
+      "3": { "id": 3, "name": "Anna", "role": "guest", "status": 2 }
     },
     "Product": {
-      100: { "id": 100, "name": "Widget", "priority": "high" },
-      101: { "id": 101, "name": "Gadget", "priority": "low" }
+      "100": { "id": 100, "name": "Widget", "priority": "high" },
+      "101": { "id": 101, "name": "Gadget", "priority": "low" }
     }
   },
   "records": [

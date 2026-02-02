@@ -2,17 +2,17 @@
   "success": true,
   "objects": {
     "User": {
-      1: { "id": 1, "name": "John", "role": "user", "status": "active", "bio": "" },
-      2: { "id": 2, "name": "Julie", "role": "user", "status": "active", "bio": "" },
-      3: { "id": 3, "name": null, "role": "admin", "status": "inactive", "bio": "" },
-      4: {
+      "1": { "id": 1, "name": "John", "role": "user", "status": "active", "bio": "" },
+      "2": { "id": 2, "name": "Julie", "role": "user", "status": "active", "bio": "" },
+      "3": { "id": 3, "name": null, "role": "admin", "status": "inactive", "bio": "" },
+      "4": {
         "id": 4,
         "name": "Matt",
         "role": null,
         "status": "pending",
         "bio": "Software engineer"
       },
-      5: { "id": 5, "name": "Anna", "role": "guest", "status": null, "bio": null }
+      "5": { "id": 5, "name": "Anna", "role": "guest", "status": null, "bio": null }
     }
   },
   "records": [

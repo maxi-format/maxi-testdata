@@ -2,19 +2,19 @@
   "success": true,
   "objects": {
     "Company": {
-      1: { "id": 1, "name": "ACME Corp", "address": "123 Main St" },
-      2: { "id": 2, "name": "Beta Inc", "address": "456 Oak Ave" },
-      3: { "id": 3, "name": "Gamma Ltd", "address": "789 Elm St" },
-      4: { "id": 4, "name": "Delta Co", "address": "321 Pine St" }
+      "1": { "id": 1, "name": "ACME Corp", "address": "123 Main St" },
+      "2": { "id": 2, "name": "Beta Inc", "address": "456 Oak Ave" },
+      "3": { "id": 3, "name": "Gamma Ltd", "address": "789 Elm St" },
+      "4": { "id": 4, "name": "Delta Co", "address": "321 Pine St" }
     },
     "Department": {
-      1: { "id": 1, "name": "Engineering", "company": 3 },
-      2: { "id": 2, "name": "Design", "company": 2 },
-      3: { "id": 3, "name": "Marketing", "company": 4 }
+      "1": { "id": 1, "name": "Engineering", "company": 3 },
+      "2": { "id": 2, "name": "Design", "company": 2 },
+      "3": { "id": 3, "name": "Marketing", "company": 4 }
     },
     "User": {
-      1: { "id": 1, "name": "Julie", "email": "julie@maxi.org", "department": 3 },
-      2: { "id": 2, "name": "Matt", "email": "matt@maxi.org", "department": 1 }
+      "1": { "id": 1, "name": "Julie", "email": "julie@maxi.org", "department": 3 },
+      "2": { "id": 2, "name": "Matt", "email": "matt@maxi.org", "department": 1 }
     }
   },
   "records": [

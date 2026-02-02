@@ -2,22 +2,22 @@
   "success": true,
   "objects": {
     "User": {
-      1: {
+      "1": {
         "id": 1,
         "name": "Julie Miller"
       },
-      2: {
+      "2": {
         "id": 2,
         "name": "Matt Smith"
       }
     },
     "Order": {
-      100: {
+      "100": {
         "id": 100,
         "user": 1,
         "total": 99.99
       },
-      101: {
+      "101": {
         "id": 101,
         "user": 2,
         "total": 149.5

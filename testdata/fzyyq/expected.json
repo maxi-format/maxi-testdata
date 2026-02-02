@@ -2,14 +2,14 @@
   "success": true,
   "objects": {
     "File": {
-      1: {
+      "1": {
         "id": 1,
         "filename": "report.pdf",
         "data": "SGVsbG8gV29ybGQh",
         "thumbnail_base64": "iVBORw0KGg==",
         "signature_hex": "48656c6c6f"
       },
-      2: {
+      "2": {
         "id": 2,
         "filename": "doc.pdf",
         "data": "UERGRmlsZQ==",

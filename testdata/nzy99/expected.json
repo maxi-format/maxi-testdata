@@ -2,19 +2,19 @@
   "success": true,
   "objects": {
     "User": {
-      1: {
+      "1": {
         "id": 1,
         "name": "Julie",
         "tags": ["dev", "backend", "api"],
         "scores": [95, 87, 92]
       },
-      2: {
+      "2": {
         "id": 2,
         "name": "Matt",
         "tags": ["design"],
         "scores": [88]
       },
-      3: {
+      "3": {
         "id": 3,
         "name": "Anna",
         "tags": ["frontend", "react", "typescript", "css", "html"],

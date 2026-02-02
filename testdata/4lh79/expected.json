@@ -2,17 +2,17 @@
   "success": true,
   "objects": {
     "Config": {
-      1: {
+      "1": {
         "id": 1,
         "settings": { "timeout": 30, "retries": 3, "maxConnections": 100 },
         "metadata": { "version": "1.0", "author": "Julie" }
       },
-      2: {
+      "2": {
         "id": 2,
         "settings": { "debug": 1 },
         "metadata": {}
       },
-      3: {
+      "3": {
         "id": 3,
         "settings": { "level": 5, "speed": 75, "volume": 50 },
         "metadata": { "theme": "dark", "language": "en" }
