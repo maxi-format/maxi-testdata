@@ -1,0 +1,7 @@
+{
+    "id": "re5ys",
+    "title": "Array with Element and Array Constraints",
+    "description": "str(>=3,<=20)[](>=1,<=10) stores element constraints separately from array-level constraints.",
+    "category": "valid",
+    "mode": "lax"
+}

@@ -1,0 +1,3 @@
+T:Thing(id:int|tags:str[])
+###
+T(1|[a,b,c)

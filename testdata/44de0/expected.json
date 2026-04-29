@@ -1,0 +1,33 @@
+{
+    "success": true,
+    "objects": {},
+    "records": [
+        {
+            "type": "U",
+            "value": {
+                "id": 1,
+                "name": "Julie"
+            }
+        },
+        {
+            "type": "U",
+            "value": {
+                "id": 2,
+                "name": "Matt"
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "first record id is 1",
+            "path": "#/records/0/value/id",
+            "expected_value": 1
+        },
+        {
+            "description": "second record id is 2",
+            "path": "#/records/1/value/id",
+            "expected_value": 2
+        }
+    ],
+    "object_validations": []
+}

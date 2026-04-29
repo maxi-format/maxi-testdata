@@ -1,0 +1,28 @@
+{
+    "success": true,
+    "records": [
+        {
+            "type": "S",
+            "value": {
+                "id": 1,
+                "data": {
+                    "math": 95,
+                    "english": 87
+                }
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "map<int> value 'math' is an integer",
+            "path": "#/records/0/value/data/math",
+            "expected_value": 95
+        },
+        {
+            "description": "map<int> value 'english' is an integer",
+            "path": "#/records/0/value/data/english",
+            "expected_value": 87
+        }
+    ],
+    "object_validations": []
+}

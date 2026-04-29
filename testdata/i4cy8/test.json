@@ -1,0 +1,7 @@
+{
+    "id": "i4cy8",
+    "title": "Array of Unknown Type",
+    "description": "A type definition with an array field whose element type is undefined must throw UnknownTypeError (E003).",
+    "category": "error",
+    "mode": "lax"
+}

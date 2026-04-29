@@ -1,0 +1,21 @@
+{
+  "success": true,
+  "expected_warnings": [
+    { "code": "E009", "description": "reference to User id=999 cannot be resolved" }
+  ],
+  "objects": {
+    "Order": {
+      "100": { "id": 100, "user": 999, "total": 99.99 }
+    }
+  },
+  "records": [
+    { "type": "Order", "value": { "id": 100, "user": 999, "total": 99.99 } }
+  ],
+  "record_validations": [
+    { "description": "order id is 100",          "path": "#/records/0/value/id",    "expected_value": 100 },
+    { "description": "user reference value 999", "path": "#/records/0/value/user",  "expected_value": 999 }
+  ],
+  "object_validations": [
+    { "description": "Order 100 id is 100", "path": "#/objects/Order/100/id", "expected_value": 100 }
+  ]
+}

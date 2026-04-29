@@ -1,0 +1,7 @@
+{
+    "id": "44de0",
+    "title": "Different ids are OK in strict mode",
+    "description": "Two records with distinct id values in strict mode should parse successfully.",
+    "category": "valid",
+    "mode": "strict"
+}

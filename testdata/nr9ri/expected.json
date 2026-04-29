@@ -1,0 +1,40 @@
+{
+    "success": true,
+    "expected_warnings": [
+        {
+            "code": "E007",
+            "description": "25.7 coerced to int 25 with fractional loss"
+        }
+    ],
+    "objects": {
+        "User": {
+            "1": {
+                "id": 1,
+                "age": 25
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "User",
+            "value": {
+                "id": 1,
+                "age": 25
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "age 25.7 coerced to int 25",
+            "path": "#/records/0/value/age",
+            "expected_value": 25
+        }
+    ],
+    "object_validations": [
+        {
+            "description": "User 1 age is 25 after coercion",
+            "path": "#/objects/User/1/age",
+            "expected_value": 25
+        }
+    ]
+}

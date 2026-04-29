@@ -1,0 +1,7 @@
+{
+    "id": "u0ki9",
+    "title": "Invalid Default Value for Bool Field",
+    "description": "A type definition with a non-boolean default value for a bool field must throw InvalidDefaultValueError (E018).",
+    "category": "error",
+    "mode": "lax"
+}

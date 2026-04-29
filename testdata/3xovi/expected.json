@@ -1,0 +1,28 @@
+{
+    "success": true,
+    "objects": {
+        "Product": {
+            "1": {
+                "id": 1,
+                "stock": 10
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "P",
+            "value": {
+                "id": 1,
+                "stock": 10
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "stock value is 10",
+            "path": "#/records/0/value/stock",
+            "expected_value": 10
+        }
+    ],
+    "object_validations": []
+}

@@ -1,0 +1,48 @@
+{
+    "success": true,
+    "objects": {
+        "User": {
+            "1": {
+                "id": 1,
+                "name": "Julie"
+            }
+        },
+        "Order": {
+            "100": {
+                "id": 100,
+                "user": 1,
+                "total": "99.99"
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "Order",
+            "value": {
+                "id": 100,
+                "user": 1,
+                "total": "99.99"
+            }
+        },
+        {
+            "type": "User",
+            "value": {
+                "id": 1,
+                "name": "Julie"
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Order user field is 1",
+            "path": "#/records/0/value/user",
+            "expected_value": 1
+        },
+        {
+            "description": "User id is 1",
+            "path": "#/records/1/value/id",
+            "expected_value": 1
+        }
+    ],
+    "object_validations": []
+}

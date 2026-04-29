@@ -1,0 +1,7 @@
+{
+    "id": "4mlwa",
+    "title": "Invalid enum value in lax mode emits warning",
+    "description": "In lax mode a value not in the enum list emits a ConstraintViolationError warning; the value is kept as-is.",
+    "category": "valid",
+    "mode": "lax"
+}

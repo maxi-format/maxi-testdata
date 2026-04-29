@@ -1,0 +1,47 @@
+{
+    "success": true,
+    "objects": {
+        "User": {
+            "1": {
+                "id": 1,
+                "score": 150,
+                "price": 9.99,
+                "active": true
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "User",
+            "value": {
+                "id": 1,
+                "score": 150,
+                "price": 9.99,
+                "active": true
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "id is parsed as int 1",
+            "path": "#/records/0/value/id",
+            "expected_value": 1
+        },
+        {
+            "description": "score 1.5e2 parsed as 150",
+            "path": "#/records/0/value/score",
+            "expected_value": 150
+        },
+        {
+            "description": "price parsed as 9.99",
+            "path": "#/records/0/value/price",
+            "expected_value": 9.99
+        },
+        {
+            "description": "active 'true' parsed as bool",
+            "path": "#/records/0/value/active",
+            "expected_value": true
+        }
+    ],
+    "object_validations": []
+}

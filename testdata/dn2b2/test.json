@@ -1,0 +1,7 @@
+{
+    "id": "dn2b2",
+    "title": "Explicit Null on Required Field Errors in Strict Mode",
+    "description": "Setting a required field to null (~) in strict mode must throw MissingRequiredFieldError (E019).",
+    "category": "error",
+    "mode": "strict"
+}

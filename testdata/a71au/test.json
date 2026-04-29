@@ -1,0 +1,7 @@
+{
+    "id": "a71au",
+    "title": "2D Integer Array (int[][])",
+    "description": "A field typed int[][] parses a nested array of integer arrays correctly.",
+    "category": "valid",
+    "mode": "lax"
+}

@@ -1,0 +1,50 @@
+{
+    "success": true,
+    "objects": {
+        "User": {
+            "1": {
+                "id": 1,
+                "name": "Julie"
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "User",
+            "value": {
+                "id": 1,
+                "name": "Julie"
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record type is User",
+            "path": "#/records/0/type",
+            "expected_value": "User"
+        },
+        {
+            "description": "Record id is 1",
+            "path": "#/records/0/value/id",
+            "expected_value": 1
+        },
+        {
+            "description": "Record name is Julie",
+            "path": "#/records/0/value/name",
+            "expected_value": "Julie"
+        }
+    ],
+    "object_validations": [],
+    "schema_validations": [
+        {
+            "description": "U type is present",
+            "path": "#/schema/types/U/name",
+            "expected_value": "User"
+        },
+        {
+            "description": "O type is present",
+            "path": "#/schema/types/O/name",
+            "expected_value": "Order"
+        }
+    ]
+}

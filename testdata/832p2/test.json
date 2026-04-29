@@ -1,0 +1,7 @@
+{
+    "id": "832p2",
+    "title": "Inline objects are indexed in object registry",
+    "description": "An inline User inside an Order is indexed in the registry so a second Order can reference it by id.",
+    "category": "valid",
+    "mode": "lax"
+}

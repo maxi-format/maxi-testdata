@@ -1,0 +1,7 @@
+{
+    "id": "q95n8",
+    "title": "Unresolved reference in lax mode emits warning",
+    "description": "In lax mode a reference to a non-existent object emits an UnresolvedReferenceError warning; the record is still parsed.",
+    "category": "valid",
+    "mode": "lax"
+}

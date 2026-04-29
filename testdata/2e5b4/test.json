@@ -1,0 +1,7 @@
+{
+    "id": "2e5b4",
+    "title": "Pattern match pass (strict)",
+    "description": "username(pattern:^[a-z0-9_]+$) + 'julie_99' passes in strict mode.",
+    "category": "valid",
+    "mode": "strict"
+}

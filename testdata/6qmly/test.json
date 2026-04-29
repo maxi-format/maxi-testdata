@@ -1,0 +1,7 @@
+{
+    "id": "6qmly",
+    "title": "Circular imports handled without infinite loop",
+    "description": "a.mxs imports b.mxs and b.mxs imports a.mxs; both types are parsed and a record resolves correctly.",
+    "category": "valid",
+    "mode": "lax"
+}

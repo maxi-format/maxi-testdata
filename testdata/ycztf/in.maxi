@@ -1,0 +1,4 @@
+@schema:base.mxs
+U:User(id:int|name|role=admin)
+###
+U(1|Julie)

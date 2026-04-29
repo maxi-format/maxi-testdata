@@ -1,0 +1,45 @@
+{
+    "success": true,
+    "expected_warnings": [
+        {
+            "code": "E008",
+            "description": "age 200 violates <=120 constraint"
+        }
+    ],
+    "objects": {
+        "User": {
+            "1": {
+                "id": 1,
+                "age": 200
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "User",
+            "value": {
+                "id": 1,
+                "age": 200
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "age value 200 is preserved despite constraint violation",
+            "path": "#/records/0/value/age",
+            "expected_value": 200
+        },
+        {
+            "description": "id is 1",
+            "path": "#/records/0/value/id",
+            "expected_value": 1
+        }
+    ],
+    "object_validations": [
+        {
+            "description": "User 1 age is 200",
+            "path": "#/objects/User/1/age",
+            "expected_value": 200
+        }
+    ]
+}

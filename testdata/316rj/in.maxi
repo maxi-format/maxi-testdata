@@ -1,0 +1,2 @@
+P:Price(id:int|amount:decimal(.2:4))
+###

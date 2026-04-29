@@ -1,0 +1,26 @@
+{
+    "success": true,
+    "objects": {},
+    "records": [
+        {
+            "type": "U",
+            "value": {
+                "id": 1,
+                "status": "1"
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "id field is 1 (int)",
+            "path": "#/records/0/value/id",
+            "expected_value": 1
+        },
+        {
+            "description": "status field is string '1'",
+            "path": "#/records/0/value/status",
+            "expected_value": "1"
+        }
+    ],
+    "object_validations": []
+}

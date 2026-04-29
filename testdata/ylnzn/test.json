@@ -1,0 +1,7 @@
+{
+  "id": "ylnzn",
+  "title": "Invalid enum value in strict mode",
+  "description": "A value not in the enum list should error with E020 in strict mode.",
+  "category": "error",
+  "mode": "strict"
+}

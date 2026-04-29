@@ -1,0 +1,7 @@
+{
+    "id": "316rj",
+    "title": "Decimal Precision .2:4",
+    "description": "decimal(.2:4) stores fracMin=2, fracMax=4, intMin/intMax null.",
+    "category": "valid",
+    "mode": "lax"
+}

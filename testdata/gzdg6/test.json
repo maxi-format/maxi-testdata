@@ -1,0 +1,7 @@
+{
+    "id": "gzdg6",
+    "title": "Forward references resolved in lax mode",
+    "description": "Order appears before User in records; forward reference resolves successfully in lax mode.",
+    "category": "valid",
+    "mode": "lax"
+}

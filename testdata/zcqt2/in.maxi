@@ -1,0 +1,5 @@
+@mode:strict
+O:Order(order_id:int(id)|user_id:int|total:decimal)
+###
+O(100|1|99.99)
+O(100|2|149.50)

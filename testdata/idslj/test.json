@@ -1,0 +1,7 @@
+{
+    "id": "idslj",
+    "title": "map<int> shorthand resolves value type as int",
+    "description": "A field declared as map<int> has its map values coerced to integers when parsed.",
+    "category": "valid",
+    "mode": "lax"
+}

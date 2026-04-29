@@ -1,0 +1,2 @@
+@schema:b.mxs
+U:User(id:int|name)

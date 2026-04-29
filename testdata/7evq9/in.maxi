@@ -1,0 +1,4 @@
+@mode:strict
+U:User(id:int|scores:int[](=3))
+###
+U(1|[95,87,92])

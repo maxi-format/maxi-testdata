@@ -1,0 +1,4 @@
+@mode:strict
+P:Product(id:int|stock:int(>=0))
+###
+P(1|-5)

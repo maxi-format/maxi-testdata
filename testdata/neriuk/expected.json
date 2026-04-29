@@ -1,0 +1,69 @@
+{
+    "success": true,
+    "objects": {},
+    "records": [
+        {
+            "type": "Measurement",
+            "value": {
+                "id": 1,
+                "value": 10000000000
+            }
+        },
+        {
+            "type": "Measurement",
+            "value": {
+                "id": 2,
+                "value": -0.0025
+            }
+        },
+        {
+            "type": "Measurement",
+            "value": {
+                "id": 3,
+                "value": 6.022e+23
+            }
+        },
+        {
+            "type": "Measurement",
+            "value": {
+                "id": 4,
+                "value": 42
+            }
+        },
+        {
+            "type": "Measurement",
+            "value": {
+                "id": 5,
+                "value": 3.14
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1 (1.0e10) is parsed as 10000000000",
+            "path": "#/records/0/value/value",
+            "expected_value": 10000000000
+        },
+        {
+            "description": "Record 2 (-2.5E-3) is parsed as -0.0025",
+            "path": "#/records/1/value/value",
+            "expected_value": -0.0025
+        },
+        {
+            "description": "Record 3 (6.022e23) is parsed as 6.022e+23",
+            "path": "#/records/2/value/value",
+            "expected_value": 6.022e+23
+        },
+        {
+            "description": "Record 4 (42) integer literal parses as 42",
+            "path": "#/records/3/value/value",
+            "expected_value": 42
+        },
+        {
+            "description": "Record 5 (3.14) standard decimal parses ok",
+            "path": "#/records/4/value/value",
+            "expected_value": 3.14
+        }
+    ],
+    "object_validations": []
+}

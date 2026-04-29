@@ -1,0 +1,45 @@
+{
+    "success": true,
+    "expected_warnings": [
+        {
+            "code": "E011",
+            "description": "Required field 'name' is null"
+        }
+    ],
+    "objects": {
+        "User": {
+            "1": {
+                "id": 1,
+                "name": null
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "User",
+            "value": {
+                "id": 1,
+                "name": null
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1 id is 1",
+            "path": "#/records/0/value/id",
+            "expected_value": 1
+        },
+        {
+            "description": "Record 1 name is null (~)",
+            "path": "#/records/0/value/name",
+            "expected_value": null
+        }
+    ],
+    "object_validations": [
+        {
+            "description": "User 1 name is null",
+            "path": "#/objects/User/1/name",
+            "expected_value": null
+        }
+    ]
+}

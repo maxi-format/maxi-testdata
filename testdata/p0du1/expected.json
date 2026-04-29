@@ -1,0 +1,59 @@
+{
+    "success": true,
+    "objects": {},
+    "records": [
+        {
+            "type": "Product",
+            "value": {
+                "created_at": 1,
+                "id": "Widget",
+                "name": "2024-01-01"
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record type is Product",
+            "path": "#/records/0/type",
+            "expected_value": "Product"
+        },
+        {
+            "description": "created_at is 1 (first positional field)",
+            "path": "#/records/0/value/created_at",
+            "expected_value": 1
+        },
+        {
+            "description": "id is Widget (second positional field)",
+            "path": "#/records/0/value/id",
+            "expected_value": "Widget"
+        },
+        {
+            "description": "name is 2024-01-01 (third positional)",
+            "path": "#/records/0/value/name",
+            "expected_value": "2024-01-01"
+        }
+    ],
+    "object_validations": [],
+    "schema_validations": [
+        {
+            "description": "P type name is Product",
+            "path": "#/schema/types/P/name",
+            "expected_value": "Product"
+        },
+        {
+            "description": "P field 0 name is created_at",
+            "path": "#/schema/types/P/fields/0/name",
+            "expected_value": "created_at"
+        },
+        {
+            "description": "P field 1 name is id",
+            "path": "#/schema/types/P/fields/1/name",
+            "expected_value": "id"
+        },
+        {
+            "description": "P field 2 name is name",
+            "path": "#/schema/types/P/fields/2/name",
+            "expected_value": "name"
+        }
+    ]
+}

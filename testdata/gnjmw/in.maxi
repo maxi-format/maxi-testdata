@@ -1,0 +1,4 @@
+U:User(id:int|name)
+O:Order(id:int|user:U|total:decimal)
+###
+O(100|~|99.99)

@@ -1,0 +1,4 @@
+@mode:strict
+U:User(id:int|score:float|price:decimal|active:bool)
+###
+U(1|1.5e2|9.99|true)

@@ -1,0 +1,49 @@
+{
+    "success": true,
+    "objects": {},
+    "records": [
+        {
+            "type": "List",
+            "value": {
+                "id": 1,
+                "items": [
+                    "a",
+                    "b"
+                ]
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "items array has 2 elements",
+            "path": "#/records/0/value/items",
+            "expected_value": [
+                "a",
+                "b"
+            ]
+        }
+    ],
+    "schema_validations": [
+        {
+            "description": "items typeExpr is str[]",
+            "path": "#/schema/types/L/fields/1/typeExpr",
+            "expected_value": "str[]"
+        },
+        {
+            "description": "elementConstraints is null (no element-level constraints)",
+            "path": "#/schema/types/L/fields/1/elementConstraints",
+            "expected_value": null
+        },
+        {
+            "description": "array constraint 0 operator is >=",
+            "path": "#/schema/types/L/fields/1/constraints/0/operator",
+            "expected_value": ">="
+        },
+        {
+            "description": "array constraint 0 value is 1",
+            "path": "#/schema/types/L/fields/1/constraints/0/value",
+            "expected_value": 1
+        }
+    ],
+    "object_validations": []
+}

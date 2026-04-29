@@ -1,0 +1,7 @@
+{
+    "id": "3vmsv",
+    "title": "Non-conflicting constraints >=0 and <=100",
+    "description": "Compatible range constraints on an int field should parse successfully.",
+    "category": "valid",
+    "mode": "lax"
+}

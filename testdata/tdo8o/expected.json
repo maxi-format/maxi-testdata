@@ -1,0 +1,46 @@
+{
+    "success": true,
+    "objects": {
+        "Stats": {
+            "1": {
+                "id": 1,
+                "data": {
+                    "math": 95,
+                    "english": 87
+                }
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "Stats",
+            "value": {
+                "id": 1,
+                "data": {
+                    "math": 95,
+                    "english": 87
+                }
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "map value math is integer 95",
+            "path": "#/records/0/value/data/math",
+            "expected_value": 95
+        },
+        {
+            "description": "map value english is integer 87",
+            "path": "#/records/0/value/data/english",
+            "expected_value": 87
+        }
+    ],
+    "schema_validations": [
+        {
+            "description": "data field typeExpr is map<str,int>",
+            "path": "#/schema/types/S/fields/1/typeExpr",
+            "expected_value": "map<str,int>"
+        }
+    ],
+    "object_validations": []
+}

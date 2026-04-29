@@ -1,0 +1,56 @@
+{
+    "success": true,
+    "objects": {
+        "User": {
+            "1": {
+                "id": 1,
+                "name": "Julie",
+                "email": "julie@maxi.org"
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "User",
+            "value": {
+                "id": 1,
+                "name": "Julie",
+                "email": "julie@maxi.org"
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1 id comes from inherited parent field",
+            "path": "#/records/0/value/id",
+            "expected_value": 1
+        },
+        {
+            "description": "Record 1 name comes from inherited parent field",
+            "path": "#/records/0/value/name",
+            "expected_value": "Julie"
+        },
+        {
+            "description": "Record 1 email comes from own field",
+            "path": "#/records/0/value/email",
+            "expected_value": "julie@maxi.org"
+        }
+    ],
+    "object_validations": [
+        {
+            "description": "User 1 id is 1",
+            "path": "#/objects/User/1/id",
+            "expected_value": 1
+        },
+        {
+            "description": "User 1 name is Julie",
+            "path": "#/objects/User/1/name",
+            "expected_value": "Julie"
+        },
+        {
+            "description": "User 1 email is julie@maxi.org",
+            "path": "#/objects/User/1/email",
+            "expected_value": "julie@maxi.org"
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "id": "z9g2w",
+    "title": "Explicit Null on Required Field Warns in Lax Mode",
+    "description": "Setting a required field to null (~) in lax mode succeeds but emits a warning; the field value is null in the parsed result.",
+    "category": "valid",
+    "mode": "lax"
+}

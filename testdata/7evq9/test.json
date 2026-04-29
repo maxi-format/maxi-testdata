@@ -1,0 +1,7 @@
+{
+    "id": "7evq9",
+    "title": "Exact-length array pass (strict)",
+    "description": "scores:int[](=3) + [95,87,92] (length 3) passes in strict mode.",
+    "category": "valid",
+    "mode": "strict"
+}

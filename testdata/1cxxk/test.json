@@ -1,0 +1,7 @@
+{
+    "id": "1cxxk",
+    "title": "Arrays and Maps in Records",
+    "description": "Array fields support quoted values containing commas; map fields support quoted keys containing colons and quoted values containing commas.",
+    "category": "valid",
+    "mode": "lax"
+}

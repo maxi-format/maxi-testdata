@@ -1,0 +1,2 @@
+TS:Timestamped(created_at)
+P:Product<TS>(id:int|name)

@@ -1,0 +1,7 @@
+{
+    "id": "yinxt",
+    "title": "@email annotation on str field is valid",
+    "description": "@email is a valid annotation for a str-typed field; record value is preserved.",
+    "category": "valid",
+    "mode": "lax"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "s94bl",
+  "title": "Circular Inheritance",
+  "description": "Two types that inherit from each other must throw CircularInheritanceError (E010).",
+  "category": "error",
+  "mode": "lax"
+}

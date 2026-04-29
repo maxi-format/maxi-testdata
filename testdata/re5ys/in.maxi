@@ -1,0 +1,3 @@
+T:Tag(id:int|tags:str(>=3,<=20)[](>=1,<=10))
+###
+T(1|[hello,world])

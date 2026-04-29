@@ -1,0 +1,7 @@
+{
+    "id": "nr9ri",
+    "title": "Lax Mode Coerces Decimal to Int with Fractional Loss Warning",
+    "description": "In lax mode, a decimal value for an int field is truncated to the integer part and a TypeMismatchError warning (E007) is emitted.",
+    "category": "valid",
+    "mode": "lax"
+}

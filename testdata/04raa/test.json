@@ -1,0 +1,7 @@
+{
+    "id": "04raa",
+    "title": "Comparison >=N violation (strict)",
+    "description": "stock:int(>=0) + record -5 throws E020 ConstraintViolationError in strict mode.",
+    "category": "error",
+    "mode": "strict"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "tiknp",
+  "title": "Unsupported @version Directive",
+  "description": "A @version directive with an unsupported version number must throw UnsupportedVersionError (E001).",
+  "category": "error",
+  "mode": "lax"
+}

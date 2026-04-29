@@ -1,0 +1,7 @@
+{
+    "id": "a7kq0",
+    "title": "Strict Mode Rejects Non-Numeric String for Float Field",
+    "description": "In strict mode, providing a non-numeric string value for a float field must throw TypeMismatchError (E007).",
+    "category": "error",
+    "mode": "strict"
+}

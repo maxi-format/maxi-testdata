@@ -1,0 +1,5 @@
+@mode:strict
+U:User(id:int|name)
+###
+U(1|Julie)
+U(1|Matt)

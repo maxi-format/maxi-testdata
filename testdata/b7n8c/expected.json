@@ -1,0 +1,122 @@
+{
+    "success": true,
+    "objects": {
+        "User": {
+            "1": {
+                "id": 1,
+                "name": "Julie",
+                "email": "julie@maxi.org"
+            },
+            "2": {
+                "id": 2,
+                "name": "Matt",
+                "email": "matt@maxi.org"
+            }
+        },
+        "Order": {
+            "100": {
+                "id": 100,
+                "user": 1,
+                "total": "99.99"
+            },
+            "101": {
+                "id": 101,
+                "user": 2,
+                "total": "149.50"
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "User",
+            "value": {
+                "id": 1,
+                "name": "Julie",
+                "email": "julie@maxi.org"
+            }
+        },
+        {
+            "type": "User",
+            "value": {
+                "id": 2,
+                "name": "Matt",
+                "email": "matt@maxi.org"
+            }
+        },
+        {
+            "type": "Order",
+            "value": {
+                "id": 100,
+                "user": 1,
+                "total": "99.99"
+            }
+        },
+        {
+            "type": "Order",
+            "value": {
+                "id": 101,
+                "user": 2,
+                "total": "149.50"
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 0 type is User",
+            "path": "#/records/0/type",
+            "expected_value": "User"
+        },
+        {
+            "description": "Record 0 id is 1",
+            "path": "#/records/0/value/id",
+            "expected_value": 1
+        },
+        {
+            "description": "Record 0 name is Julie",
+            "path": "#/records/0/value/name",
+            "expected_value": "Julie"
+        },
+        {
+            "description": "Record 2 type is Order",
+            "path": "#/records/2/type",
+            "expected_value": "Order"
+        },
+        {
+            "description": "Record 2 id is 100",
+            "path": "#/records/2/value/id",
+            "expected_value": 100
+        },
+        {
+            "description": "Record 2 user reference is 1",
+            "path": "#/records/2/value/user",
+            "expected_value": 1
+        },
+        {
+            "description": "Record 3 user reference is 2",
+            "path": "#/records/3/value/user",
+            "expected_value": 2
+        }
+    ],
+    "object_validations": [
+        {
+            "description": "User 1 name is Julie",
+            "path": "#/objects/User/1/name",
+            "expected_value": "Julie"
+        },
+        {
+            "description": "User 2 name is Matt",
+            "path": "#/objects/User/2/name",
+            "expected_value": "Matt"
+        },
+        {
+            "description": "Order 100 user is 1",
+            "path": "#/objects/Order/100/user",
+            "expected_value": 1
+        },
+        {
+            "description": "Order 101 user is 2",
+            "path": "#/objects/Order/101/user",
+            "expected_value": 2
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "id": "2dj2l",
+    "title": "Quoted Strings and Escape Sequences",
+    "description": "Quoted string values support \\n (newline) and \\\" (escaped quote) escape sequences which are decoded by the parser.",
+    "category": "valid",
+    "mode": "lax"
+}

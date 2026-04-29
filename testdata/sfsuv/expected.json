@@ -1,0 +1,44 @@
+{
+    "success": true,
+    "expected_warnings": [
+        {
+            "code": "E016",
+            "description": "duplicate id 1 for type User"
+        }
+    ],
+    "objects": {},
+    "records": [
+        {
+            "type": "User",
+            "value": {
+                "id": 1,
+                "name": "Julie"
+            }
+        },
+        {
+            "type": "User",
+            "value": {
+                "id": 1,
+                "name": "Matt"
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "first record name is Julie",
+            "path": "#/records/0/value/name",
+            "expected_value": "Julie"
+        },
+        {
+            "description": "second record name is Matt",
+            "path": "#/records/1/value/name",
+            "expected_value": "Matt"
+        },
+        {
+            "description": "both records share id 1",
+            "path": "#/records/1/value/id",
+            "expected_value": 1
+        }
+    ],
+    "object_validations": []
+}

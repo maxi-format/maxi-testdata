@@ -1,0 +1,7 @@
+{
+  "id": "b1vxv",
+  "title": "Inline Schema + Records",
+  "description": "A single type definition followed by two records; validates that schema is parsed and record values are correctly projected.",
+  "category": "valid",
+  "mode": "lax"
+}

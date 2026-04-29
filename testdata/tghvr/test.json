@@ -1,0 +1,7 @@
+{
+    "id": "tghvr",
+    "title": "2D String Array (str[][])",
+    "description": "A field typed str[][] parses a nested array of string arrays correctly.",
+    "category": "valid",
+    "mode": "lax"
+}

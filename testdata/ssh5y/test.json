@@ -1,0 +1,7 @@
+{
+  "id": "ssh5y",
+  "title": "Data-Only Input (No Schema Section)",
+  "description": "Input with no schema section and no ### separator is treated as records-only; unknown alias warnings are emitted in lax mode but parsing succeeds.",
+  "category": "valid",
+  "mode": "lax"
+}

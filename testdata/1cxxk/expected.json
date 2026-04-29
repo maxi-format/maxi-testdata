@@ -1,0 +1,80 @@
+{
+    "success": true,
+    "objects": {
+        "User": {
+            "1": {
+                "id": 1,
+                "tags": [
+                    "a",
+                    "b",
+                    "c,d"
+                ],
+                "meta": {
+                    "k1": "v1",
+                    "k:2": "v,2"
+                }
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "User",
+            "value": {
+                "id": 1,
+                "tags": [
+                    "a",
+                    "b",
+                    "c,d"
+                ],
+                "meta": {
+                    "k1": "v1",
+                    "k:2": "v,2"
+                }
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1 id is 1",
+            "path": "#/records/0/value/id",
+            "expected_value": 1
+        },
+        {
+            "description": "Record 1 tags first element is 'a'",
+            "path": "#/records/0/value/tags/0",
+            "expected_value": "a"
+        },
+        {
+            "description": "Record 1 tags second element is 'b'",
+            "path": "#/records/0/value/tags/1",
+            "expected_value": "b"
+        },
+        {
+            "description": "Record 1 tags third element is 'c,d' (has comma)",
+            "path": "#/records/0/value/tags/2",
+            "expected_value": "c,d"
+        },
+        {
+            "description": "Record 1 meta k1 value is 'v1'",
+            "path": "#/records/0/value/meta/k1",
+            "expected_value": "v1"
+        },
+        {
+            "description": "Record 1 meta key 'k:2' (has colon) is 'v,2'",
+            "path": "#/records/0/value/meta/k:2",
+            "expected_value": "v,2"
+        }
+    ],
+    "object_validations": [
+        {
+            "description": "User 1 tags third element is 'c,d'",
+            "path": "#/objects/User/1/tags/2",
+            "expected_value": "c,d"
+        },
+        {
+            "description": "User 1 meta k:2 is 'v,2'",
+            "path": "#/objects/User/1/meta/k:2",
+            "expected_value": "v,2"
+        }
+    ]
+}

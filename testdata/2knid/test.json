@@ -1,0 +1,7 @@
+{
+    "id": "2knid",
+    "title": "Untyped Map Field",
+    "description": "An untyped map field parses map values as strings.",
+    "category": "valid",
+    "mode": "lax"
+}

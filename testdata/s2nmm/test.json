@@ -1,0 +1,7 @@
+{
+  "id": "s2nmm",
+  "title": "@base64 annotation on str field → E012",
+  "description": "Using @base64 annotation on a str-typed field is invalid and must produce E012.",
+  "category": "error",
+  "mode": "lax"
+}

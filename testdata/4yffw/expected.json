@@ -1,0 +1,21 @@
+{
+    "success": true,
+    "objects": {},
+    "records": [
+        {
+            "type": "U",
+            "value": {
+                "id": 1,
+                "role": "admin"
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "role field is admin",
+            "path": "#/records/0/value/role",
+            "expected_value": "admin"
+        }
+    ],
+    "object_validations": []
+}
