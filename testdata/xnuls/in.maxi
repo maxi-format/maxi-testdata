@@ -1,0 +1,4 @@
+@mode:strict
+U:User(id:int|role=member(!))
+###
+U(1|~)

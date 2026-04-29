@@ -1,0 +1,7 @@
+{
+    "id": "xnuls",
+    "title": "Explicit null (~) on required field with default throws error (strict)",
+    "description": "Using ~ to explicitly null a required field that has a default value must throw a MissingRequiredFieldError in strict mode.",
+    "category": "error",
+    "mode": "strict"
+}

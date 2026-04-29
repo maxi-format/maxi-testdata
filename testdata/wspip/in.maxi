@@ -1,0 +1,4 @@
+U:User(id:int|name:str|score:int)
+###
+U( 1 | Alice | 99 )
+U( 2 | Bob | 42 )

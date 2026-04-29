@@ -1,0 +1,26 @@
+{
+    "success": true,
+    "records": [
+        {
+            "type": "User",
+            "value": {
+                "id": 1,
+                "role": null
+            }
+        }
+    ],
+    "expected_warnings": [
+        {
+            "code": "E011",
+            "description": "Explicit ~ on required+default field must emit MissingRequiredFieldError warning"
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Explicit ~ on required+default field results in null, not the default",
+            "path": "#/records/0/value/role",
+            "expected_value": null
+        }
+    ],
+    "object_validations": []
+}

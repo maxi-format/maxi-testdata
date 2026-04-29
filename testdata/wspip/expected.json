@@ -1,0 +1,55 @@
+{
+    "success": true,
+    "objects": {},
+    "records": [
+        {
+            "type": "User",
+            "value": {
+                "id": 1,
+                "name": "Alice",
+                "score": 99
+            }
+        },
+        {
+            "type": "User",
+            "value": {
+                "id": 2,
+                "name": "Bob",
+                "score": 42
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1: id trimmed and parsed as int 1",
+            "path": "#/records/0/value/id",
+            "expected_value": 1
+        },
+        {
+            "description": "Record 1: name trimmed to 'Alice'",
+            "path": "#/records/0/value/name",
+            "expected_value": "Alice"
+        },
+        {
+            "description": "Record 1: score trimmed and parsed as int 99",
+            "path": "#/records/0/value/score",
+            "expected_value": 99
+        },
+        {
+            "description": "Record 2: id trimmed and parsed as int 2",
+            "path": "#/records/1/value/id",
+            "expected_value": 2
+        },
+        {
+            "description": "Record 2: name trimmed to 'Bob'",
+            "path": "#/records/1/value/name",
+            "expected_value": "Bob"
+        },
+        {
+            "description": "Record 2: score trimmed and parsed as int 42",
+            "path": "#/records/1/value/score",
+            "expected_value": 42
+        }
+    ],
+    "object_validations": []
+}
