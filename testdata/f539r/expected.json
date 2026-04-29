@@ -1,0 +1,32 @@
+{
+    "success": true,
+    "expected_warnings": [
+        {
+            "code": "E007",
+            "description": "non-numeric string 'hello' passed to int field id"
+        }
+    ],
+    "objects": {},
+    "records": [
+        {
+            "type": "User",
+            "value": {
+                "id": "hello",
+                "name": "Julie"
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "id value kept as string 'hello'",
+            "path": "#/records/0/value/id",
+            "expected_value": "hello"
+        },
+        {
+            "description": "name is Julie",
+            "path": "#/records/0/value/name",
+            "expected_value": "Julie"
+        }
+    ],
+    "object_validations": []
+}

@@ -1,0 +1,2 @@
+E:Event(id:int|ts:str@timestamp)
+###

@@ -1,0 +1,2 @@
+@schema:a.mxs
+O:Order(id:int|total:decimal)

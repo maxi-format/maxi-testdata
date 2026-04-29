@@ -1,0 +1,7 @@
+{
+    "id": "0ql9z",
+    "title": "Lax mode constraint violation emits warning not error",
+    "description": "In lax mode a value violating a comparison constraint emits a ConstraintViolationError warning; the value is preserved.",
+    "category": "valid",
+    "mode": "lax"
+}

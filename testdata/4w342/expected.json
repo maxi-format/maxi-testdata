@@ -1,0 +1,44 @@
+{
+    "success": true,
+    "objects": {
+        "Order": {
+            "100": {
+                "id": 100,
+                "user": 1
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "Order",
+            "value": {
+                "id": 100,
+                "user": 1
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1 type is Order",
+            "path": "#/records/0/type",
+            "expected_value": "Order"
+        },
+        {
+            "description": "Record 1 id is 100",
+            "path": "#/records/0/value/id",
+            "expected_value": 100
+        },
+        {
+            "description": "Record 1 user reference is scalar id 1",
+            "path": "#/records/0/value/user",
+            "expected_value": 1
+        }
+    ],
+    "object_validations": [
+        {
+            "description": "Order 100 user reference id is 1",
+            "path": "#/objects/Order/100/user",
+            "expected_value": 1
+        }
+    ]
+}

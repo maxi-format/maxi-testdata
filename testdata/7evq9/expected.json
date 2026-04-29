@@ -1,0 +1,46 @@
+{
+    "success": true,
+    "objects": {
+        "User": {
+            "1": {
+                "id": 1,
+                "scores": [
+                    95,
+                    87,
+                    92
+                ]
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "U",
+            "value": {
+                "id": 1,
+                "scores": [
+                    95,
+                    87,
+                    92
+                ]
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "scores array has 3 elements",
+            "path": "#/records/0/value/scores/0",
+            "expected_value": 95
+        },
+        {
+            "description": "scores[1] is 87",
+            "path": "#/records/0/value/scores/1",
+            "expected_value": 87
+        },
+        {
+            "description": "scores[2] is 92",
+            "path": "#/records/0/value/scores/2",
+            "expected_value": 92
+        }
+    ],
+    "object_validations": []
+}

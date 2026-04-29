@@ -1,0 +1,34 @@
+{
+    "success": true,
+    "objects": {},
+    "records": [],
+    "record_validations": [],
+    "schema_validations": [
+        {
+            "description": "constraint value is '1:999.'",
+            "path": "#/schema/types/P/fields/1/constraints/0/value",
+            "expected_value": "1:999."
+        },
+        {
+            "description": "intMin is 1",
+            "path": "#/schema/types/P/fields/1/constraints/0/intMin",
+            "expected_value": 1
+        },
+        {
+            "description": "intMax is 999",
+            "path": "#/schema/types/P/fields/1/constraints/0/intMax",
+            "expected_value": 999
+        },
+        {
+            "description": "fracMin is null",
+            "path": "#/schema/types/P/fields/1/constraints/0/fracMin",
+            "expected_value": null
+        },
+        {
+            "description": "fracMax is null",
+            "path": "#/schema/types/P/fields/1/constraints/0/fracMax",
+            "expected_value": null
+        }
+    ],
+    "object_validations": []
+}

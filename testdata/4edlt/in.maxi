@@ -1,0 +1,4 @@
+@mode:strict
+P:Product(id:int|price:decimal)
+###
+P(1|expensive)

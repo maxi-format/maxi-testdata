@@ -1,0 +1,7 @@
+{
+    "id": "n03or",
+    "title": "String length violation (strict)",
+    "description": "name(>=3,<=20) + record 'ab' (length 2) throws E020 in strict mode.",
+    "category": "error",
+    "mode": "strict"
+}

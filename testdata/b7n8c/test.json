@@ -1,0 +1,7 @@
+{
+    "id": "b7n8c",
+    "title": "Object registry built from records",
+    "description": "Two types U and O with a reference field; validates that records are parsed and object registry is populated.",
+    "category": "valid",
+    "mode": "lax"
+}

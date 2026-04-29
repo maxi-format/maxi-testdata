@@ -1,0 +1,7 @@
+{
+    "id": "uivuu",
+    "title": "Strict Mode Accepts Valid Typed Values",
+    "description": "In strict mode, valid int, float, decimal and bool values parse correctly to their native types.",
+    "category": "valid",
+    "mode": "strict"
+}

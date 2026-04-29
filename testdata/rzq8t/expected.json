@@ -1,0 +1,80 @@
+{
+    "success": true,
+    "objects": {},
+    "records": [
+        {
+            "type": "Cube",
+            "value": {
+                "id": 1,
+                "data": [
+                    [
+                        [
+                            1,
+                            2
+                        ],
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    [
+                        [
+                            5,
+                            6
+                        ],
+                        [
+                            7,
+                            8
+                        ]
+                    ]
+                ]
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "data is a 3D array",
+            "path": "#/records/0/value/data",
+            "expected_value": [
+                [
+                    [
+                        1,
+                        2
+                    ],
+                    [
+                        3,
+                        4
+                    ]
+                ],
+                [
+                    [
+                        5,
+                        6
+                    ],
+                    [
+                        7,
+                        8
+                    ]
+                ]
+            ]
+        },
+        {
+            "description": "data[0][0][0] = 1",
+            "path": "#/records/0/value/data/0/0/0",
+            "expected_value": 1
+        },
+        {
+            "description": "data[1][1][1] = 8",
+            "path": "#/records/0/value/data/1/1/1",
+            "expected_value": 8
+        }
+    ],
+    "schema_validations": [
+        {
+            "description": "data field typeExpr is int[][][]",
+            "path": "#/schema/types/C/fields/1/typeExpr",
+            "expected_value": "int[][][]"
+        }
+    ],
+    "object_validations": []
+}

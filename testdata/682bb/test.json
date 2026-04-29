@@ -1,0 +1,7 @@
+{
+    "id": "682bb",
+    "title": "Pattern match violation (strict)",
+    "description": "username(pattern:^[a-z0-9_]+$) + 'Hello World!' throws E020 in strict mode.",
+    "category": "error",
+    "mode": "strict"
+}

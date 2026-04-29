@@ -1,0 +1,7 @@
+{
+  "id": "j6v5e",
+  "title": "Duplicate Type Alias",
+  "description": "Defining the same alias twice in one file must throw DuplicateTypeError (E002).",
+  "category": "error",
+  "mode": "lax"
+}

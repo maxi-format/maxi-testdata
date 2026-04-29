@@ -1,0 +1,5 @@
+U:User(id:int|name|email)
+O:Order(id:int|user:U|total:decimal)
+###
+O(100|(1|Julie|julie@maxi.org)|99.99)
+O(101|1|149.50)

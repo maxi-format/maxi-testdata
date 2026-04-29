@@ -1,0 +1,74 @@
+{
+    "success": true,
+    "expected_warnings": [
+        {
+            "code": "E003",
+            "description": "Unknown type alias U (first record)"
+        },
+        {
+            "code": "E003",
+            "description": "Unknown type alias U (second record)"
+        }
+    ],
+    "objects": {},
+    "records": [
+        {
+            "type": "U",
+            "value": {
+                "values": [
+                    1,
+                    "Julie",
+                    "julie@maxi.org"
+                ]
+            }
+        },
+        {
+            "type": "U",
+            "value": {
+                "values": [
+                    2,
+                    "Matt",
+                    "matt@maxi.org"
+                ]
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1 type alias is U",
+            "path": "#/records/0/type",
+            "expected_value": "U"
+        },
+        {
+            "description": "Record 1 first positional value is 1",
+            "path": "#/records/0/value/values/0",
+            "expected_value": 1
+        },
+        {
+            "description": "Record 1 second positional value is Julie",
+            "path": "#/records/0/value/values/1",
+            "expected_value": "Julie"
+        },
+        {
+            "description": "Record 1 third positional value is email",
+            "path": "#/records/0/value/values/2",
+            "expected_value": "julie@maxi.org"
+        },
+        {
+            "description": "Record 2 type alias is U",
+            "path": "#/records/1/type",
+            "expected_value": "U"
+        },
+        {
+            "description": "Record 2 first positional value is 2",
+            "path": "#/records/1/value/values/0",
+            "expected_value": 2
+        },
+        {
+            "description": "Record 2 second positional value is Matt",
+            "path": "#/records/1/value/values/1",
+            "expected_value": "Matt"
+        }
+    ],
+    "object_validations": []
+}

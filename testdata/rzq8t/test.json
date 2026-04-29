@@ -1,0 +1,7 @@
+{
+    "id": "rzq8t",
+    "title": "3D Integer Array (int[][][])",
+    "description": "A field typed int[][][] parses a three-dimensional nested array of integers correctly.",
+    "category": "valid",
+    "mode": "lax"
+}

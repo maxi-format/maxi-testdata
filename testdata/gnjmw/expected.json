@@ -1,0 +1,30 @@
+{
+    "success": true,
+    "objects": {
+        "Order": {
+            "100": {
+                "id": 100,
+                "user": null,
+                "total": "99.99"
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "Order",
+            "value": {
+                "id": 100,
+                "user": null,
+                "total": "99.99"
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Order user field is null",
+            "path": "#/records/0/value/user",
+            "expected_value": null
+        }
+    ],
+    "object_validations": []
+}

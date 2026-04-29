@@ -1,0 +1,20 @@
+{
+    "success": true,
+    "records": [
+        {
+            "type": "U",
+            "value": {
+                "id": 1,
+                "email": "julie@maxi.org"
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "email field value",
+            "path": "#/records/0/value/email",
+            "expected_value": "julie@maxi.org"
+        }
+    ],
+    "object_validations": []
+}

@@ -1,0 +1,45 @@
+{
+    "success": true,
+    "expected_warnings": [
+        {
+            "code": "E008",
+            "description": "'superadmin' is not a valid value for enum[admin,user,guest]"
+        }
+    ],
+    "objects": {
+        "User": {
+            "1": {
+                "id": 1,
+                "role": "superadmin"
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "User",
+            "value": {
+                "id": 1,
+                "role": "superadmin"
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "role value 'superadmin' is preserved despite not being in enum",
+            "path": "#/records/0/value/role",
+            "expected_value": "superadmin"
+        },
+        {
+            "description": "id is 1",
+            "path": "#/records/0/value/id",
+            "expected_value": 1
+        }
+    ],
+    "object_validations": [
+        {
+            "description": "User 1 role is superadmin",
+            "path": "#/objects/User/1/role",
+            "expected_value": "superadmin"
+        }
+    ]
+}

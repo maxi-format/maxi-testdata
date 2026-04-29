@@ -1,0 +1,7 @@
+{
+    "id": "i0px1",
+    "title": "Unmatched Opening Bracket in Array Literal",
+    "description": "An array literal with an opening bracket but no closing bracket must throw ArraySyntaxError (E015).",
+    "category": "error",
+    "mode": "lax"
+}

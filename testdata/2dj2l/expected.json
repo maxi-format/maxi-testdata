@@ -1,0 +1,55 @@
+{
+    "success": true,
+    "objects": {
+        "User": {
+            "1": {
+                "id": 1,
+                "bio": "Line1\nLine2"
+            },
+            "2": {
+                "id": 2,
+                "bio": "He said \"Hi\""
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "User",
+            "value": {
+                "id": 1,
+                "bio": "Line1\nLine2"
+            }
+        },
+        {
+            "type": "User",
+            "value": {
+                "id": 2,
+                "bio": "He said \"Hi\""
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1 bio has \\n decoded to a real newline",
+            "path": "#/records/0/value/bio",
+            "expected_value": "Line1\nLine2"
+        },
+        {
+            "description": "Record 2 bio has \\\" decoded to a real quote",
+            "path": "#/records/1/value/bio",
+            "expected_value": "He said \"Hi\""
+        }
+    ],
+    "object_validations": [
+        {
+            "description": "User 1 bio contains newline",
+            "path": "#/objects/User/1/bio",
+            "expected_value": "Line1\nLine2"
+        },
+        {
+            "description": "User 2 bio contains embedded quote",
+            "path": "#/objects/User/2/bio",
+            "expected_value": "He said \"Hi\""
+        }
+    ]
+}

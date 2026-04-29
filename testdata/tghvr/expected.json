@@ -1,0 +1,65 @@
+{
+    "success": true,
+    "objects": {
+        "Grid": {
+            "1": {
+                "id": 1,
+                "cells": [
+                    [
+                        "a",
+                        "b"
+                    ],
+                    [
+                        "c",
+                        "d"
+                    ]
+                ]
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "Grid",
+            "value": {
+                "id": 1,
+                "cells": [
+                    [
+                        "a",
+                        "b"
+                    ],
+                    [
+                        "c",
+                        "d"
+                    ]
+                ]
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "cells is a 2D array of strings",
+            "path": "#/records/0/value/cells",
+            "expected_value": [
+                [
+                    "a",
+                    "b"
+                ],
+                [
+                    "c",
+                    "d"
+                ]
+            ]
+        },
+        {
+            "description": "first row first element is 'a'",
+            "path": "#/records/0/value/cells/0/0",
+            "expected_value": "a"
+        },
+        {
+            "description": "second row last element is 'd'",
+            "path": "#/records/0/value/cells/1/1",
+            "expected_value": "d"
+        }
+    ],
+    "object_validations": []
+}

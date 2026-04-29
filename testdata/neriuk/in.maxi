@@ -1,0 +1,7 @@
+M:Measurement(id:int|value:float)
+###
+M(1|1.0e10)
+M(2|-2.5E-3)
+M(3|6.022e23)
+M(4|42)
+M(5|3.14)

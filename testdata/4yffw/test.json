@@ -1,0 +1,7 @@
+{
+    "id": "4yffw",
+    "title": "Valid enum value passes in strict mode",
+    "description": "A value present in the enum list should parse successfully in strict mode.",
+    "category": "valid",
+    "mode": "strict"
+}

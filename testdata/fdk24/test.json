@@ -1,0 +1,7 @@
+{
+    "id": "fdk24",
+    "title": "Decimal Precision 1:999.",
+    "description": "decimal(1:999.) stores intMin=1, intMax=999, fracMin/fracMax null.",
+    "category": "valid",
+    "mode": "lax"
+}

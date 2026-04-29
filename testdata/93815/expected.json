@@ -1,0 +1,20 @@
+{
+    "success": true,
+    "records": [
+        {
+            "type": "E",
+            "value": {
+                "id": 1,
+                "ts": 1700000000
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "ts field is parsed as integer",
+            "path": "#/records/0/value/ts",
+            "expected_value": 1700000000
+        }
+    ],
+    "object_validations": []
+}

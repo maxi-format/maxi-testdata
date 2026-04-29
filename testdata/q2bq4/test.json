@@ -1,0 +1,7 @@
+{
+    "id": "q2bq4",
+    "title": "@email annotation on int field → E012",
+    "description": "Using @email annotation on an int-typed field is invalid and must produce E012.",
+    "category": "error",
+    "mode": "lax"
+}

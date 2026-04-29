@@ -1,0 +1,2 @@
+T:Thing(id:int|age:int=25|active:bool=1|score:float=3.14|name=default)
+###

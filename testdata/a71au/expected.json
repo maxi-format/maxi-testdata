@@ -1,0 +1,71 @@
+{
+    "success": true,
+    "objects": {
+        "Matrix": {
+            "1": {
+                "id": 1,
+                "data": [
+                    [
+                        1,
+                        2,
+                        3
+                    ],
+                    [
+                        4,
+                        5,
+                        6
+                    ]
+                ]
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "Matrix",
+            "value": {
+                "id": 1,
+                "data": [
+                    [
+                        1,
+                        2,
+                        3
+                    ],
+                    [
+                        4,
+                        5,
+                        6
+                    ]
+                ]
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "data is a 2D array of ints",
+            "path": "#/records/0/value/data",
+            "expected_value": [
+                [
+                    1,
+                    2,
+                    3
+                ],
+                [
+                    4,
+                    5,
+                    6
+                ]
+            ]
+        },
+        {
+            "description": "first row first element is 1",
+            "path": "#/records/0/value/data/0/0",
+            "expected_value": 1
+        },
+        {
+            "description": "second row last element is 6",
+            "path": "#/records/0/value/data/1/2",
+            "expected_value": 6
+        }
+    ],
+    "object_validations": []
+}

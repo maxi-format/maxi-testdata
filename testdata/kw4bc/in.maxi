@@ -1,0 +1,6 @@
+@mode:strict
+U:User(id:int|name)
+O:Order(id:int|user:U|total:decimal)
+###
+O(100|1|99.99)
+U(1|Julie)

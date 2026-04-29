@@ -1,0 +1,4 @@
+@mode:strict
+U:User(id:int|status:enum<int>[0,1,2])
+###
+U(1|1)

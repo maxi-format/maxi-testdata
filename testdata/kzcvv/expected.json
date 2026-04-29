@@ -1,0 +1,34 @@
+{
+    "success": true,
+    "objects": {},
+    "records": [],
+    "record_validations": [],
+    "schema_validations": [
+        {
+            "description": "constraint value is '.2'",
+            "path": "#/schema/types/P/fields/1/constraints/0/value",
+            "expected_value": ".2"
+        },
+        {
+            "description": "fracMax is 2",
+            "path": "#/schema/types/P/fields/1/constraints/0/fracMax",
+            "expected_value": 2
+        },
+        {
+            "description": "intMin is null",
+            "path": "#/schema/types/P/fields/1/constraints/0/intMin",
+            "expected_value": null
+        },
+        {
+            "description": "intMax is null",
+            "path": "#/schema/types/P/fields/1/constraints/0/intMax",
+            "expected_value": null
+        },
+        {
+            "description": "fracMin is null",
+            "path": "#/schema/types/P/fields/1/constraints/0/fracMin",
+            "expected_value": null
+        }
+    ],
+    "object_validations": []
+}

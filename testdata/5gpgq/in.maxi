@@ -1,0 +1,2 @@
+U:User(id:int|count:int(>10,<10))
+###

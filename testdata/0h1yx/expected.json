@@ -1,0 +1,51 @@
+{
+    "success": true,
+    "objects": {
+        "User": {
+            "1": {
+                "id": 1,
+                "role": "guest",
+                "active": "true"
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "User",
+            "value": {
+                "id": 1,
+                "role": "guest",
+                "active": "true"
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1 id is 1",
+            "path": "#/records/0/value/id",
+            "expected_value": 1
+        },
+        {
+            "description": "Record 1 role filled with default 'guest'",
+            "path": "#/records/0/value/role",
+            "expected_value": "guest"
+        },
+        {
+            "description": "Record 1 active filled with default 'true'",
+            "path": "#/records/0/value/active",
+            "expected_value": "true"
+        }
+    ],
+    "object_validations": [
+        {
+            "description": "User 1 role default is guest",
+            "path": "#/objects/User/1/role",
+            "expected_value": "guest"
+        },
+        {
+            "description": "User 1 active default is true",
+            "path": "#/objects/User/1/active",
+            "expected_value": "true"
+        }
+    ]
+}

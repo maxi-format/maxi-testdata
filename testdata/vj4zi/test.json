@@ -1,0 +1,7 @@
+{
+    "id": "vj4zi",
+    "title": "Exact-length array violation (strict)",
+    "description": "scores:int[](=3) + [95,87] (length 2) throws E020 in strict mode.",
+    "category": "error",
+    "mode": "strict"
+}

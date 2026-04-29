@@ -1,0 +1,28 @@
+{
+    "success": true,
+    "objects": {
+        "User": {
+            "1": {
+                "id": 1,
+                "username": "julie_99"
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "U",
+            "value": {
+                "id": 1,
+                "username": "julie_99"
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "username value is julie_99",
+            "path": "#/records/0/value/username",
+            "expected_value": "julie_99"
+        }
+    ],
+    "object_validations": []
+}

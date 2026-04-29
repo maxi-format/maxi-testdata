@@ -1,0 +1,7 @@
+{
+    "id": "gucah",
+    "title": "Array Constraint Only (no element constraints)",
+    "description": "str[](>=1) has array-level constraints but null elementConstraints.",
+    "category": "valid",
+    "mode": "lax"
+}

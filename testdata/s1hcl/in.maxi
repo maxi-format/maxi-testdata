@@ -1,0 +1,4 @@
+@mode:strict
+U:User(id:int|age:int(>=0,<=120))
+###
+U(1|200)

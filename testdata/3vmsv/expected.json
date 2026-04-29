@@ -1,0 +1,21 @@
+{
+    "success": true,
+    "objects": {},
+    "records": [
+        {
+            "type": "U",
+            "value": {
+                "id": 1,
+                "score": 50
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "score field is 50",
+            "path": "#/records/0/value/score",
+            "expected_value": 50
+        }
+    ],
+    "object_validations": []
+}

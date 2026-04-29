@@ -1,0 +1,7 @@
+{
+  "id": "d09ha",
+  "title": "Undefined Parent Type",
+  "description": "A type that inherits from a parent alias that is not defined must throw UndefinedParentError (E013).",
+  "category": "error",
+  "mode": "lax"
+}

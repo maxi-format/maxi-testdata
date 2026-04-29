@@ -1,0 +1,4 @@
+mode:strict
+U:User(id:int|name(>=3,<=20))
+###
+U(1|ab)

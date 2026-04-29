@@ -1,0 +1,7 @@
+{
+    "id": "4w342",
+    "title": "Field Referencing Type by Long Name",
+    "description": "A field whose typeExpr uses the long type name (e.g. User) instead of the alias (e.g. U) is valid and resolves correctly.",
+    "category": "valid",
+    "mode": "lax"
+}

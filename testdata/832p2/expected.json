@@ -1,0 +1,70 @@
+{
+    "success": true,
+    "objects": {
+        "User": {
+            "1": {
+                "id": 1,
+                "name": "Julie",
+                "email": "julie@maxi.org"
+            }
+        },
+        "Order": {
+            "100": {
+                "id": 100,
+                "user": 1,
+                "total": "99.99"
+            },
+            "101": {
+                "id": 101,
+                "user": 1,
+                "total": "149.50"
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "Order",
+            "value": {
+                "id": 100,
+                "user": {
+                    "id": 1,
+                    "name": "Julie",
+                    "email": "julie@maxi.org"
+                },
+                "total": "99.99"
+            }
+        },
+        {
+            "type": "Order",
+            "value": {
+                "id": 101,
+                "user": 1,
+                "total": "149.50"
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Order 100 user is inline object with id 1",
+            "path": "#/records/0/value/user/id",
+            "expected_value": 1
+        },
+        {
+            "description": "Order 100 user name is Julie",
+            "path": "#/records/0/value/user/name",
+            "expected_value": "Julie"
+        },
+        {
+            "description": "Order 101 user reference is 1",
+            "path": "#/records/1/value/user",
+            "expected_value": 1
+        }
+    ],
+    "object_validations": [
+        {
+            "description": "User 1 is indexed from inline object",
+            "path": "#/objects/User/1/name",
+            "expected_value": "Julie"
+        }
+    ]
+}

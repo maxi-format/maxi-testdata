@@ -1,0 +1,7 @@
+{
+    "id": "kzcvv",
+    "title": "Decimal Precision .2 (exact frac)",
+    "description": "decimal(.2) stores exact fracMax=2 with all other precision fields null.",
+    "category": "valid",
+    "mode": "lax"
+}

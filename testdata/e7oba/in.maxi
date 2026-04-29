@@ -1,0 +1,4 @@
+P:Person(id:int|name)
+U:User<P>(email)
+###
+U(1|Julie|julie@maxi.org)

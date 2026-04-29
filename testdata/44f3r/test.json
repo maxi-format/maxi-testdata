@@ -1,0 +1,7 @@
+{
+    "id": "44f3r",
+    "title": "Field Referencing Unknown Type",
+    "description": "A type definition with a field whose typeExpr references an undefined alias must throw UnknownTypeError (E003).",
+    "category": "error",
+    "mode": "lax"
+}

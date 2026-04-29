@@ -1,0 +1,7 @@
+{
+    "id": "s1hcl",
+    "title": "Comparison <=N violation (strict)",
+    "description": "age:int(>=0,<=120) + record 200 throws E020 ConstraintViolationError in strict mode.",
+    "category": "error",
+    "mode": "strict"
+}

@@ -1,0 +1,4 @@
+U:User(id:int|name)
+O:Order(id:int|user:User)
+###
+O(100|1)
