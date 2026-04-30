@@ -3,5 +3,9 @@
     "title": "Valid Default Values for All Typed Fields",
     "description": "Type definitions with valid default values for int, bool, float, and str fields must parse without error.",
     "category": "valid",
-    "mode": "lax"
+    "mode": "lax",
+    "tags": [
+        "inline-schema",
+        "defaults"
+    ]
 }

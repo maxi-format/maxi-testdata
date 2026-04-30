@@ -1,0 +1,12 @@
+{
+    "id": "h81op",
+    "title": "bytes@hex field parses hex-encoded value correctly",
+    "description": "A bytes@hex field must accept a hex-encoded string value and preserve it. The raw hex string is stored as the field value; the @hex annotation identifies the encoding format.",
+    "category": "valid",
+    "mode": "lax",
+    "tags": [
+        "inline-schema",
+        "bytes",
+        "annotations"
+    ]
+}

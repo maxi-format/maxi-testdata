@@ -1,0 +1,64 @@
+{
+    "success": true,
+    "objects": {
+        "User": {
+            "1": {
+                "id": 1,
+                "name": "Julie",
+                "role": "admin"
+            },
+            "2": {
+                "id": 2,
+                "name": "Matt",
+                "role": null
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "User",
+            "value": {
+                "id": 1,
+                "name": "Julie",
+                "role": "admin"
+            }
+        },
+        {
+            "type": "User",
+            "value": {
+                "id": 2,
+                "name": "Matt",
+                "role": null
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1 role is admin",
+            "path": "#/records/0/value/role",
+            "expected_value": "admin"
+        },
+        {
+            "description": "Record 2 omitted role is null (lax mode, no error)",
+            "path": "#/records/1/value/role",
+            "expected_value": null
+        },
+        {
+            "description": "Record 2 name is Matt",
+            "path": "#/records/1/value/name",
+            "expected_value": "Matt"
+        }
+    ],
+    "object_validations": [
+        {
+            "description": "User 1 role is admin",
+            "path": "#/objects/User/1/role",
+            "expected_value": "admin"
+        },
+        {
+            "description": "User 2 role is null",
+            "path": "#/objects/User/2/role",
+            "expected_value": null
+        }
+    ]
+}

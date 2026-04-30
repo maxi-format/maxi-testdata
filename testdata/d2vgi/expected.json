@@ -1,0 +1,7 @@
+{
+    "success": false,
+    "error_code": "E009",
+    "note": "This result applies only to parsers that reject forward references in strict mode. Parsers that support forward references in strict mode (per kw4bc) may return success=true instead. Check parser_dependent flag in test.json.",
+    "record_validations": [],
+    "object_validations": []
+}

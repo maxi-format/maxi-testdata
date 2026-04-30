@@ -1,0 +1,76 @@
+{
+    "success": true,
+    "objects": {
+        "User": {
+            "1": {
+                "id": 1,
+                "name": "Julie",
+                "email": "julie@maxi.org"
+            },
+            "2": {
+                "id": 2,
+                "name": "Matt",
+                "email": "matt@maxi.org"
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "User",
+            "value": {
+                "id": 1,
+                "name": "Julie",
+                "email": "julie@maxi.org"
+            }
+        },
+        {
+            "type": "User",
+            "value": {
+                "id": 2,
+                "name": "Matt",
+                "email": "matt@maxi.org"
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1 name is Julie (type defined in .mxs with comments)",
+            "path": "#/records/0/value/name",
+            "expected_value": "Julie"
+        },
+        {
+            "description": "Record 1 email is julie@maxi.org",
+            "path": "#/records/0/value/email",
+            "expected_value": "julie@maxi.org"
+        },
+        {
+            "description": "Record 2 name is Matt",
+            "path": "#/records/1/value/name",
+            "expected_value": "Matt"
+        }
+    ],
+    "object_validations": [
+        {
+            "description": "User 1 in registry has correct id",
+            "path": "#/objects/User/1/id",
+            "expected_value": 1
+        },
+        {
+            "description": "User 2 email is matt@maxi.org",
+            "path": "#/objects/User/2/email",
+            "expected_value": "matt@maxi.org"
+        }
+    ],
+    "schema_validations": [
+        {
+            "description": "U type name is User (loaded from commented .mxs)",
+            "path": "#/schema/types/U/name",
+            "expected_value": "User"
+        },
+        {
+            "description": "U has 3 fields (comments did not corrupt field count)",
+            "path": "#/schema/types/U/fields/2/name",
+            "expected_value": "email"
+        }
+    ]
+}

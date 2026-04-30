@@ -1,0 +1,5 @@
+U:User(id:int|name|active:bool|verified:bool)
+###
+U(1|Julie|1|0)
+U(2|Matt|0|1)
+U(3|Anna|true|false)

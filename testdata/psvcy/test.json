@@ -1,0 +1,11 @@
+{
+    "id": "psvcy",
+    "title": "Explicit @mode:lax directive behaves identically to default lax mode",
+    "description": "A file with an explicit @mode:lax directive must behave identically to a file with no mode directive (lax is the default). Omitted trailing fields are filled with null without error, and no extra warnings are emitted solely due to the directive.",
+    "category": "valid",
+    "mode": "lax",
+    "tags": [
+        "inline-schema",
+        "directives"
+    ]
+}

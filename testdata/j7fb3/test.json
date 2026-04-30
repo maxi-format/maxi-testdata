@@ -1,0 +1,13 @@
+{
+    "id": "j7fb3",
+    "title": "Float constraint <=90.0 violated triggers E008 (strict)",
+    "description": "A float field with constraint (>=-90.0,<=90.0) must reject a value of 200.0 in strict mode, triggering ConstraintViolationError E008.",
+    "category": "error",
+    "mode": "strict",
+    "tags": [
+        "inline-schema",
+        "constraints",
+        "error-code",
+        "strict"
+    ]
+}

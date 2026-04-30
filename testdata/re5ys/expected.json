@@ -1,23 +1,76 @@
 {
-  "success": true,
-  "objects": {},
-  "records": [
-    { "type": "Tag", "value": { "id": 1, "tags": ["hello", "world"] } }
-  ],
-  "record_validations": [
-    { "description": "first tag is hello", "path": "#/records/0/value/tags/0", "expected_value": "hello" },
-    { "description": "second tag is world", "path": "#/records/0/value/tags/1", "expected_value": "world" }
-  ],
-  "schema_validations": [
-    { "description": "tags typeExpr is str[]", "path": "#/schema/types/T/fields/1/typeExpr", "expected_value": "str[]" },
-    { "description": "element constraint 0 is >= 3", "path": "#/schema/types/T/fields/1/elementConstraints/0/operator", "expected_value": ">=" },
-    { "description": "element constraint 0 value is 3", "path": "#/schema/types/T/fields/1/elementConstraints/0/value", "expected_value": 3 },
-    { "description": "element constraint 1 is <= 20", "path": "#/schema/types/T/fields/1/elementConstraints/1/operator", "expected_value": "<=" },
-    { "description": "element constraint 1 value is 20", "path": "#/schema/types/T/fields/1/elementConstraints/1/value", "expected_value": 20 },
-    { "description": "array constraint 0 is >= 1", "path": "#/schema/types/T/fields/1/constraints/0/operator", "expected_value": ">=" },
-    { "description": "array constraint 0 value is 1", "path": "#/schema/types/T/fields/1/constraints/0/value", "expected_value": 1 },
-    { "description": "array constraint 1 is <= 10", "path": "#/schema/types/T/fields/1/constraints/1/operator", "expected_value": "<=" },
-    { "description": "array constraint 1 value is 10", "path": "#/schema/types/T/fields/1/constraints/1/value", "expected_value": 10 }
-  ],
-  "object_validations": []
+    "success": true,
+    "objects": {},
+    "records": [
+        {
+            "type": "Tag",
+            "value": {
+                "id": 1,
+                "tags": [
+                    "hello",
+                    "world"
+                ]
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "first tag is hello",
+            "path": "#/records/0/value/tags/0",
+            "expected_value": "hello"
+        },
+        {
+            "description": "second tag is world",
+            "path": "#/records/0/value/tags/1",
+            "expected_value": "world"
+        }
+    ],
+    "schema_validations": [
+        {
+            "description": "tags typeExpr is str[]",
+            "path": "#/schema/types/T/fields/1/typeExpr",
+            "expected_value": "str[]"
+        },
+        {
+            "description": "element constraint 0 is >= 3",
+            "path": "#/schema/types/T/fields/1/elementConstraints/0/operator",
+            "expected_value": ">="
+        },
+        {
+            "description": "element constraint 0 value is 3",
+            "path": "#/schema/types/T/fields/1/elementConstraints/0/value",
+            "expected_value": 3
+        },
+        {
+            "description": "element constraint 1 is <= 20",
+            "path": "#/schema/types/T/fields/1/elementConstraints/1/operator",
+            "expected_value": "<="
+        },
+        {
+            "description": "element constraint 1 value is 20",
+            "path": "#/schema/types/T/fields/1/elementConstraints/1/value",
+            "expected_value": 20
+        },
+        {
+            "description": "array constraint 0 is >= 1",
+            "path": "#/schema/types/T/fields/1/constraints/0/operator",
+            "expected_value": ">="
+        },
+        {
+            "description": "array constraint 0 value is 1",
+            "path": "#/schema/types/T/fields/1/constraints/0/value",
+            "expected_value": 1
+        },
+        {
+            "description": "array constraint 1 is <= 10",
+            "path": "#/schema/types/T/fields/1/constraints/1/operator",
+            "expected_value": "<="
+        },
+        {
+            "description": "array constraint 1 value is 10",
+            "path": "#/schema/types/T/fields/1/constraints/1/value",
+            "expected_value": 10
+        }
+    ],
+    "object_validations": []
 }

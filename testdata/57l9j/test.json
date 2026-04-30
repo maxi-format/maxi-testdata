@@ -1,0 +1,13 @@
+{
+    "id": "57l9j",
+    "title": "Multiple inheritance conflict: first parent's field definition wins",
+    "description": "Dog<Animal,Creature> inherits from both Animal(name|type) and Creature(name:str(>=3)|age:int). Both parents define 'name'; the first parent Animal takes precedence (plain str, no constraint). A short name like 'ab' (length 2) must succeed because Animal's unconstrained 'name' is used, not Creature's str(>=3).",
+    "category": "valid",
+    "mode": "strict",
+    "tags": [
+        "inline-schema",
+        "inheritance",
+        "multi-inheritance",
+        "strict"
+    ]
+}

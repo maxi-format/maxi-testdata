@@ -1,0 +1,7 @@
+PV:ProductVariant(sku(id)|product_name|color|size)
+O:Order(id:int|variant:PV|qty:int)
+###
+PV(sku_001|Widget|red|M)
+PV(sku_002|Gadget|blue|L)
+O(100|sku_001|3)
+O(101|sku_002|1)

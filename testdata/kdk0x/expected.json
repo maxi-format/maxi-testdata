@@ -1,0 +1,59 @@
+{
+    "success": true,
+    "objects": {
+        "User": {
+            "1": {
+                "id": 1,
+                "name": "Julie",
+                "email": "julie@maxi.org"
+            },
+            "2": {
+                "id": 2,
+                "name": "Matt",
+                "email": "matt@maxi.org"
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "User",
+            "value": {
+                "id": 1,
+                "name": "Julie",
+                "email": "julie@maxi.org"
+            }
+        },
+        {
+            "type": "User",
+            "value": {
+                "id": 2,
+                "name": "Matt",
+                "email": "matt@maxi.org"
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1 has only 3 fields (extra values discarded)",
+            "path": "#/records/0/value/email",
+            "expected_value": "julie@maxi.org"
+        },
+        {
+            "description": "Record 1 has no extra field 'ignored_extra'",
+            "path": "#/records/0/value/ignored_extra",
+            "expected_value": null
+        },
+        {
+            "description": "Record 2 parses normally",
+            "path": "#/records/1/value/name",
+            "expected_value": "Matt"
+        }
+    ],
+    "object_validations": [
+        {
+            "description": "User 1 in registry has only schema fields",
+            "path": "#/objects/User/1/email",
+            "expected_value": "julie@maxi.org"
+        }
+    ]
+}

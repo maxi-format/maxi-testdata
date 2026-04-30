@@ -1,0 +1,13 @@
+{
+    "id": "24mmc",
+    "title": "Explicit (id) constraint overrides implicit id field",
+    "description": "When a type has both a field named 'id' and another field marked (id), the explicit (id) field is used as the identifier. Object registry must be keyed by order_item_id, not id.",
+    "category": "valid",
+    "mode": "strict",
+    "tags": [
+        "inline-schema",
+        "constraints",
+        "references",
+        "strict"
+    ]
+}

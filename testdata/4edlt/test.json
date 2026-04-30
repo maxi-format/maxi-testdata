@@ -3,5 +3,11 @@
     "title": "Strict Mode Rejects Non-Numeric String for Decimal Field",
     "description": "In strict mode, providing a non-numeric string value for a decimal field must throw TypeMismatchError (E007).",
     "category": "error",
-    "mode": "strict"
+    "mode": "strict",
+    "tags": [
+        "inline-schema",
+        "constraints",
+        "error-code",
+        "strict"
+    ]
 }

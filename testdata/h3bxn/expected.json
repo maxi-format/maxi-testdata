@@ -1,0 +1,111 @@
+{
+    "success": true,
+    "objects": {
+        "Item": {
+            "1": {
+                "id": 1,
+                "name": "Widget",
+                "price": 9.99
+            },
+            "2": {
+                "id": 2,
+                "name": "Gadget",
+                "price": 19.99
+            }
+        },
+        "Order": {
+            "100": {
+                "id": 100,
+                "items": [
+                    1,
+                    2
+                ]
+            },
+            "101": {
+                "id": 101,
+                "items": []
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "Order",
+            "value": {
+                "id": 100,
+                "items": [
+                    {
+                        "id": 1,
+                        "name": "Widget",
+                        "price": 9.99
+                    },
+                    {
+                        "id": 2,
+                        "name": "Gadget",
+                        "price": 19.99
+                    }
+                ]
+            }
+        },
+        {
+            "type": "Order",
+            "value": {
+                "id": 101,
+                "items": []
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Order 100 items array has 2 elements",
+            "path": "#/records/0/value/items/0/name",
+            "expected_value": "Widget"
+        },
+        {
+            "description": "Order 100 second item name is Gadget",
+            "path": "#/records/0/value/items/1/name",
+            "expected_value": "Gadget"
+        },
+        {
+            "description": "Order 100 second item price is 19.99",
+            "path": "#/records/0/value/items/1/price",
+            "expected_value": 19.99
+        },
+        {
+            "description": "Order 101 items array is empty",
+            "path": "#/records/1/value/items",
+            "expected_value": []
+        }
+    ],
+    "object_validations": [
+        {
+            "description": "Inline Item 1 is registered with name Widget",
+            "path": "#/objects/Item/1/name",
+            "expected_value": "Widget"
+        },
+        {
+            "description": "Inline Item 2 is registered with price 19.99",
+            "path": "#/objects/Item/2/price",
+            "expected_value": 19.99
+        },
+        {
+            "description": "Order 100 items in registry resolves to [1, 2]",
+            "path": "#/objects/Order/100/items",
+            "expected_value": [
+                1,
+                2
+            ]
+        },
+        {
+            "description": "Order 100 item 1 name via follow_references",
+            "path": "#/objects/Order/100/items/0/name",
+            "follow_references": true,
+            "expected_value": "Widget"
+        },
+        {
+            "description": "Order 100 item 2 name via follow_references",
+            "path": "#/objects/Order/100/items/1/name",
+            "follow_references": true,
+            "expected_value": "Gadget"
+        }
+    ]
+}

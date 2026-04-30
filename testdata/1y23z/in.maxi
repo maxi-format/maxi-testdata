@@ -1,0 +1,7 @@
+@schema:base-types.mxs
+O:Order(id:int|user:U|total:decimal)
+###
+U(1|Julie|julie@maxi.org)
+U(2|Matt|matt@maxi.org)
+O(100|1|99.99)
+O(101|2|149.50)

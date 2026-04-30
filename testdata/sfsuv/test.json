@@ -3,5 +3,11 @@
     "title": "Duplicate id in lax mode emits warning",
     "description": "In lax mode two records with the same id emit a DuplicateIdentifierError warning; both records are still parsed.",
     "category": "valid",
-    "mode": "lax"
+    "mode": "lax",
+    "tags": [
+        "inline-schema",
+        "references",
+        "duplicate-id",
+        "warning"
+    ]
 }

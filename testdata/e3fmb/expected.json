@@ -1,0 +1,81 @@
+{
+    "success": true,
+    "objects": {
+        "User": {
+            "1": {
+                "id": 1,
+                "age": 25,
+                "role": "admin"
+            },
+            "2": {
+                "id": 2,
+                "age": 40,
+                "role": "user"
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "User",
+            "value": {
+                "id": 1,
+                "age": 25,
+                "role": "admin"
+            }
+        },
+        {
+            "type": "User",
+            "value": {
+                "id": 2,
+                "age": 40,
+                "role": "user"
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1 id is 1",
+            "path": "#/records/0/value/id",
+            "expected_value": 1
+        },
+        {
+            "description": "Record 1 age is 25 (valid for child constraint >=18,<=65)",
+            "path": "#/records/0/value/age",
+            "expected_value": 25
+        },
+        {
+            "description": "Record 1 role is admin",
+            "path": "#/records/0/value/role",
+            "expected_value": "admin"
+        },
+        {
+            "description": "Record 2 age is 40 (valid for child constraint >=18,<=65)",
+            "path": "#/records/1/value/age",
+            "expected_value": 40
+        }
+    ],
+    "object_validations": [
+        {
+            "description": "User 1 age is 25",
+            "path": "#/objects/User/1/age",
+            "expected_value": 25
+        },
+        {
+            "description": "User 2 role is user",
+            "path": "#/objects/User/2/role",
+            "expected_value": "user"
+        }
+    ],
+    "schema_validations": [
+        {
+            "description": "U age field minVal is 18 (child override applied, not parent's 0)",
+            "path": "#/schema/types/U/fields/1/constraints/minVal",
+            "expected_value": 18
+        },
+        {
+            "description": "U age field maxVal is 65 (child override applied, not parent's 120)",
+            "path": "#/schema/types/U/fields/1/constraints/maxVal",
+            "expected_value": 65
+        }
+    ]
+}

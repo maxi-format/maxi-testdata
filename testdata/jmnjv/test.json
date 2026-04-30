@@ -1,0 +1,14 @@
+{
+    "id": "jmnjv",
+    "title": "Value not in quoted enum list triggers E008 (strict)",
+    "description": "A data record providing a value that is not a member of the enum (even when the enum uses quoted multi-word values) must trigger ConstraintViolationError E008 in strict mode.",
+    "category": "error",
+    "mode": "strict",
+    "tags": [
+        "inline-schema",
+        "enum",
+        "constraints",
+        "error-code",
+        "strict"
+    ]
+}

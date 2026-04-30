@@ -1,0 +1,5 @@
+P:Person(id:int|name|city|greeting)
+###
+P(1|José|München|"Héllo Wörld")
+P(2|北京|Москва|"日本語テスト")
+P(3|"مرحبا"|"Ñoño"|"Ångström")

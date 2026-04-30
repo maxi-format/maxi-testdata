@@ -3,5 +3,12 @@
     "title": "Pattern match violation (strict)",
     "description": "username(pattern:^[a-z0-9_]+$) + 'Hello World!' throws E020 in strict mode.",
     "category": "error",
-    "mode": "strict"
+    "mode": "strict",
+    "tags": [
+        "inline-schema",
+        "constraints",
+        "annotations",
+        "error-code",
+        "strict"
+    ]
 }

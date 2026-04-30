@@ -1,0 +1,13 @@
+{
+    "id": "nfndj",
+    "title": "Strict mode: record with too few fields (missing required non-trailing) triggers error",
+    "description": "In strict mode a record that provides fewer values than required fields without defaults must be rejected. U(1|Julie) provides only id+name but email and role are both required with no default. Expected error_code is E006 (SchemaMismatchError) or E011 (MissingRequiredFieldError) depending on parser strategy.",
+    "category": "error",
+    "mode": "strict",
+    "tags": [
+        "inline-schema",
+        "required",
+        "error-code",
+        "strict"
+    ]
+}

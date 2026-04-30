@@ -1,0 +1,57 @@
+{
+    "success": true,
+    "objects": {},
+    "records": [
+        {
+            "type": "Ticket",
+            "value": {
+                "id": 1,
+                "status": "in progress"
+            }
+        },
+        {
+            "type": "Ticket",
+            "value": {
+                "id": 2,
+                "status": "done"
+            }
+        },
+        {
+            "type": "Ticket",
+            "value": {
+                "id": 3,
+                "status": "pending review"
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1 status is 'in progress' (quoted enum member accepted)",
+            "path": "#/records/0/value/status",
+            "expected_value": "in progress"
+        },
+        {
+            "description": "Record 2 status is 'done'",
+            "path": "#/records/1/value/status",
+            "expected_value": "done"
+        },
+        {
+            "description": "Record 3 status is 'pending review'",
+            "path": "#/records/2/value/status",
+            "expected_value": "pending review"
+        }
+    ],
+    "object_validations": [],
+    "schema_validations": [
+        {
+            "description": "Ticket status field has 3 enum values",
+            "path": "#/schema/types/T/fields/1/enumValues/0",
+            "expected_value": "pending review"
+        },
+        {
+            "description": "Second enum value is 'in progress'",
+            "path": "#/schema/types/T/fields/1/enumValues/1",
+            "expected_value": "in progress"
+        }
+    ]
+}

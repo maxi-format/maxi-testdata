@@ -1,0 +1,12 @@
+{
+    "id": "stnog",
+    "title": "UTF-8 / non-ASCII characters in unquoted and quoted field values",
+    "description": "MAXI is UTF-8 encoded and supports non-ASCII characters in both unquoted and quoted field values. Names like José, 北京, Москва, مرحبا must round-trip through the parser unchanged.",
+    "category": "valid",
+    "mode": "lax",
+    "tags": [
+        "inline-schema",
+        "utf8",
+        "quoted-strings"
+    ]
+}

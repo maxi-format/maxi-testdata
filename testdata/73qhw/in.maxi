@@ -1,0 +1,4 @@
+C:Config(id:int|nested:map<map>)
+###
+C(1|{section1:{a:1,b:2},section2:{x:foo,y:bar}})
+C(2|{})

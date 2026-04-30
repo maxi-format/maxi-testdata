@@ -1,0 +1,11 @@
+{
+    "id": "0vme4",
+    "title": "Whitespace stripped for unquoted values, preserved for quoted values",
+    "description": "Unquoted field values have leading and trailing whitespace stripped by the parser. Quoted values preserve all whitespace including leading and trailing spaces.",
+    "category": "valid",
+    "mode": "lax",
+    "tags": [
+        "inline-schema",
+        "quoted-strings"
+    ]
+}

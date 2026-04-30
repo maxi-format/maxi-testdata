@@ -1,0 +1,81 @@
+{
+    "success": true,
+    "objects": {},
+    "records": [
+        {
+            "type": "Person",
+            "value": {
+                "id": 1,
+                "name": "José",
+                "city": "München",
+                "greeting": "Héllo Wörld"
+            }
+        },
+        {
+            "type": "Person",
+            "value": {
+                "id": 2,
+                "name": "北京",
+                "city": "Москва",
+                "greeting": "日本語テスト"
+            }
+        },
+        {
+            "type": "Person",
+            "value": {
+                "id": 3,
+                "name": "مرحبا",
+                "city": "Ñoño",
+                "greeting": "Ångström"
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1 unquoted name José preserved",
+            "path": "#/records/0/value/name",
+            "expected_value": "José"
+        },
+        {
+            "description": "Record 1 unquoted city München preserved",
+            "path": "#/records/0/value/city",
+            "expected_value": "München"
+        },
+        {
+            "description": "Record 1 quoted greeting Héllo Wörld preserved",
+            "path": "#/records/0/value/greeting",
+            "expected_value": "Héllo Wörld"
+        },
+        {
+            "description": "Record 2 unquoted name 北京 preserved",
+            "path": "#/records/1/value/name",
+            "expected_value": "北京"
+        },
+        {
+            "description": "Record 2 unquoted city Москва preserved",
+            "path": "#/records/1/value/city",
+            "expected_value": "Москва"
+        },
+        {
+            "description": "Record 2 quoted greeting 日本語テスト preserved",
+            "path": "#/records/1/value/greeting",
+            "expected_value": "日本語テスト"
+        },
+        {
+            "description": "Record 3 quoted name Arabic مرحبا preserved",
+            "path": "#/records/2/value/name",
+            "expected_value": "مرحبا"
+        },
+        {
+            "description": "Record 3 quoted city Ñoño preserved",
+            "path": "#/records/2/value/city",
+            "expected_value": "Ñoño"
+        },
+        {
+            "description": "Record 3 quoted greeting Ångström preserved",
+            "path": "#/records/2/value/greeting",
+            "expected_value": "Ångström"
+        }
+    ],
+    "object_validations": []
+}

@@ -1,0 +1,15 @@
+{
+    "id": "x48xb",
+    "title": "Str-typed explicit id: duplicate value triggers E016 (strict)",
+    "description": "Two ProductVariant records with the same sku(id) string value must trigger DuplicateIdentifierError E016 in strict mode.",
+    "category": "error",
+    "mode": "strict",
+    "tags": [
+        "inline-schema",
+        "constraints",
+        "references",
+        "duplicate-id",
+        "error-code",
+        "strict"
+    ]
+}

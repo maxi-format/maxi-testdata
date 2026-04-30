@@ -1,15 +1,39 @@
 {
-  "success": true,
-  "objects": {},
-  "records": [],
-  "record_validations": [],
-  "schema_validations": [
-    { "description": "amount constraint type is decimal-precision", "path": "#/schema/types/P/fields/1/constraints/0/type", "expected_value": "decimal-precision" },
-    { "description": "amount constraint value is '5.2'", "path": "#/schema/types/P/fields/1/constraints/0/value", "expected_value": "5.2" },
-    { "description": "intMax is 5", "path": "#/schema/types/P/fields/1/constraints/0/intMax", "expected_value": 5 },
-    { "description": "fracMax is 2", "path": "#/schema/types/P/fields/1/constraints/0/fracMax", "expected_value": 2 },
-    { "description": "intMin is null", "path": "#/schema/types/P/fields/1/constraints/0/intMin", "expected_value": null },
-    { "description": "fracMin is null", "path": "#/schema/types/P/fields/1/constraints/0/fracMin", "expected_value": null }
-  ],
-  "object_validations": []
+    "success": true,
+    "objects": {},
+    "records": [],
+    "record_validations": [],
+    "schema_validations": [
+        {
+            "description": "amount constraint type is decimal-precision",
+            "path": "#/schema/types/P/fields/1/constraints/0/type",
+            "expected_value": "decimal-precision"
+        },
+        {
+            "description": "amount constraint value is '5.2'",
+            "path": "#/schema/types/P/fields/1/constraints/0/value",
+            "expected_value": "5.2"
+        },
+        {
+            "description": "intMax is 5",
+            "path": "#/schema/types/P/fields/1/constraints/0/intMax",
+            "expected_value": 5
+        },
+        {
+            "description": "fracMax is 2",
+            "path": "#/schema/types/P/fields/1/constraints/0/fracMax",
+            "expected_value": 2
+        },
+        {
+            "description": "intMin is null",
+            "path": "#/schema/types/P/fields/1/constraints/0/intMin",
+            "expected_value": null
+        },
+        {
+            "description": "fracMin is null",
+            "path": "#/schema/types/P/fields/1/constraints/0/fracMin",
+            "expected_value": null
+        }
+    ],
+    "object_validations": []
 }

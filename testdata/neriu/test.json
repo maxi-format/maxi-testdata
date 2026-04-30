@@ -1,7 +1,10 @@
 {
-    "id": "neriuk",
+    "id": "neriu",
     "title": "Float Fields Accept Scientific Notation",
     "description": "Float fields parse standard decimal notation, negative values, scientific notation (e/E), and integer literals.",
     "category": "valid",
-    "mode": "lax"
+    "mode": "lax",
+    "tags": [
+        "inline-schema"
+    ]
 }

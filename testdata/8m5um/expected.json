@@ -1,0 +1,77 @@
+{
+    "success": true,
+    "objects": {
+        "User-Data": {
+            "1": {
+                "id": 1,
+                "key": "theme",
+                "value": "dark"
+            },
+            "2": {
+                "id": 2,
+                "key": "language",
+                "value": "en"
+            },
+            "3": {
+                "id": 3,
+                "key": "font-size",
+                "value": "14px"
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "User-Data",
+            "value": {
+                "id": 1,
+                "key": "theme",
+                "value": "dark"
+            }
+        },
+        {
+            "type": "User-Data",
+            "value": {
+                "id": 2,
+                "key": "language",
+                "value": "en"
+            }
+        },
+        {
+            "type": "User-Data",
+            "value": {
+                "id": 3,
+                "key": "font-size",
+                "value": "14px"
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1 type resolves to User-Data via hyphenated alias u-d",
+            "path": "#/records/0/type",
+            "expected_value": "User-Data"
+        },
+        {
+            "description": "Record 1 key is theme",
+            "path": "#/records/0/value/key",
+            "expected_value": "theme"
+        },
+        {
+            "description": "Record 2 key is language",
+            "path": "#/records/1/value/key",
+            "expected_value": "language"
+        },
+        {
+            "description": "Record 3 value is 14px",
+            "path": "#/records/2/value/value",
+            "expected_value": "14px"
+        }
+    ],
+    "object_validations": [
+        {
+            "description": "User-Data 1 in registry via hyphenated type name",
+            "path": "#/objects/User-Data/1/key",
+            "expected_value": "theme"
+        }
+    ]
+}

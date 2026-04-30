@@ -1,0 +1,13 @@
+{
+    "id": "1y23z",
+    "title": "@schema import combined with local inline type definition",
+    "description": "A .maxi file that imports a schema via @schema and also defines additional types inline. Both the imported type (User from base-types.mxs) and the locally defined type (Order) must be resolvable and usable in data records in the same file.",
+    "category": "valid",
+    "mode": "lax",
+    "tags": [
+        "external-schema",
+        "inline-schema",
+        "multi-schema",
+        "references"
+    ]
+}

@@ -1,0 +1,5 @@
+@mode:strict
+P:Person(id:int|age:int(>=0,<=120))
+U:User<P>(age:int(>=18,<=65)|role)
+###
+U(1|10|admin)

@@ -1,0 +1,9 @@
+# This is a valid comment in schema
+U:User(id:int|name)
+# Another comment between types
+O:Order(id:int|user:U|total:decimal)
+# Final comment before separator
+###
+U(1|Julie)
+U(2|Matt)
+O(100|1|99.99)

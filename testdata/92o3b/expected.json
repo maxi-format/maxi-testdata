@@ -1,0 +1,71 @@
+{
+    "success": true,
+    "objects": {
+        "User": {
+            "1": {
+                "id": 1,
+                "name": "Julie",
+                "role": "admin"
+            },
+            "2": {
+                "id": 2,
+                "name": "Matt",
+                "role": "user"
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "User",
+            "value": {
+                "id": 1,
+                "name": "Julie",
+                "role": "admin"
+            }
+        },
+        {
+            "type": "User",
+            "value": {
+                "id": 2,
+                "name": "Matt",
+                "role": "user"
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1 third field is role=admin (second.mxs wins, not source from first.mxs)",
+            "path": "#/records/0/value/role",
+            "expected_value": "admin"
+        },
+        {
+            "description": "Record 2 role is user",
+            "path": "#/records/1/value/role",
+            "expected_value": "user"
+        },
+        {
+            "description": "Record 1 has no 'source' field (first.mxs was overridden)",
+            "path": "#/records/0/value/source",
+            "expected_value": null
+        }
+    ],
+    "object_validations": [
+        {
+            "description": "User 1 role is admin",
+            "path": "#/objects/User/1/role",
+            "expected_value": "admin"
+        }
+    ],
+    "schema_validations": [
+        {
+            "description": "U type name is User",
+            "path": "#/schema/types/U/name",
+            "expected_value": "User"
+        },
+        {
+            "description": "U field 2 name is role (from second.mxs, not source from first.mxs)",
+            "path": "#/schema/types/U/fields/2/name",
+            "expected_value": "role"
+        }
+    ]
+}

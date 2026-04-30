@@ -1,0 +1,5 @@
+@mode:strict
+OI:OrderItem(id:int|order_item_id:int(id)|product|quantity:int)
+###
+OI(999|1001|Widget|2)
+OI(998|1002|Gadget|5)

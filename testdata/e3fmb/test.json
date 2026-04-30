@@ -1,0 +1,13 @@
+{
+    "id": "e3fmb",
+    "title": "Child type overrides parent field constraint: child constraint applies",
+    "description": "When a child type redefines a parent field, the child's constraint replaces the parent's entirely. User<Person> redefines age with (>=18,<=65); a value of 25 must pass the child constraint in strict mode.",
+    "category": "valid",
+    "mode": "strict",
+    "tags": [
+        "inline-schema",
+        "inheritance",
+        "constraints",
+        "strict"
+    ]
+}

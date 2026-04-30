@@ -1,0 +1,5 @@
+@schema:first.mxs
+@schema:second.mxs
+###
+U(1|Julie|admin)
+U(2|Matt|user)

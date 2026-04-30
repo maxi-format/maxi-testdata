@@ -3,5 +3,10 @@
     "title": "String length pass (strict)",
     "description": "name(>=3,<=20) + record 'Julie' passes in strict mode.",
     "category": "valid",
-    "mode": "strict"
+    "mode": "strict",
+    "tags": [
+        "inline-schema",
+        "constraints",
+        "strict"
+    ]
 }

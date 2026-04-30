@@ -1,0 +1,83 @@
+{
+    "success": true,
+    "objects": {
+        "User": {
+            "1": {
+                "id": 1,
+                "name": "Julie Miller",
+                "email": "julie@maxi.org",
+                "bio": "Software engineer with 10+ years experience"
+            },
+            "2": {
+                "id": 2,
+                "name": "Matt",
+                "email": "matt@maxi.org",
+                "bio": "Product designer"
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "User",
+            "value": {
+                "id": 1,
+                "name": "Julie Miller",
+                "email": "julie@maxi.org",
+                "bio": "Software engineer with 10+ years experience"
+            }
+        },
+        {
+            "type": "User",
+            "value": {
+                "id": 2,
+                "name": "Matt",
+                "email": "matt@maxi.org",
+                "bio": "Product designer"
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1 id is 1",
+            "path": "#/records/0/value/id",
+            "expected_value": 1
+        },
+        {
+            "description": "Record 1 name is Julie Miller (multiline field)",
+            "path": "#/records/0/value/name",
+            "expected_value": "Julie Miller"
+        },
+        {
+            "description": "Record 1 bio is the quoted multiline string",
+            "path": "#/records/0/value/bio",
+            "expected_value": "Software engineer with 10+ years experience"
+        },
+        {
+            "description": "Record 2 id is 2",
+            "path": "#/records/1/value/id",
+            "expected_value": 2
+        },
+        {
+            "description": "Record 2 name is Matt (on same line as id)",
+            "path": "#/records/1/value/name",
+            "expected_value": "Matt"
+        },
+        {
+            "description": "Record 2 bio is Product designer",
+            "path": "#/records/1/value/bio",
+            "expected_value": "Product designer"
+        }
+    ],
+    "object_validations": [
+        {
+            "description": "User 1 email is julie@maxi.org",
+            "path": "#/objects/User/1/email",
+            "expected_value": "julie@maxi.org"
+        },
+        {
+            "description": "User 2 email is matt@maxi.org",
+            "path": "#/objects/User/2/email",
+            "expected_value": "matt@maxi.org"
+        }
+    ]
+}

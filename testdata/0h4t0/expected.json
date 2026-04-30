@@ -1,0 +1,50 @@
+{
+    "success": true,
+    "expected_warnings": [
+        {
+            "code": "E004",
+            "description": "Unknown directive @debug"
+        }
+    ],
+    "objects": {
+        "User": {
+            "1": {
+                "id": 1,
+                "name": "Julie"
+            },
+            "2": {
+                "id": 2,
+                "name": "Matt"
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "User",
+            "value": {
+                "id": 1,
+                "name": "Julie"
+            }
+        },
+        {
+            "type": "User",
+            "value": {
+                "id": 2,
+                "name": "Matt"
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1 parsed correctly despite unknown directive",
+            "path": "#/records/0/value/name",
+            "expected_value": "Julie"
+        },
+        {
+            "description": "Record 2 parsed correctly",
+            "path": "#/records/1/value/name",
+            "expected_value": "Matt"
+        }
+    ],
+    "object_validations": []
+}

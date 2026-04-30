@@ -1,0 +1,50 @@
+{
+    "success": true,
+    "objects": {},
+    "records": [
+        {
+            "type": "File",
+            "value": {
+                "id": 1,
+                "name": "photo.png",
+                "thumbnail_base64": "iVBORw0KGgoAAAANSUhEUg=="
+            }
+        },
+        {
+            "type": "File",
+            "value": {
+                "id": 2,
+                "name": "icon.jpg",
+                "thumbnail_base64": "/9j/4AAQSkZJRgABAQ=="
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1 thumbnail value is preserved",
+            "path": "#/records/0/value/thumbnail_base64",
+            "expected_value": "iVBORw0KGgoAAAANSUhEUg=="
+        },
+        {
+            "description": "Record 2 thumbnail value is preserved",
+            "path": "#/records/1/value/thumbnail_base64",
+            "expected_value": "/9j/4AAQSkZJRgABAQ=="
+        }
+    ],
+    "object_validations": [],
+    "schema_validations": [
+        {
+            "description": "thumbnail field annotation is base64",
+            "path": "#/schema/types/F/fields/2/annotation",
+            "expected_value": "base64"
+        },
+        {
+            "description": "thumbnail mime constraint is a list of two MIME types",
+            "path": "#/schema/types/F/fields/2/constraints/mime",
+            "expected_value": [
+                "image/png",
+                "image/jpg"
+            ]
+        }
+    ]
+}

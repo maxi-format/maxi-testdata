@@ -1,14 +1,39 @@
 {
-  "success": true,
-  "objects": { "Search": { "1": { "id": 1, "meta": { "key": "value" } } } },
-  "records": [
-    { "type": "Search", "value": { "id": 1, "meta": { "key": "value" } } }
-  ],
-  "record_validations": [
-    { "description": "map value key is string 'value'", "path": "#/records/0/value/meta/key", "expected_value": "value" }
-  ],
-  "schema_validations": [
-    { "description": "meta field typeExpr is map", "path": "#/schema/types/S/fields/1/typeExpr", "expected_value": "map" }
-  ],
-  "object_validations": []
+    "success": true,
+    "objects": {
+        "Search": {
+            "1": {
+                "id": 1,
+                "meta": {
+                    "key": "value"
+                }
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "Search",
+            "value": {
+                "id": 1,
+                "meta": {
+                    "key": "value"
+                }
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "map value key is string 'value'",
+            "path": "#/records/0/value/meta/key",
+            "expected_value": "value"
+        }
+    ],
+    "schema_validations": [
+        {
+            "description": "meta field typeExpr is map",
+            "path": "#/schema/types/S/fields/1/typeExpr",
+            "expected_value": "map"
+        }
+    ],
+    "object_validations": []
 }

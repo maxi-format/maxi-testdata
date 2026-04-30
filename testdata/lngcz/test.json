@@ -3,5 +3,9 @@
     "title": "Valid references produce no warnings",
     "description": "A User and Order with a valid user reference; success is true and no unresolved reference warnings.",
     "category": "valid",
-    "mode": "lax"
+    "mode": "lax",
+    "tags": [
+        "inline-schema",
+        "references"
+    ]
 }

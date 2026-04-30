@@ -1,0 +1,57 @@
+{
+    "success": true,
+    "objects": {},
+    "records": [
+        {
+            "type": "Row",
+            "value": {
+                "id": 1,
+                "content": "line1\r\nline2",
+                "path": "C:\\Users\\Julie",
+                "delimited": "col1\tcol2\tcol3"
+            }
+        },
+        {
+            "type": "Row",
+            "value": {
+                "id": 2,
+                "content": "no\\escape",
+                "path": "D:\\data\\file.txt",
+                "delimited": "a\tb"
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1 content contains literal CR+LF (\\r\\n decoded)",
+            "path": "#/records/0/value/content",
+            "expected_value": "line1\r\nline2"
+        },
+        {
+            "description": "Record 1 path has backslashes decoded (C:\\Users\\Julie)",
+            "path": "#/records/0/value/path",
+            "expected_value": "C:\\Users\\Julie"
+        },
+        {
+            "description": "Record 1 delimited has tab characters (\\t decoded)",
+            "path": "#/records/0/value/delimited",
+            "expected_value": "col1\tcol2\tcol3"
+        },
+        {
+            "description": "Record 2 content has single backslash (\\\\no→no\\escape)",
+            "path": "#/records/1/value/content",
+            "expected_value": "no\\escape"
+        },
+        {
+            "description": "Record 2 path backslashes decoded",
+            "path": "#/records/1/value/path",
+            "expected_value": "D:\\data\\file.txt"
+        },
+        {
+            "description": "Record 2 delimited has tab between a and b",
+            "path": "#/records/1/value/delimited",
+            "expected_value": "a\tb"
+        }
+    ],
+    "object_validations": []
+}

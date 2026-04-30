@@ -1,0 +1,14 @@
+{
+    "id": "8wktv",
+    "title": "mime:image/* wildcard constraint: matching MIME type passes (strict)",
+    "description": "A bytes field with mime:image/* constraint must accept a value whose declared MIME type matches the image/* wildcard. The schema constraint is parsed and stored correctly.",
+    "category": "valid",
+    "mode": "strict",
+    "tags": [
+        "inline-schema",
+        "bytes",
+        "constraints",
+        "annotations",
+        "strict"
+    ]
+}

@@ -3,5 +3,9 @@
     "title": "Decimal Precision 0:10.2",
     "description": "decimal(0:10.2) stores intMin=0, intMax=10, fracMax=2.",
     "category": "valid",
-    "mode": "lax"
+    "mode": "lax",
+    "tags": [
+        "inline-schema",
+        "constraints"
+    ]
 }

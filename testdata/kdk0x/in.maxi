@@ -1,0 +1,4 @@
+U:User(id:int|name|email)
+###
+U(1|Julie|julie@maxi.org|ignored_extra|another_extra)
+U(2|Matt|matt@maxi.org)

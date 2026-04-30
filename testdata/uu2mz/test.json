@@ -1,0 +1,12 @@
+{
+    "id": "uu2mz",
+    "title": "Strict mode: record with extra trailing fields triggers E006",
+    "description": "In strict mode, a record that supplies more field values than the schema defines must be rejected with SchemaMismatchError E006. The User type has 3 fields; the record supplies 5.",
+    "category": "error",
+    "mode": "strict",
+    "tags": [
+        "inline-schema",
+        "error-code",
+        "strict"
+    ]
+}

@@ -1,0 +1,4 @@
+@mode:strict
+U:User(id:int|name(!)|email(!)|role(!))
+###
+U(1|Julie)

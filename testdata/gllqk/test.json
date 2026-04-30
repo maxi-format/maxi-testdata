@@ -3,5 +3,11 @@
     "title": "Unresolved reference in strict mode → E009",
     "description": "Order references user id 999 which does not exist; strict mode throws E009 UnresolvedReferenceError.",
     "category": "error",
-    "mode": "strict"
+    "mode": "strict",
+    "tags": [
+        "inline-schema",
+        "references",
+        "error-code",
+        "strict"
+    ]
 }

@@ -1,0 +1,12 @@
+{
+    "id": "ibx29",
+    "title": "Multiple inheritance: correct field order (parent1 fields, parent2 unique fields, own fields)",
+    "description": "User<Person,TimeStamp>(role) merges fields in order: id/name/email from Person, then createdAt/updatedAt from TimeStamp (unique to TS), then role (own). Data records must supply values in this exact order.",
+    "category": "valid",
+    "mode": "lax",
+    "tags": [
+        "inline-schema",
+        "inheritance",
+        "multi-inheritance"
+    ]
+}

@@ -1,0 +1,4 @@
+C:Catalog(id:int|labels:map<int,str>)
+###
+C(1|{1:one,2:two,3:three})
+C(2|{})

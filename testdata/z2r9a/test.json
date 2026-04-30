@@ -1,7 +1,12 @@
 {
-  "id": "z2r9a",
-  "title": "Person with Circular Reference Test",
-  "description": "Tests that persons with circular spouse references are processed correctly.",
-  "category": "valid",
-  "mode": "lax"
+    "id": "z2r9a",
+    "title": "Person with Circular Reference Test",
+    "description": "Tests that persons with circular spouse references are processed correctly.",
+    "category": "valid",
+    "mode": "lax",
+    "tags": [
+        "inline-schema",
+        "references",
+        "inline-sub-object"
+    ]
 }

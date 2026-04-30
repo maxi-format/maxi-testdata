@@ -1,0 +1,66 @@
+{
+    "success": true,
+    "objects": {
+        "File": {
+            "1": {
+                "id": 1,
+                "name": "hello.txt",
+                "data_hex": "48656c6c6f"
+            },
+            "2": {
+                "id": 2,
+                "name": "empty.bin",
+                "data_hex": null
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "File",
+            "value": {
+                "id": 1,
+                "name": "hello.txt",
+                "data_hex": "48656c6c6f"
+            }
+        },
+        {
+            "type": "File",
+            "value": {
+                "id": 2,
+                "name": "empty.bin",
+                "data_hex": null
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1 name is hello.txt",
+            "path": "#/records/0/value/name",
+            "expected_value": "hello.txt"
+        },
+        {
+            "description": "Record 1 hex data value is preserved as-is",
+            "path": "#/records/0/value/data_hex",
+            "expected_value": "48656c6c6f"
+        },
+        {
+            "description": "Record 2 data is null (empty slot)",
+            "path": "#/records/1/value/data_hex",
+            "expected_value": null
+        }
+    ],
+    "object_validations": [
+        {
+            "description": "File 1 hex data preserved in registry",
+            "path": "#/objects/File/1/data_hex",
+            "expected_value": "48656c6c6f"
+        }
+    ],
+    "schema_validations": [
+        {
+            "description": "data field annotation is hex",
+            "path": "#/schema/types/F/fields/2/annotation",
+            "expected_value": "hex"
+        }
+    ]
+}

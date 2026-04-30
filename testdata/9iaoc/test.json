@@ -1,0 +1,12 @@
+{
+    "id": "9iaoc",
+    "title": "map<int,str> data record with integer keys parses correctly",
+    "description": "A map<int,str> field must parse a map literal with integer keys ({1:one,2:two,3:three}) and store them as integer keys. An empty map {} must also be accepted.",
+    "category": "valid",
+    "mode": "lax",
+    "tags": [
+        "inline-schema",
+        "maps",
+        "map-data"
+    ]
+}

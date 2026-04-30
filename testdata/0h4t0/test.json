@@ -1,0 +1,12 @@
+{
+    "id": "0h4t0",
+    "title": "Unknown @directive emits E004 warning in lax mode",
+    "description": "An unrecognised directive (@debug:true) must emit an UnknownDirectiveError E004 warning but must NOT cause the parse to fail. The type definitions and data records after the unknown directive must still be parsed correctly.",
+    "category": "valid",
+    "mode": "lax",
+    "tags": [
+        "inline-schema",
+        "directives",
+        "warning"
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "id": "i0m0o",
+    "title": "Float constraints pass: values within range (strict)",
+    "description": "Float fields with (>=-90.0,<=90.0) and (>=-180.0,<=180.0) constraints must accept valid coordinate values in strict mode. Real-world geographic coordinates are used.",
+    "category": "valid",
+    "mode": "strict",
+    "tags": [
+        "inline-schema",
+        "constraints",
+        "strict"
+    ]
+}

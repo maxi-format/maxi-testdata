@@ -1,0 +1,5 @@
+T:Ticket(id:int|status:enum["pending review","in progress","done"])
+###
+T(1|in progress)
+T(2|done)
+T(3|pending review)

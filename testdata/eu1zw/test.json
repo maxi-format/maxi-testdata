@@ -3,5 +3,10 @@
     "title": "Invalid Default Value for Float Field",
     "description": "A type definition with a non-numeric default value for a float field must throw InvalidDefaultValueError (E018).",
     "category": "error",
-    "mode": "lax"
+    "mode": "lax",
+    "tags": [
+        "inline-schema",
+        "defaults",
+        "error-code"
+    ]
 }

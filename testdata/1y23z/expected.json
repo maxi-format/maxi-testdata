@@ -1,0 +1,109 @@
+{
+    "success": true,
+    "objects": {
+        "User": {
+            "1": {
+                "id": 1,
+                "name": "Julie",
+                "email": "julie@maxi.org"
+            },
+            "2": {
+                "id": 2,
+                "name": "Matt",
+                "email": "matt@maxi.org"
+            }
+        },
+        "Order": {
+            "100": {
+                "id": 100,
+                "user": 1,
+                "total": 99.99
+            },
+            "101": {
+                "id": 101,
+                "user": 2,
+                "total": 149.50
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "User",
+            "value": {
+                "id": 1,
+                "name": "Julie",
+                "email": "julie@maxi.org"
+            }
+        },
+        {
+            "type": "User",
+            "value": {
+                "id": 2,
+                "name": "Matt",
+                "email": "matt@maxi.org"
+            }
+        },
+        {
+            "type": "Order",
+            "value": {
+                "id": 100,
+                "user": 1,
+                "total": 99.99
+            }
+        },
+        {
+            "type": "Order",
+            "value": {
+                "id": 101,
+                "user": 2,
+                "total": 149.50
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "User type was imported from base-types.mxs",
+            "path": "#/records/0/type",
+            "expected_value": "User"
+        },
+        {
+            "description": "Order type was defined inline in in.maxi",
+            "path": "#/records/2/type",
+            "expected_value": "Order"
+        },
+        {
+            "description": "Order 100 user reference is 1",
+            "path": "#/records/2/value/user",
+            "expected_value": 1
+        },
+        {
+            "description": "Order 101 total is 149.50",
+            "path": "#/records/3/value/total",
+            "expected_value": 149.50
+        }
+    ],
+    "object_validations": [
+        {
+            "description": "User 1 from imported schema is in registry",
+            "path": "#/objects/User/1/name",
+            "expected_value": "Julie"
+        },
+        {
+            "description": "Order 100 from inline schema is in registry",
+            "path": "#/objects/Order/100/total",
+            "expected_value": 99.99
+        },
+        {
+            "description": "Order 100 user resolves to Julie via follow_references",
+            "path": "#/objects/Order/100/user/name",
+            "follow_references": true,
+            "expected_value": "Julie"
+        },
+        {
+            "description": "Order 101 user resolves to Matt via follow_references",
+            "path": "#/objects/Order/101/user/name",
+            "follow_references": true,
+            "expected_value": "Matt"
+        }
+    ]
+}

@@ -1,0 +1,4 @@
+@mode:strict
+M:Measurement(id:int|latitude:float(>=-90.0,<=90.0)|longitude:float(>=-180.0,<=180.0))
+###
+M(1|200.0|45.0)

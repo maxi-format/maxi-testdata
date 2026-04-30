@@ -1,0 +1,4 @@
+PV:ProductVariant(sku(id)|color)
+###
+PV(sku_001|red)
+PV(sku_001|blue)

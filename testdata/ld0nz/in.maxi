@@ -1,0 +1,9 @@
+I:Item(id:int|name|price:decimal)
+O:Order(id:int|items:I[])
+###
+I(1|Widget|9.99)
+I(2|Gadget|19.99)
+I(3|Doohickey|4.50)
+O(100|[1,2])
+O(101|[3])
+O(102|[])

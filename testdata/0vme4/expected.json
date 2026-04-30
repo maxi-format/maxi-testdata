@@ -1,0 +1,58 @@
+{
+    "success": true,
+    "objects": {
+        "User": {
+            "1": {
+                "id": 1,
+                "name": "Julie",
+                "tag": "unquoted"
+            },
+            "2": {
+                "id": 2,
+                "name": "  Matt  ",
+                "tag": "  quoted  "
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "User",
+            "value": {
+                "id": 1,
+                "name": "Julie",
+                "tag": "unquoted"
+            }
+        },
+        {
+            "type": "User",
+            "value": {
+                "id": 2,
+                "name": "  Matt  ",
+                "tag": "  quoted  "
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1 name has whitespace stripped (unquoted)",
+            "path": "#/records/0/value/name",
+            "expected_value": "Julie"
+        },
+        {
+            "description": "Record 1 tag has whitespace stripped (unquoted)",
+            "path": "#/records/0/value/tag",
+            "expected_value": "unquoted"
+        },
+        {
+            "description": "Record 2 name has whitespace preserved (quoted)",
+            "path": "#/records/1/value/name",
+            "expected_value": "  Matt  "
+        },
+        {
+            "description": "Record 2 tag has whitespace preserved (quoted)",
+            "path": "#/records/1/value/tag",
+            "expected_value": "  quoted  "
+        }
+    ],
+    "object_validations": []
+}

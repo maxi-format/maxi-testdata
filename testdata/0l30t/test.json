@@ -1,0 +1,15 @@
+{
+    "id": "0l30t",
+    "title": "Map key constraint str(>=1) violated by empty key triggers E008 (strict)",
+    "description": "A map<str(>=1),str> field must reject a map entry with an empty string key (length 0), which violates the >=1 minimum length constraint on the key type. Triggers ConstraintViolationError E008 in strict mode.",
+    "category": "error",
+    "mode": "strict",
+    "tags": [
+        "inline-schema",
+        "maps",
+        "constraints",
+        "map-data",
+        "error-code",
+        "strict"
+    ]
+}

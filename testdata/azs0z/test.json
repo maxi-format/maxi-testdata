@@ -1,0 +1,12 @@
+{
+    "id": "azs0z",
+    "title": "\\r, \\t, \\\\ escape sequences decode correctly in quoted strings",
+    "description": "Quoted string values containing \\r (carriage return), \\t (tab), and \\\\ (backslash) escape sequences must be decoded to their literal characters. The spec defines these alongside \\n and \\\".",
+    "category": "valid",
+    "mode": "lax",
+    "tags": [
+        "inline-schema",
+        "quoted-strings",
+        "escape-sequences"
+    ]
+}

@@ -1,0 +1,4 @@
+F:File(id:int|name(!)|thumbnail:bytes@base64(mime:[image/png,image/jpg]))
+###
+F(1|photo.png|iVBORw0KGgoAAAANSUhEUg==)
+F(2|icon.jpg|/9j/4AAQSkZJRgABAQ==)

@@ -1,0 +1,4 @@
+O:Order(order_id:int|created_at:str@datetime|total_price:decimal|is_paid:bool)
+###
+O(1001|2024-06-15T09:30:00Z|149.99|true)
+O(1002|2025-01-01T00:00:00Z|0.00|false)

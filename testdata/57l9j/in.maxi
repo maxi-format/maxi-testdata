@@ -1,0 +1,7 @@
+@mode:strict
+A:Animal(name|type)
+C:Creature(name:str(>=3)|age:int)
+D:Dog<A,C>(breed)
+###
+D(ab|mammal|5|labrador)
+D(Rex|canine|3|poodle)

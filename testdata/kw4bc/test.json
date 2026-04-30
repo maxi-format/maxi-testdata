@@ -3,5 +3,11 @@
     "title": "Forward references in strict mode resolve successfully",
     "description": "Order appears before User but User is eventually defined; strict mode resolves the reference without error.",
     "category": "valid",
-    "mode": "strict"
+    "mode": "strict",
+    "tags": [
+        "inline-schema",
+        "references",
+        "forward-ref",
+        "strict"
+    ]
 }

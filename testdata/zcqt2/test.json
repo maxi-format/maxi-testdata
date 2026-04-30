@@ -1,7 +1,15 @@
 {
-  "id": "zcqt2",
-  "title": "Explicit id constraint field duplicate detection",
-  "description": "A field named order_id with id constraint should trigger E016 on duplicate values in strict mode.",
-  "category": "error",
-  "mode": "strict"
+    "id": "zcqt2",
+    "title": "Explicit id constraint field duplicate detection",
+    "description": "A field named order_id with id constraint should trigger E016 on duplicate values in strict mode.",
+    "category": "error",
+    "mode": "strict",
+    "tags": [
+        "inline-schema",
+        "constraints",
+        "references",
+        "duplicate-id",
+        "error-code",
+        "strict"
+    ]
 }

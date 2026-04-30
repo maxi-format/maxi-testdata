@@ -1,0 +1,10 @@
+{
+    "id": "9sqyp",
+    "title": "Alias starting with underscore (_M) is valid and resolves correctly",
+    "description": "The spec (§3.3.3) explicitly allows aliases to start with underscore (_). An alias like _M for type _Meta must be parsed and resolved correctly, and data records using _M(...) must parse normally.",
+    "category": "valid",
+    "mode": "lax",
+    "tags": [
+        "inline-schema"
+    ]
+}

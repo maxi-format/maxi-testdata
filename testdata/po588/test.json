@@ -1,8 +1,13 @@
 {
-  "id": "po588",
-  "title": "Multiple Inheritance + Defaults",
-  "description": "Tests User<P,TS,A> field composition order, datetime formats, and default field value (status=active) overridden by an explicit value.",
-  "category": "valid",
-  "mode": "lax"
+    "id": "po588",
+    "title": "Multiple Inheritance + Defaults",
+    "description": "Tests User<P,TS,A> field composition order, datetime formats, and default field value (status=active) overridden by an explicit value.",
+    "category": "valid",
+    "mode": "lax",
+    "tags": [
+        "inline-schema",
+        "inheritance",
+        "multi-inheritance",
+        "defaults"
+    ]
 }
-

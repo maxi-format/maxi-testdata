@@ -1,0 +1,118 @@
+{
+    "success": true,
+    "objects": {
+        "ProductVariant": {
+            "sku_001": {
+                "sku": "sku_001",
+                "product_name": "Widget",
+                "color": "red",
+                "size": "M"
+            },
+            "sku_002": {
+                "sku": "sku_002",
+                "product_name": "Gadget",
+                "color": "blue",
+                "size": "L"
+            }
+        },
+        "Order": {
+            "100": {
+                "id": 100,
+                "variant": "sku_001",
+                "qty": 3
+            },
+            "101": {
+                "id": 101,
+                "variant": "sku_002",
+                "qty": 1
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "ProductVariant",
+            "value": {
+                "sku": "sku_001",
+                "product_name": "Widget",
+                "color": "red",
+                "size": "M"
+            }
+        },
+        {
+            "type": "ProductVariant",
+            "value": {
+                "sku": "sku_002",
+                "product_name": "Gadget",
+                "color": "blue",
+                "size": "L"
+            }
+        },
+        {
+            "type": "Order",
+            "value": {
+                "id": 100,
+                "variant": "sku_001",
+                "qty": 3
+            }
+        },
+        {
+            "type": "Order",
+            "value": {
+                "id": 101,
+                "variant": "sku_002",
+                "qty": 1
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "PV sku_001 product_name is Widget",
+            "path": "#/records/0/value/product_name",
+            "expected_value": "Widget"
+        },
+        {
+            "description": "PV sku_002 color is blue",
+            "path": "#/records/1/value/color",
+            "expected_value": "blue"
+        },
+        {
+            "description": "Order 100 variant reference is sku_001",
+            "path": "#/records/2/value/variant",
+            "expected_value": "sku_001"
+        },
+        {
+            "description": "Order 101 variant reference is sku_002",
+            "path": "#/records/3/value/variant",
+            "expected_value": "sku_002"
+        },
+        {
+            "description": "Order 100 qty is 3",
+            "path": "#/records/2/value/qty",
+            "expected_value": 3
+        }
+    ],
+    "object_validations": [
+        {
+            "description": "ProductVariant registry is keyed by string sku_001",
+            "path": "#/objects/ProductVariant/sku_001/product_name",
+            "expected_value": "Widget"
+        },
+        {
+            "description": "ProductVariant registry is keyed by string sku_002",
+            "path": "#/objects/ProductVariant/sku_002/size",
+            "expected_value": "L"
+        },
+        {
+            "description": "Order 100 variant reference resolves to sku_001 product_name (follow ref)",
+            "path": "#/objects/Order/100/variant/product_name",
+            "follow_references": true,
+            "expected_value": "Widget"
+        },
+        {
+            "description": "Order 101 variant reference resolves to sku_002 color (follow ref)",
+            "path": "#/objects/Order/101/variant/color",
+            "follow_references": true,
+            "expected_value": "blue"
+        }
+    ]
+}

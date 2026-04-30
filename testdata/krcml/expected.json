@@ -1,0 +1,64 @@
+{
+    "success": true,
+    "objects": {
+        "User": {
+            "1": {
+                "id": 1,
+                "name": "Julie",
+                "role": "member"
+            },
+            "2": {
+                "id": 2,
+                "name": "Matt",
+                "role": "admin"
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "User",
+            "value": {
+                "id": 1,
+                "name": "Julie",
+                "role": "member"
+            }
+        },
+        {
+            "type": "User",
+            "value": {
+                "id": 2,
+                "name": "Matt",
+                "role": "admin"
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1 role is 'member' (default applied when field omitted)",
+            "path": "#/records/0/value/role",
+            "expected_value": "member"
+        },
+        {
+            "description": "Record 1 name is Julie",
+            "path": "#/records/0/value/name",
+            "expected_value": "Julie"
+        },
+        {
+            "description": "Record 2 role is admin (explicit value overrides default)",
+            "path": "#/records/1/value/role",
+            "expected_value": "admin"
+        }
+    ],
+    "object_validations": [
+        {
+            "description": "User 1 role default is member",
+            "path": "#/objects/User/1/role",
+            "expected_value": "member"
+        },
+        {
+            "description": "User 2 role is admin",
+            "path": "#/objects/User/2/role",
+            "expected_value": "admin"
+        }
+    ]
+}

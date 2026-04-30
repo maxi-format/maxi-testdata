@@ -1,0 +1,78 @@
+{
+    "success": true,
+    "objects": {
+        "Order": {
+            "1001": {
+                "order_id": 1001,
+                "created_at": "2024-06-15T09:30:00Z",
+                "total_price": 149.99,
+                "is_paid": true
+            },
+            "1002": {
+                "order_id": 1002,
+                "created_at": "2025-01-01T00:00:00Z",
+                "total_price": 0.00,
+                "is_paid": false
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "Order",
+            "value": {
+                "order_id": 1001,
+                "created_at": "2024-06-15T09:30:00Z",
+                "total_price": 149.99,
+                "is_paid": true
+            }
+        },
+        {
+            "type": "Order",
+            "value": {
+                "order_id": 1002,
+                "created_at": "2025-01-01T00:00:00Z",
+                "total_price": 0.00,
+                "is_paid": false
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1 order_id is 1001 (snake_case field name)",
+            "path": "#/records/0/value/order_id",
+            "expected_value": 1001
+        },
+        {
+            "description": "Record 1 created_at is 2024-06-15T09:30:00Z",
+            "path": "#/records/0/value/created_at",
+            "expected_value": "2024-06-15T09:30:00Z"
+        },
+        {
+            "description": "Record 1 total_price is 149.99",
+            "path": "#/records/0/value/total_price",
+            "expected_value": 149.99
+        },
+        {
+            "description": "Record 1 is_paid is true",
+            "path": "#/records/0/value/is_paid",
+            "expected_value": true
+        },
+        {
+            "description": "Record 2 order_id is 1002",
+            "path": "#/records/1/value/order_id",
+            "expected_value": 1002
+        },
+        {
+            "description": "Record 2 is_paid is false",
+            "path": "#/records/1/value/is_paid",
+            "expected_value": false
+        }
+    ],
+    "object_validations": [
+        {
+            "description": "Order 1001 in registry keyed by order_id",
+            "path": "#/objects/Order/1001/total_price",
+            "expected_value": 149.99
+        }
+    ]
+}

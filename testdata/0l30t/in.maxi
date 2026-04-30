@@ -1,0 +1,4 @@
+@mode:strict
+C:Config(id:int|settings:map<str(>=1),str>)
+###
+C(1|{"":value})

@@ -3,5 +3,10 @@
     "title": "Conflicting constraints >=10 and <=5",
     "description": "Conflicting lower and upper bounds on an int field should error with E012.",
     "category": "error",
-    "mode": "lax"
+    "mode": "lax",
+    "tags": [
+        "inline-schema",
+        "constraints",
+        "error-code"
+    ]
 }

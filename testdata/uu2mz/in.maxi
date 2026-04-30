@@ -1,0 +1,4 @@
+@mode:strict
+U:User(id:int|name|email)
+###
+U(1|Julie|julie@maxi.org|extrafield|anotherextra)

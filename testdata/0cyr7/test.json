@@ -3,5 +3,11 @@
     "title": "Strict Mode Rejects Invalid Bool Value",
     "description": "In strict mode, providing a value that is not a valid boolean (0/1/true/false) for a bool field must throw TypeMismatchError (E007).",
     "category": "error",
-    "mode": "strict"
+    "mode": "strict",
+    "tags": [
+        "inline-schema",
+        "constraints",
+        "error-code",
+        "strict"
+    ]
 }

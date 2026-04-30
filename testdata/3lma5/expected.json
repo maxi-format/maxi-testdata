@@ -1,0 +1,34 @@
+{
+    "success": true,
+    "objects": {},
+    "records": [
+        {
+            "type": "Config",
+            "value": {
+                "id": 1,
+                "settings": {
+                    "a": "1",
+                    "b": "2"
+                }
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Config id is 1",
+            "path": "#/records/0/value/id",
+            "expected_value": 1
+        },
+        {
+            "description": "settings map has key 'a'",
+            "path": "#/records/0/value/settings/a",
+            "expected_value": "1"
+        },
+        {
+            "description": "settings map has key 'b'",
+            "path": "#/records/0/value/settings/b",
+            "expected_value": "2"
+        }
+    ],
+    "object_validations": []
+}

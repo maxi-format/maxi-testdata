@@ -1,0 +1,158 @@
+{
+    "success": true,
+    "objects": {
+        "Item": {
+            "1": {
+                "id": 1,
+                "name": "Widget",
+                "price": 9.99
+            },
+            "2": {
+                "id": 2,
+                "name": "Gadget",
+                "price": 19.99
+            },
+            "3": {
+                "id": 3,
+                "name": "Doohickey",
+                "price": 4.5
+            }
+        },
+        "Order": {
+            "100": {
+                "id": 100,
+                "items": [
+                    1,
+                    2
+                ]
+            },
+            "101": {
+                "id": 101,
+                "items": [
+                    3
+                ]
+            },
+            "102": {
+                "id": 102,
+                "items": []
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "Item",
+            "value": {
+                "id": 1,
+                "name": "Widget",
+                "price": 9.99
+            }
+        },
+        {
+            "type": "Item",
+            "value": {
+                "id": 2,
+                "name": "Gadget",
+                "price": 19.99
+            }
+        },
+        {
+            "type": "Item",
+            "value": {
+                "id": 3,
+                "name": "Doohickey",
+                "price": 4.5
+            }
+        },
+        {
+            "type": "Order",
+            "value": {
+                "id": 100,
+                "items": [
+                    1,
+                    2
+                ]
+            }
+        },
+        {
+            "type": "Order",
+            "value": {
+                "id": 101,
+                "items": [
+                    3
+                ]
+            }
+        },
+        {
+            "type": "Order",
+            "value": {
+                "id": 102,
+                "items": []
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Order 100 items array is [1, 2] (reference IDs)",
+            "path": "#/records/3/value/items",
+            "expected_value": [
+                1,
+                2
+            ]
+        },
+        {
+            "description": "Order 101 items array is [3]",
+            "path": "#/records/4/value/items",
+            "expected_value": [
+                3
+            ]
+        },
+        {
+            "description": "Order 102 items array is empty",
+            "path": "#/records/5/value/items",
+            "expected_value": []
+        }
+    ],
+    "object_validations": [
+        {
+            "description": "Item 1 in registry has name Widget",
+            "path": "#/objects/Item/1/name",
+            "expected_value": "Widget"
+        },
+        {
+            "description": "Item 2 in registry has price 19.99",
+            "path": "#/objects/Item/2/price",
+            "expected_value": 19.99
+        },
+        {
+            "description": "Item 3 in registry has name Doohickey",
+            "path": "#/objects/Item/3/name",
+            "expected_value": "Doohickey"
+        },
+        {
+            "description": "Order 100 items holds reference IDs [1, 2]",
+            "path": "#/objects/Order/100/items",
+            "expected_value": [
+                1,
+                2
+            ]
+        },
+        {
+            "description": "Order 100 item 0 name via follow_references",
+            "path": "#/objects/Order/100/items/0/name",
+            "follow_references": true,
+            "expected_value": "Widget"
+        },
+        {
+            "description": "Order 100 item 1 price via follow_references",
+            "path": "#/objects/Order/100/items/1/price",
+            "follow_references": true,
+            "expected_value": 19.99
+        },
+        {
+            "description": "Order 101 item 0 name via follow_references",
+            "path": "#/objects/Order/101/items/0/name",
+            "follow_references": true,
+            "expected_value": "Doohickey"
+        }
+    ]
+}

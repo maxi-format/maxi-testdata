@@ -3,5 +3,9 @@
     "title": "Lax mode warns on non-numeric value for int field",
     "description": "In lax mode a non-numeric string passed to an int field emits a TypeMismatchError warning; value is kept as-is.",
     "category": "valid",
-    "mode": "lax"
+    "mode": "lax",
+    "tags": [
+        "inline-schema",
+        "warning"
+    ]
 }

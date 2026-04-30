@@ -1,0 +1,5 @@
+@mode:strict
+F:File(id:int|name(!)|data:bytes(mime:image/*))
+###
+F(1|photo.png|iVBORw0KGgoAAAANSUhEUg==)
+F(2|icon.jpg|/9j/4AAQSkZJRgABAQ==)

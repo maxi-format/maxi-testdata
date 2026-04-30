@@ -3,5 +3,8 @@
     "title": "@schema import loaded",
     "description": "Main file imports a schema via @schema:users.mxs; the imported type is used to parse a record.",
     "category": "valid",
-    "mode": "lax"
+    "mode": "lax",
+    "tags": [
+        "external-schema"
+    ]
 }

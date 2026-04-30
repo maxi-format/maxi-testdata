@@ -1,0 +1,11 @@
+{
+    "id": "oxalc",
+    "title": "@version:1.0.0 directive accepted without error or warning",
+    "description": "A supported @version:1.0.0 directive must be accepted silently. tiknp tests rejection of an unsupported version; this test confirms the positive case — the parser accepts the version it supports and continues normally.",
+    "category": "valid",
+    "mode": "lax",
+    "tags": [
+        "inline-schema",
+        "directives"
+    ]
+}

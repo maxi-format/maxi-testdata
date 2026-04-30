@@ -1,0 +1,13 @@
+U:User(id:int|name|email|bio)
+###
+U(
+1|
+Julie Miller|
+julie@maxi.org|
+"Software engineer with 10+ years experience"
+)
+U(
+2|Matt|
+matt@maxi.org|
+"Product designer"
+)

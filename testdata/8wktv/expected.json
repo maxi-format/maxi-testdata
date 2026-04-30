@@ -1,0 +1,47 @@
+{
+    "success": true,
+    "objects": {},
+    "records": [
+        {
+            "type": "File",
+            "value": {
+                "id": 1,
+                "name": "photo.png",
+                "data": "iVBORw0KGgoAAAANSUhEUg=="
+            }
+        },
+        {
+            "type": "File",
+            "value": {
+                "id": 2,
+                "name": "icon.jpg",
+                "data": "/9j/4AAQSkZJRgABAQ=="
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1 name is photo.png",
+            "path": "#/records/0/value/name",
+            "expected_value": "photo.png"
+        },
+        {
+            "description": "Record 1 data value is preserved",
+            "path": "#/records/0/value/data",
+            "expected_value": "iVBORw0KGgoAAAANSUhEUg=="
+        },
+        {
+            "description": "Record 2 name is icon.jpg",
+            "path": "#/records/1/value/name",
+            "expected_value": "icon.jpg"
+        }
+    ],
+    "object_validations": [],
+    "schema_validations": [
+        {
+            "description": "data field mime constraint is image/*",
+            "path": "#/schema/types/F/fields/2/constraints/mime",
+            "expected_value": "image/*"
+        }
+    ]
+}

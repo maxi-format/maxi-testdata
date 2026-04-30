@@ -1,0 +1,4 @@
+F:File(id:int|name|data:bytes@hex)
+###
+F(1|hello.txt|48656c6c6f)
+F(2|empty.bin|)

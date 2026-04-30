@@ -1,0 +1,12 @@
+{
+    "id": "m520f",
+    "title": "@version, @mode:strict, and @schema all present in the same file",
+    "description": "No existing test uses all three directives (@version, @mode, @schema) in a single file. All three must be processed in order before schema definitions and data records. The imported type (User from shared.mxs) must resolve and data records must validate in strict mode.",
+    "category": "valid",
+    "mode": "strict",
+    "tags": [
+        "external-schema",
+        "directives",
+        "strict"
+    ]
+}

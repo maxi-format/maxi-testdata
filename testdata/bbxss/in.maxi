@@ -1,0 +1,6 @@
+U:User(id:int|name=""|role)
+###
+U(1|John|admin)
+U(2||user)
+U(3|~|guest)
+U(4|""|mod)

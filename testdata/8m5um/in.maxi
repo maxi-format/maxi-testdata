@@ -1,0 +1,5 @@
+u-d:User-Data(id:int|key|value)
+###
+u-d(1|theme|dark)
+u-d(2|language|en)
+u-d(3|font-size|14px)

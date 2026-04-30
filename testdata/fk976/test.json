@@ -1,7 +1,12 @@
 {
-  "id": "fk976",
-  "title": "Strict Mode Rejects Unknown Type Alias",
-  "description": "In strict mode, a record whose alias has no type definition must throw UnknownTypeError (E003).",
-  "category": "error",
-  "mode": "strict"
+    "id": "fk976",
+    "title": "Strict Mode Rejects Unknown Type Alias",
+    "description": "In strict mode, a record whose alias has no type definition must throw UnknownTypeError (E003).",
+    "category": "error",
+    "mode": "strict",
+    "tags": [
+        "no-schema",
+        "error-code",
+        "strict"
+    ]
 }

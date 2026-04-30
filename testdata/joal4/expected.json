@@ -1,0 +1,98 @@
+{
+    "success": true,
+    "objects": {
+        "Event": {
+            "1": {
+                "id": 1,
+                "homepage": "https://maxi-format.org",
+                "token": "550e8400-e29b-41d4-a716-446655440000",
+                "eventDate": "2024-06-15",
+                "startTime": "09:30:00"
+            },
+            "2": {
+                "id": 2,
+                "homepage": "http://example.com/path?q=1",
+                "token": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+                "eventDate": "2025-12-31",
+                "startTime": "23:59:59"
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "Event",
+            "value": {
+                "id": 1,
+                "homepage": "https://maxi-format.org",
+                "token": "550e8400-e29b-41d4-a716-446655440000",
+                "eventDate": "2024-06-15",
+                "startTime": "09:30:00"
+            }
+        },
+        {
+            "type": "Event",
+            "value": {
+                "id": 2,
+                "homepage": "http://example.com/path?q=1",
+                "token": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+                "eventDate": "2025-12-31",
+                "startTime": "23:59:59"
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1 homepage is https://maxi-format.org",
+            "path": "#/records/0/value/homepage",
+            "expected_value": "https://maxi-format.org"
+        },
+        {
+            "description": "Record 1 token UUID is preserved",
+            "path": "#/records/0/value/token",
+            "expected_value": "550e8400-e29b-41d4-a716-446655440000"
+        },
+        {
+            "description": "Record 1 eventDate is 2024-06-15",
+            "path": "#/records/0/value/eventDate",
+            "expected_value": "2024-06-15"
+        },
+        {
+            "description": "Record 1 startTime is 09:30:00",
+            "path": "#/records/0/value/startTime",
+            "expected_value": "09:30:00"
+        },
+        {
+            "description": "Record 2 eventDate is 2025-12-31",
+            "path": "#/records/1/value/eventDate",
+            "expected_value": "2025-12-31"
+        },
+        {
+            "description": "Record 2 startTime is 23:59:59",
+            "path": "#/records/1/value/startTime",
+            "expected_value": "23:59:59"
+        }
+    ],
+    "object_validations": [],
+    "schema_validations": [
+        {
+            "description": "homepage field annotation is url",
+            "path": "#/schema/types/E/fields/1/annotation",
+            "expected_value": "url"
+        },
+        {
+            "description": "token field annotation is uuid",
+            "path": "#/schema/types/E/fields/2/annotation",
+            "expected_value": "uuid"
+        },
+        {
+            "description": "eventDate field annotation is date",
+            "path": "#/schema/types/E/fields/3/annotation",
+            "expected_value": "date"
+        },
+        {
+            "description": "startTime field annotation is time",
+            "path": "#/schema/types/E/fields/4/annotation",
+            "expected_value": "time"
+        }
+    ]
+}

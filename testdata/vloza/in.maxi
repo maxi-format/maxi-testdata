@@ -1,0 +1,5 @@
+U:User(id:int|name)
+###
+U(1|Julie)
+O:Order(id:int|total)
+O(100|99.99)

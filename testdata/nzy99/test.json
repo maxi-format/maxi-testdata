@@ -1,8 +1,13 @@
 {
-  "id": "nzy99",
-  "title": "Arrays with Constraints (tags + scores)",
-  "description": "Parses string[] and int[] fields; exercises array length constraints and per-item constraints as data examples.",
-  "category": "valid",
-  "mode": "lax"
+    "id": "nzy99",
+    "title": "Arrays with Constraints (tags + scores)",
+    "description": "Parses string[] and int[] fields; exercises array length constraints and per-item constraints as data examples.",
+    "category": "valid",
+    "mode": "lax",
+    "tags": [
+        "inline-schema",
+        "arrays",
+        "constraints",
+        "array-data"
+    ]
 }
-

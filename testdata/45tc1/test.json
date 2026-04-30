@@ -1,7 +1,11 @@
 {
-  "id": "45tc1",
-  "title": "Same-file duplicate type alias errors E002",
-  "description": "Two U: definitions in the same file trigger a DuplicateTypeError.",
-  "category": "error",
-  "mode": "lax"
+    "id": "45tc1",
+    "title": "Same-file duplicate type alias errors E002",
+    "description": "Two U: definitions in the same file trigger a DuplicateTypeError.",
+    "category": "error",
+    "mode": "lax",
+    "tags": [
+        "inline-schema",
+        "error-code"
+    ]
 }

@@ -1,0 +1,44 @@
+{
+    "success": true,
+    "expected_warnings": [
+        {
+            "code": "E016",
+            "description": "duplicate id sku_001 for type ProductVariant"
+        }
+    ],
+    "objects": {},
+    "records": [
+        {
+            "type": "ProductVariant",
+            "value": {
+                "sku": "sku_001",
+                "color": "red"
+            }
+        },
+        {
+            "type": "ProductVariant",
+            "value": {
+                "sku": "sku_001",
+                "color": "blue"
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "first record color is red",
+            "path": "#/records/0/value/color",
+            "expected_value": "red"
+        },
+        {
+            "description": "second record color is blue",
+            "path": "#/records/1/value/color",
+            "expected_value": "blue"
+        },
+        {
+            "description": "both records share sku sku_001",
+            "path": "#/records/1/value/sku",
+            "expected_value": "sku_001"
+        }
+    ],
+    "object_validations": []
+}

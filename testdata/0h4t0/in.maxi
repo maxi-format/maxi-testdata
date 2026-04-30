@@ -1,0 +1,5 @@
+@debug:true
+U:User(id:int|name)
+###
+U(1|Julie)
+U(2|Matt)

@@ -1,0 +1,11 @@
+{
+    "id": "sq2z3",
+    "title": "Comments in .mxs schema file are ignored",
+    "description": "Comment lines (# ...) in an imported .mxs schema file must be silently ignored. The type definition between the comments must be parsed correctly and usable for data records.",
+    "category": "valid",
+    "mode": "lax",
+    "tags": [
+        "external-schema",
+        "comments"
+    ]
+}

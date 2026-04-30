@@ -1,0 +1,16 @@
+{
+    "id": "d2vgi",
+    "title": "Forward reference in strict mode (parser MAY reject)",
+    "description": "In strict mode, an Order record references a User that is defined later in the data section (forward reference). The spec states parsers MAY reject forward references in strict mode. This test is marked parser_dependent: true — parsers that reject forward references must return E009; parsers that support them may return success=true.",
+    "category": "error",
+    "mode": "strict",
+    "parser_dependent": true,
+    "tags": [
+        "inline-schema",
+        "references",
+        "forward-ref",
+        "error-code",
+        "strict",
+        "parser-dependent"
+    ]
+}

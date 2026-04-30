@@ -1,0 +1,4 @@
+@mode:strict
+C:Config(id:int|scores:map<str,int(>=0)>)
+###
+C(1|{math:-5,science:90})

@@ -1,0 +1,93 @@
+{
+    "success": true,
+    "objects": {
+        "User": {
+            "1": {
+                "id": 1,
+                "name": "Julie"
+            },
+            "2": {
+                "id": 2,
+                "name": "Matt"
+            }
+        },
+        "Order": {
+            "100": {
+                "id": 100,
+                "user": 1,
+                "total": 99.99
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "User",
+            "value": {
+                "id": 1,
+                "name": "Julie"
+            }
+        },
+        {
+            "type": "User",
+            "value": {
+                "id": 2,
+                "name": "Matt"
+            }
+        },
+        {
+            "type": "Order",
+            "value": {
+                "id": 100,
+                "user": 1,
+                "total": 99.99
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1 id is 1 (comments before schema did not break parsing)",
+            "path": "#/records/0/value/id",
+            "expected_value": 1
+        },
+        {
+            "description": "Record 1 name is Julie",
+            "path": "#/records/0/value/name",
+            "expected_value": "Julie"
+        },
+        {
+            "description": "Record 3 Order total is 99.99 (second type after inline comment parsed correctly)",
+            "path": "#/records/2/value/total",
+            "expected_value": 99.99
+        },
+        {
+            "description": "Record 3 Order user reference is 1",
+            "path": "#/records/2/value/user",
+            "expected_value": 1
+        }
+    ],
+    "object_validations": [
+        {
+            "description": "User 1 name is Julie",
+            "path": "#/objects/User/1/name",
+            "expected_value": "Julie"
+        },
+        {
+            "description": "Order 100 user reference resolves to Julie via follow_references",
+            "path": "#/objects/Order/100/user/name",
+            "follow_references": true,
+            "expected_value": "Julie"
+        }
+    ],
+    "schema_validations": [
+        {
+            "description": "U type name is User",
+            "path": "#/schema/types/U/name",
+            "expected_value": "User"
+        },
+        {
+            "description": "O type name is Order",
+            "path": "#/schema/types/O/name",
+            "expected_value": "Order"
+        }
+    ]
+}

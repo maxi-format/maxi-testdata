@@ -1,0 +1,10 @@
+E:Event(
+  id:int|
+  homepage:str@url|
+  token:str@uuid|
+  eventDate:str@date|
+  startTime:str@time
+)
+###
+E(1|https://maxi-format.org|550e8400-e29b-41d4-a716-446655440000|2024-06-15|09:30:00)
+E(2|http://example.com/path?q=1|f47ac10b-58cc-4372-a567-0e02b2c3d479|2025-12-31|23:59:59)

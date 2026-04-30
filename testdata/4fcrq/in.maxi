@@ -1,0 +1,4 @@
+@mode:strict
+C:Config(id:int|settings:map(=2))
+###
+C(1|{a:1})

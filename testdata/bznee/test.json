@@ -1,0 +1,12 @@
+{
+    "id": "bznee",
+    "title": "Malformed constraint (missing closing paren) triggers E014",
+    "description": "A type definition where the outer parenthesis of the type definition is never closed (the constraint paren consumes the closing paren) must be rejected with ConstraintSyntaxError E014.",
+    "category": "error",
+    "mode": "lax",
+    "tags": [
+        "inline-schema",
+        "constraints",
+        "error-code"
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "success": true,
+    "objects": {},
+    "records": [
+        {
+            "type": "Dog",
+            "value": {
+                "name": "ab",
+                "type": "mammal",
+                "age": 5,
+                "breed": "labrador"
+            }
+        },
+        {
+            "type": "Dog",
+            "value": {
+                "name": "Rex",
+                "type": "canine",
+                "age": 3,
+                "breed": "poodle"
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1 name is 'ab' (first parent Animal wins; no >=3 constraint from Creature applied)",
+            "path": "#/records/0/value/name",
+            "expected_value": "ab"
+        },
+        {
+            "description": "Record 1 type is mammal (from Animal)",
+            "path": "#/records/0/value/type",
+            "expected_value": "mammal"
+        },
+        {
+            "description": "Record 1 age is 5 (from Creature, unique field)",
+            "path": "#/records/0/value/age",
+            "expected_value": 5
+        },
+        {
+            "description": "Record 1 breed is labrador (own field)",
+            "path": "#/records/0/value/breed",
+            "expected_value": "labrador"
+        },
+        {
+            "description": "Record 2 name is Rex",
+            "path": "#/records/1/value/name",
+            "expected_value": "Rex"
+        },
+        {
+            "description": "Record 2 breed is poodle",
+            "path": "#/records/1/value/breed",
+            "expected_value": "poodle"
+        }
+    ],
+    "object_validations": [],
+    "schema_validations": [
+        {
+            "description": "D field 0 name is 'name' (from Animal, first parent)",
+            "path": "#/schema/types/D/fields/0/name",
+            "expected_value": "name"
+        },
+        {
+            "description": "D field 1 name is 'type' (from Animal)",
+            "path": "#/schema/types/D/fields/1/name",
+            "expected_value": "type"
+        },
+        {
+            "description": "D field 2 name is 'age' (from Creature, unique)",
+            "path": "#/schema/types/D/fields/2/name",
+            "expected_value": "age"
+        },
+        {
+            "description": "D field 3 name is 'breed' (own field)",
+            "path": "#/schema/types/D/fields/3/name",
+            "expected_value": "breed"
+        },
+        {
+            "description": "D has exactly 4 fields (name from Creature deduplicated)",
+            "path": "#/schema/types/D/fields/3/name",
+            "expected_value": "breed"
+        }
+    ]
+}

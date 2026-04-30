@@ -1,0 +1,3 @@
+U:User(id:int|age:int(##invalid))
+###
+U(1|25)

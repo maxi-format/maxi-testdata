@@ -3,5 +3,11 @@
     "title": "Comparison <=N violation (strict)",
     "description": "age:int(>=0,<=120) + record 200 throws E020 ConstraintViolationError in strict mode.",
     "category": "error",
-    "mode": "strict"
+    "mode": "strict",
+    "tags": [
+        "inline-schema",
+        "constraints",
+        "error-code",
+        "strict"
+    ]
 }

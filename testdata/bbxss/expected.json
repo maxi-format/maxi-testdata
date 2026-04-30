@@ -1,0 +1,61 @@
+{
+    "success": true,
+    "objects": {},
+    "records": [
+        {
+            "type": "User",
+            "value": {
+                "id": 1,
+                "name": "John",
+                "role": "admin"
+            }
+        },
+        {
+            "type": "User",
+            "value": {
+                "id": 2,
+                "name": "",
+                "role": "user"
+            }
+        },
+        {
+            "type": "User",
+            "value": {
+                "id": 3,
+                "name": null,
+                "role": "guest"
+            }
+        },
+        {
+            "type": "User",
+            "value": {
+                "id": 4,
+                "name": "",
+                "role": "mod"
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1 name is John (explicit value)",
+            "path": "#/records/0/value/name",
+            "expected_value": "John"
+        },
+        {
+            "description": "Record 2 name is empty string (empty slot || uses default=\"\")",
+            "path": "#/records/1/value/name",
+            "expected_value": ""
+        },
+        {
+            "description": "Record 3 name is null (explicit ~ overrides default)",
+            "path": "#/records/2/value/name",
+            "expected_value": null
+        },
+        {
+            "description": "Record 4 name is empty string (explicit quoted \"\" always yields empty string)",
+            "path": "#/records/3/value/name",
+            "expected_value": ""
+        }
+    ],
+    "object_validations": []
+}

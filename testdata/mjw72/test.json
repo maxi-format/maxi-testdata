@@ -1,0 +1,11 @@
+{
+    "id": "mjw72",
+    "title": "Completely malformed data line triggers E005",
+    "description": "A line in the data section that cannot be parsed as any valid record (no type alias, not a comment, not blank — just broken text like '!!!this is not valid at all') must trigger InvalidSyntaxError E005.",
+    "category": "error",
+    "mode": "lax",
+    "tags": [
+        "inline-schema",
+        "error-code"
+    ]
+}

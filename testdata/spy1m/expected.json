@@ -1,0 +1,66 @@
+{
+    "success": true,
+    "objects": {},
+    "records": [
+        {
+            "type": "User",
+            "value": {
+                "id": 1,
+                "name": "Julie",
+                "active": true,
+                "verified": false
+            }
+        },
+        {
+            "type": "User",
+            "value": {
+                "id": 2,
+                "name": "Matt",
+                "active": false,
+                "verified": true
+            }
+        },
+        {
+            "type": "User",
+            "value": {
+                "id": 3,
+                "name": "Anna",
+                "active": true,
+                "verified": false
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1 active=1 parsed as bool true",
+            "path": "#/records/0/value/active",
+            "expected_value": true
+        },
+        {
+            "description": "Record 1 verified=0 parsed as bool false",
+            "path": "#/records/0/value/verified",
+            "expected_value": false
+        },
+        {
+            "description": "Record 2 active=0 parsed as bool false",
+            "path": "#/records/1/value/active",
+            "expected_value": false
+        },
+        {
+            "description": "Record 2 verified=1 parsed as bool true",
+            "path": "#/records/1/value/verified",
+            "expected_value": true
+        },
+        {
+            "description": "Record 3 active=true parsed as bool true",
+            "path": "#/records/2/value/active",
+            "expected_value": true
+        },
+        {
+            "description": "Record 3 verified=false parsed as bool false",
+            "path": "#/records/2/value/verified",
+            "expected_value": false
+        }
+    ],
+    "object_validations": []
+}

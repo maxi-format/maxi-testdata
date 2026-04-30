@@ -1,7 +1,12 @@
 {
-  "id": "8hq2z",
-  "title": "Basic References vs Inline Objects",
-  "description": "Tests that basic references and inline objects are processed correctly.",
-  "category": "valid",
-  "mode": "lax"
+    "id": "8hq2z",
+    "title": "Basic References vs Inline Objects",
+    "description": "Tests that basic references and inline objects are processed correctly.",
+    "category": "valid",
+    "mode": "lax",
+    "tags": [
+        "inline-schema",
+        "references",
+        "inline-sub-object"
+    ]
 }

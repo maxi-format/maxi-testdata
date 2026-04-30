@@ -1,8 +1,11 @@
 {
-  "id": "u26s7",
-  "title": "Enums (string + int)",
-  "description": "Tests enum parsing for string enums (role, priority) and int enums (status: enum<int>[0,1,2]).",
-  "category": "valid",
-  "mode": "lax"
+    "id": "u26s7",
+    "title": "Enums (string + int)",
+    "description": "Tests enum parsing for string enums (role, priority) and int enums (status: enum<int>[0,1,2]).",
+    "category": "valid",
+    "mode": "lax",
+    "tags": [
+        "inline-schema",
+        "enum"
+    ]
 }
-

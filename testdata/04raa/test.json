@@ -3,5 +3,11 @@
     "title": "Comparison >=N violation (strict)",
     "description": "stock:int(>=0) + record -5 throws E020 ConstraintViolationError in strict mode.",
     "category": "error",
-    "mode": "strict"
+    "mode": "strict",
+    "tags": [
+        "inline-schema",
+        "constraints",
+        "error-code",
+        "strict"
+    ]
 }

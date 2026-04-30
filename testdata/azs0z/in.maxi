@@ -1,0 +1,4 @@
+R:Row(id:int|content|path|delimited)
+###
+R(1|"line1\r\nline2"|"C:\\Users\\Julie"|"col1\tcol2\tcol3")
+R(2|"no\\escape"|"D:\\data\\file.txt"|"a\tb")

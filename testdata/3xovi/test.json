@@ -3,5 +3,10 @@
     "title": "Comparison >=N pass (strict)",
     "description": "stock:int(>=0) + record 10 passes in strict mode.",
     "category": "valid",
-    "mode": "strict"
+    "mode": "strict",
+    "tags": [
+        "inline-schema",
+        "constraints",
+        "strict"
+    ]
 }

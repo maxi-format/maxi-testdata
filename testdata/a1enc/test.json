@@ -3,5 +3,12 @@
     "title": "Duplicate id in strict mode",
     "description": "Two records with the same id field value in strict mode should error with E016.",
     "category": "error",
-    "mode": "strict"
+    "mode": "strict",
+    "tags": [
+        "inline-schema",
+        "references",
+        "duplicate-id",
+        "error-code",
+        "strict"
+    ]
 }

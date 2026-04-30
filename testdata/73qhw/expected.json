@@ -1,0 +1,57 @@
+{
+    "success": true,
+    "objects": {},
+    "records": [
+        {
+            "type": "Config",
+            "value": {
+                "id": 1,
+                "nested": {
+                    "section1": {
+                        "a": "1",
+                        "b": "2"
+                    },
+                    "section2": {
+                        "x": "foo",
+                        "y": "bar"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Config",
+            "value": {
+                "id": 2,
+                "nested": {}
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1 nested.section1.a is '1'",
+            "path": "#/records/0/value/nested/section1/a",
+            "expected_value": "1"
+        },
+        {
+            "description": "Record 1 nested.section1.b is '2'",
+            "path": "#/records/0/value/nested/section1/b",
+            "expected_value": "2"
+        },
+        {
+            "description": "Record 1 nested.section2.x is 'foo'",
+            "path": "#/records/0/value/nested/section2/x",
+            "expected_value": "foo"
+        },
+        {
+            "description": "Record 1 nested.section2.y is 'bar'",
+            "path": "#/records/0/value/nested/section2/y",
+            "expected_value": "bar"
+        },
+        {
+            "description": "Record 2 nested is empty map",
+            "path": "#/records/1/value/nested",
+            "expected_value": {}
+        }
+    ],
+    "object_validations": []
+}

@@ -1,0 +1,76 @@
+{
+    "success": true,
+    "objects": {},
+    "records": [
+        {
+            "type": "Measurement",
+            "value": {
+                "id": 1,
+                "latitude": 51.5074,
+                "longitude": -0.1278
+            }
+        },
+        {
+            "type": "Measurement",
+            "value": {
+                "id": 2,
+                "latitude": -33.8688,
+                "longitude": 151.2093
+            }
+        },
+        {
+            "type": "Measurement",
+            "value": {
+                "id": 3,
+                "latitude": 90.0,
+                "longitude": 180.0
+            }
+        },
+        {
+            "type": "Measurement",
+            "value": {
+                "id": 4,
+                "latitude": -90.0,
+                "longitude": -180.0
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1 latitude is 51.5074 (London)",
+            "path": "#/records/0/value/latitude",
+            "expected_value": 51.5074
+        },
+        {
+            "description": "Record 1 longitude is -0.1278",
+            "path": "#/records/0/value/longitude",
+            "expected_value": -0.1278
+        },
+        {
+            "description": "Record 2 latitude is -33.8688 (Sydney)",
+            "path": "#/records/1/value/latitude",
+            "expected_value": -33.8688
+        },
+        {
+            "description": "Record 2 longitude is 151.2093",
+            "path": "#/records/1/value/longitude",
+            "expected_value": 151.2093
+        },
+        {
+            "description": "Record 3 latitude is 90.0 (boundary value, valid)",
+            "path": "#/records/2/value/latitude",
+            "expected_value": 90.0
+        },
+        {
+            "description": "Record 4 latitude is -90.0 (boundary value, valid)",
+            "path": "#/records/3/value/latitude",
+            "expected_value": -90.0
+        },
+        {
+            "description": "Record 4 longitude is -180.0 (boundary value, valid)",
+            "path": "#/records/3/value/longitude",
+            "expected_value": -180.0
+        }
+    ],
+    "object_validations": []
+}
