@@ -1,12 +1,10 @@
 {
     "id": "4yffw",
-    "title": "Valid enum value passes in strict mode",
-    "description": "A value present in the enum list should parse successfully in strict mode.",
+    "title": "Valid enum value passes",
+    "description": "A value present in the enum list should parse successfully.",
     "category": "valid",
-    "mode": "strict",
     "tags": [
         "inline-schema",
-        "enum",
-        "strict"
+        "enum"
     ]
 }

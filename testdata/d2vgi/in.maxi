@@ -1,4 +1,3 @@
-@mode:strict
 U:User(id:int|name|email)
 O:Order(id:int|user:U|total:decimal)
 ###

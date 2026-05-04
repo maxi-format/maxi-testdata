@@ -1,13 +1,11 @@
 {
     "id": "c0y57",
     "title": "Integer enum validation",
-    "description": "A valid value for enum<int> should parse successfully in strict mode.",
+    "description": "A valid value for enum<int> should parse successfully.",
     "category": "valid",
-    "mode": "strict",
     "tags": [
         "inline-schema",
         "enum",
-        "constraints",
-        "strict"
+        "constraints"
     ]
 }

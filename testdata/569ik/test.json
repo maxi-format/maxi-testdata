@@ -3,7 +3,6 @@
     "title": "Inheritance + Defaults + Explicit Null",
     "description": "Tests single inheritance (Employee< Person, Contractor< Person), default field values, and explicit null (~) overriding defaults.",
     "category": "valid",
-    "mode": "lax",
     "tags": [
         "inline-schema",
         "inheritance",

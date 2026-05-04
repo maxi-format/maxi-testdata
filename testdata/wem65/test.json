@@ -1,12 +1,10 @@
 {
     "id": "wem65",
-    "title": "String length pass (strict)",
-    "description": "name(>=3,<=20) + record 'Julie' passes in strict mode.",
+    "title": "String length pass",
+    "description": "name(>=3,<=20) + record 'Julie' passes.",
     "category": "valid",
-    "mode": "strict",
     "tags": [
         "inline-schema",
-        "constraints",
-        "strict"
+        "constraints"
     ]
 }

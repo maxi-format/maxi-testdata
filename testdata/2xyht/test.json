@@ -3,7 +3,6 @@
     "title": "Str-typed explicit id: valid reference by string key",
     "description": "PV:ProductVariant uses sku(id) as a string identifier; Order records reference ProductVariants by their sku string value.",
     "category": "valid",
-    "mode": "lax",
     "tags": [
         "inline-schema",
         "constraints",

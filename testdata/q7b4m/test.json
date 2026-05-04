@@ -3,7 +3,6 @@
     "title": "User and Order with Inline Schema Test",
     "description": "Tests that users and orders with inline schema definitions are processed correctly.",
     "category": "valid",
-    "mode": "lax",
     "tags": [
         "inline-schema",
         "references"

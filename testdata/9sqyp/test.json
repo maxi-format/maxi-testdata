@@ -1,10 +1,10 @@
 {
     "id": "9sqyp",
-    "title": "Alias starting with underscore (_M) is valid and resolves correctly",
-    "description": "The spec (§3.3.3) explicitly allows aliases to start with underscore (_). An alias like _M for type _Meta must be parsed and resolved correctly, and data records using _M(...) must parse normally.",
-    "category": "valid",
-    "mode": "lax",
+    "title": "Type name starting with underscore (_Meta) is invalid per §3.3.2",
+    "description": "Per §3.3.2, type names must start with a letter [a-zA-Z]. The type name _Meta starts with an underscore, which is invalid. The alias _M is valid per §3.3.3, but the type name itself must be rejected.",
+    "category": "error",
     "tags": [
-        "inline-schema"
+        "inline-schema",
+        "error-code"
     ]
 }

@@ -3,7 +3,6 @@
     "title": "Maps + Quoted Strings (multiline record)",
     "description": "Parses a multiline Order record with a map<str,int> items field and quoted string notes containing punctuation.",
     "category": "valid",
-    "mode": "lax",
     "tags": [
         "inline-schema",
         "maps",

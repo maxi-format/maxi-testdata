@@ -3,7 +3,6 @@
     "title": "Null reference value is not validated",
     "description": "Order has a null (~) user reference; this does not trigger an unresolved reference error.",
     "category": "valid",
-    "mode": "lax",
     "tags": [
         "inline-schema",
         "references",

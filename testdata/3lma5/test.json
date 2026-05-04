@@ -1,14 +1,12 @@
 {
     "id": "3lma5",
-    "title": "Map =N constraint: exact entry count passes (strict)",
-    "description": "A map field with constraint (=2) must accept a map with exactly two entries in strict mode.",
+    "title": "Map =N constraint: exact entry count passes",
+    "description": "A map field with constraint (=2) must accept a map with exactly two entries.",
     "category": "valid",
-    "mode": "strict",
     "tags": [
         "inline-schema",
         "maps",
         "constraints",
-        "map-data",
-        "strict"
+        "map-data"
     ]
 }

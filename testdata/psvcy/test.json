@@ -1,11 +1,9 @@
 {
     "id": "psvcy",
-    "title": "Explicit @mode:lax directive behaves identically to default lax mode",
-    "description": "A file with an explicit @mode:lax directive must behave identically to a file with no mode directive (lax is the default). Omitted trailing fields are filled with null without error, and no extra warnings are emitted solely due to the directive.",
+    "title": "Omitted trailing fields are filled with null by default",
+    "description": "When a record omits trailing fields, the parser fills them with null by default (allowMissingFields defaults to 'null'). No warnings or errors are emitted.",
     "category": "valid",
-    "mode": "lax",
     "tags": [
-        "inline-schema",
-        "directives"
+        "inline-schema"
     ]
 }

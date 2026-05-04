@@ -3,7 +3,6 @@
     "title": "bool fields accept 1 and 0 integer literals in data records",
     "description": "The spec states that bool fields accept true/false (lowercase) OR 1/0 integer literals, with 1/0 preferred for token efficiency. This test exercises both forms in the same file to confirm they are treated as equivalent boolean values.",
     "category": "valid",
-    "mode": "lax",
     "tags": [
         "inline-schema",
         "bool-int"

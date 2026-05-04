@@ -1,9 +1,8 @@
 {
     "id": "xnull",
-    "title": "Explicit null (~) on required field with default emits warning (lax)",
-    "description": "Using ~ to explicitly null a required field that has a default value should emit a MissingRequiredFieldError warning in lax mode and result in null (not the default).",
+    "title": "Explicit null (~) on required field with default emits warning",
+    "description": "Using ~ to explicitly null a required field that has a default value should emit a MissingRequiredFieldError warning with default parser settings and result in null (not the default).",
     "category": "warning",
-    "mode": "lax",
     "tags": [
         "inline-schema",
         "required",

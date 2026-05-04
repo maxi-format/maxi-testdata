@@ -3,7 +3,6 @@
     "title": "Defaults + Explicit Null (~) + Required After Defaults",
     "description": "Tests schema defaults, explicit null (~) overriding defaults, and a required field (status=active(!)) satisfied by default but overridable to null.",
     "category": "valid",
-    "mode": "lax",
     "tags": [
         "inline-schema",
         "defaults",

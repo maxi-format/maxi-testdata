@@ -1,14 +1,15 @@
 {
     "id": "682bb",
-    "title": "Pattern match violation (strict)",
-    "description": "username(pattern:^[a-z0-9_]+$) + 'Hello World!' throws E020 in strict mode.",
+    "title": "Pattern match violation",
+    "description": "username(pattern:^[a-z0-9_]+$) + 'Hello World!' throws E020.",
     "category": "error",
-    "mode": "strict",
     "tags": [
         "inline-schema",
         "constraints",
         "annotations",
-        "error-code",
-        "strict"
-    ]
+        "error-code"
+    ],
+    "parserOptions": {
+        "allowConstraintViolations": "error"
+    }
 }

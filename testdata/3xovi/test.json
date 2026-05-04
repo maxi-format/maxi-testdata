@@ -1,12 +1,10 @@
 {
     "id": "3xovi",
-    "title": "Comparison >=N pass (strict)",
-    "description": "stock:int(>=0) + record 10 passes in strict mode.",
+    "title": "Comparison >=N pass",
+    "description": "stock:int(>=0) + record 10 passes.",
     "category": "valid",
-    "mode": "strict",
     "tags": [
         "inline-schema",
-        "constraints",
-        "strict"
+        "constraints"
     ]
 }

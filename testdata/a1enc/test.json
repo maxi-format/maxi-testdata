@@ -1,14 +1,15 @@
 {
     "id": "a1enc",
-    "title": "Duplicate id in strict mode",
-    "description": "Two records with the same id field value in strict mode should error with E016.",
+    "title": "Duplicate id",
+    "description": "Two records with the same id field value should error with E016.",
     "category": "error",
-    "mode": "strict",
     "tags": [
         "inline-schema",
         "references",
         "duplicate-id",
-        "error-code",
-        "strict"
-    ]
+        "error-code"
+    ],
+    "parserOptions": {
+        "allowConstraintViolations": "error"
+    }
 }

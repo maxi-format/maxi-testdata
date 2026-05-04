@@ -1,9 +1,8 @@
 {
     "id": "jn71j",
-    "title": "Str-typed explicit id: duplicate emits warning (lax)",
-    "description": "Two ProductVariant records with the same sku(id) string value in lax mode emit a DuplicateIdentifierError warning; both records are still parsed.",
+    "title": "Str-typed explicit id: duplicate emits warning",
+    "description": "Two ProductVariant records with the same sku(id) string value with default parser settings emit a DuplicateIdentifierError warning; both records are still parsed.",
     "category": "valid",
-    "mode": "lax",
     "tags": [
         "inline-schema",
         "constraints",

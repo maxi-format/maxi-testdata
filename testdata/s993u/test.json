@@ -1,12 +1,13 @@
 {
     "id": "s993u",
-    "title": "Strict Mode Rejects Non-Numeric String for Int Field",
-    "description": "In strict mode, providing a non-numeric string value for an int field must throw TypeMismatchError (E007).",
+    "title": "Rejects Non-Numeric String for Int Field",
+    "description": "when allowTypeCoercion is \"error\", providing a non-numeric string value for an int field must throw TypeMismatchError (E007).",
     "category": "error",
-    "mode": "strict",
     "tags": [
         "inline-schema",
-        "error-code",
-        "strict"
-    ]
+        "error-code"
+    ],
+    "parserOptions": {
+        "allowTypeCoercion": "error"
+    }
 }

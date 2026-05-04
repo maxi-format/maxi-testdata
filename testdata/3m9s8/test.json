@@ -3,7 +3,6 @@
     "title": "Remote @schema URL unreachable triggers E020",
     "description": "A @schema directive pointing to an HTTPS URL that cannot be fetched must trigger SchemaLoadError E020.",
     "category": "error",
-    "mode": "lax",
     "tags": [
         "url-schema",
         "directives",

@@ -3,7 +3,6 @@
     "title": "Data-only file with @schema import: no ### separator needed",
     "description": "When a .maxi file contains only a @schema directive and data records (no inline type definitions), the ### separator is optional. The parser must resolve types from the imported schema and parse records without errors or warnings.",
     "category": "valid",
-    "mode": "lax",
     "tags": [
         "external-schema",
         "no-schema"

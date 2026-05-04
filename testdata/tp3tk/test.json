@@ -3,7 +3,6 @@
     "title": "Alias-only type definition (no :TypeName) parses correctly",
     "description": "Type definitions using alias-only syntax (U(id:int|name|email) without :TypeName) must be parsed and resolved correctly. The type is identified solely by its alias. Data records referencing the alias must parse normally.",
     "category": "valid",
-    "mode": "lax",
     "tags": [
         "inline-schema",
         "alias-only",

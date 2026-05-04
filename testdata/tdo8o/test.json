@@ -3,7 +3,6 @@
     "title": "Typed Map (map<str,int>)",
     "description": "A map<str,int> field stores the full typeExpr and parses map values as integers.",
     "category": "valid",
-    "mode": "lax",
     "tags": [
         "inline-schema",
         "maps",

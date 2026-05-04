@@ -6,7 +6,7 @@
             "type": "U",
             "value": {
                 "id": 1,
-                "status": "1"
+                "status": 1
             }
         }
     ],
@@ -17,9 +17,9 @@
             "expected_value": 1
         },
         {
-            "description": "status field is string '1'",
+            "description": "status field is int 1",
             "path": "#/records/0/value/status",
-            "expected_value": "1"
+            "expected_value": 1
         }
     ],
     "object_validations": []

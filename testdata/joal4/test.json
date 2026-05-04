@@ -3,7 +3,6 @@
     "title": "str@url, str@uuid, str@date, str@time annotations in data records",
     "description": "Fields annotated with str@url, str@uuid, str@date, and str@time must be parsed correctly. Values are stored as strings; the annotation is metadata. Schema validations confirm each annotation is registered correctly.",
     "category": "valid",
-    "mode": "lax",
     "tags": [
         "inline-schema",
         "annotations"

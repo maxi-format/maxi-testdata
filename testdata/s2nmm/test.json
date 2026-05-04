@@ -1,9 +1,8 @@
 {
     "id": "s2nmm",
-    "title": "@base64 annotation on str field → E012",
+    "title": "@base64 annotation on str field \u00e2\u2020\u2019 E012",
     "description": "Using @base64 annotation on a str-typed field is invalid and must produce E012.",
     "category": "error",
-    "mode": "lax",
     "tags": [
         "inline-schema",
         "bytes",

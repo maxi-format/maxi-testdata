@@ -1,4 +1,3 @@
-@mode:strict
 M:Measurement(id:int|value:float)
 ###
 M(1|not-a-float)

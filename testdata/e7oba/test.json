@@ -3,7 +3,6 @@
     "title": "Inheritance Merges Fields in Order",
     "description": "A child type inheriting from a parent gets parent fields prepended before its own; the merged field order is id, name, email.",
     "category": "valid",
-    "mode": "lax",
     "tags": [
         "inline-schema",
         "inheritance"

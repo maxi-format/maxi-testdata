@@ -3,7 +3,6 @@
     "title": "Enum with quoted string values (spaces in enum members) parses correctly",
     "description": "Enum definitions may use quoted strings as member values when the values contain spaces or special characters. Data records providing matching values (unquoted in the data) must be accepted.",
     "category": "valid",
-    "mode": "lax",
     "tags": [
         "inline-schema",
         "enum",

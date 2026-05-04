@@ -1,15 +1,16 @@
 {
     "id": "xnuls",
-    "title": "Explicit null (~) on required field with default throws error (strict)",
-    "description": "Using ~ to explicitly null a required field that has a default value must throw a MissingRequiredFieldError in strict mode.",
+    "title": "Explicit null (~) on required field with default throws error (allowMissingFields: \"error\")",
+    "description": "Using ~ to explicitly null a required field that has a default value must throw a MissingRequiredFieldError when allowMissingFields is \"error\".",
     "category": "error",
-    "mode": "strict",
     "tags": [
         "inline-schema",
         "required",
         "defaults",
         "null-values",
-        "error-code",
-        "strict"
-    ]
+        "error-code"
+    ],
+    "parserOptions": {
+        "allowMissingFields": "error"
+    }
 }

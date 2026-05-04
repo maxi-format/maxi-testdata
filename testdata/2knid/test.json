@@ -3,7 +3,6 @@
     "title": "Untyped Map Field",
     "description": "An untyped map field parses map values as strings.",
     "category": "valid",
-    "mode": "lax",
     "tags": [
         "inline-schema",
         "maps",

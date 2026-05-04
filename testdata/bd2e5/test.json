@@ -3,7 +3,6 @@
     "title": "Multi-line data records",
     "description": "Data records with field values split across multiple lines inside parentheses must be parsed identically to their single-line equivalents.",
     "category": "valid",
-    "mode": "lax",
     "tags": [
         "inline-schema",
         "multi-line-record",

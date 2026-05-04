@@ -1,9 +1,8 @@
 {
     "id": "8m5um",
     "title": "Type name and alias with hyphens (u-d:User-Data) parse correctly",
-    "description": "The spec (§3.3.2, §3.3.3) allows hyphens in both type names and aliases. An alias 'u-d' for type 'User-Data' must be resolved correctly, and data records using u-d(...) must parse normally.",
+    "description": "The spec (\u00c2\u00a73.3.2, \u00c2\u00a73.3.3) allows hyphens in both type names and aliases. An alias 'u-d' for type 'User-Data' must be resolved correctly, and data records using u-d(...) must parse normally.",
     "category": "valid",
-    "mode": "lax",
     "tags": [
         "inline-schema"
     ]

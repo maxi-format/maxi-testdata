@@ -3,7 +3,6 @@
     "title": "bytes@csv unknown annotation triggers E017",
     "description": "Only @base64 and @hex are valid annotations for bytes fields. An unrecognised annotation like @csv must trigger UnsupportedBinaryFormatError E017 during schema parsing.",
     "category": "error",
-    "mode": "lax",
     "tags": [
         "inline-schema",
         "bytes",

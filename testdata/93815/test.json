@@ -3,7 +3,6 @@
     "title": "@timestamp annotation on int field is valid",
     "description": "@timestamp is a valid annotation for an int-typed field; record value is preserved as an integer.",
     "category": "valid",
-    "mode": "lax",
     "tags": [
         "inline-schema",
         "annotations"

@@ -3,7 +3,6 @@
     "title": "mime:[image/png,image/jpg] list constraint is parsed and stored correctly",
     "description": "A bytes field with mime:[image/png,image/jpg] constraint must have the MIME list parsed and stored in the schema. This test validates the constraint structure; runtime MIME enforcement depends on whether the parser has MIME-type detection capability.",
     "category": "valid",
-    "mode": "lax",
     "tags": [
         "inline-schema",
         "bytes",

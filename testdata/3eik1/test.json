@@ -3,7 +3,6 @@
     "title": "Cross-file duplicate in imported file errors E002",
     "description": "Two U: definitions inside an imported .mxs file trigger a DuplicateTypeError.",
     "category": "error",
-    "mode": "lax",
     "tags": [
         "external-schema",
         "error-code"

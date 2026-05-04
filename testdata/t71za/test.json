@@ -3,7 +3,6 @@
     "title": "@timestamp annotation on str field → E012",
     "description": "Using @timestamp annotation on a str-typed field is invalid and must produce E012.",
     "category": "error",
-    "mode": "lax",
     "tags": [
         "inline-schema",
         "annotations",

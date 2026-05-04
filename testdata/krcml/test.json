@@ -1,13 +1,11 @@
 {
     "id": "krcml",
     "title": "Required field with default: omitted field uses default value",
-    "description": "A field marked (!) with a default value must use the default when the field is omitted from a record. Omission is not an error; the default satisfies the required constraint. Strict mode is used to confirm no error is raised.",
+    "description": "A field marked (!) with a default value must use the default when the field is omitted from a record. Omission is not an error; the default satisfies the required constraint. is used to confirm no error is raised.",
     "category": "valid",
-    "mode": "strict",
     "tags": [
         "inline-schema",
         "required",
-        "defaults",
-        "strict"
+        "defaults"
     ]
 }

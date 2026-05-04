@@ -1,9 +1,8 @@
 {
     "id": "f539r",
-    "title": "Lax mode warns on non-numeric value for int field",
-    "description": "In lax mode a non-numeric string passed to an int field emits a TypeMismatchError warning; value is kept as-is.",
+    "title": "Default settings: warns on non-numeric value for int field",
+    "description": "with default parser settings a non-numeric string passed to an int field emits a TypeMismatchError warning; value is kept as-is.",
     "category": "valid",
-    "mode": "lax",
     "tags": [
         "inline-schema",
         "warning"

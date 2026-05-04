@@ -1,9 +1,8 @@
 {
     "id": "sfsuv",
-    "title": "Duplicate id in lax mode emits warning",
-    "description": "In lax mode two records with the same id emit a DuplicateIdentifierError warning; both records are still parsed.",
+    "title": "Duplicate id with default parser settings emits warning",
+    "description": "with default parser settings two records with the same id emit a DuplicateIdentifierError warning; both records are still parsed.",
     "category": "valid",
-    "mode": "lax",
     "tags": [
         "inline-schema",
         "references",

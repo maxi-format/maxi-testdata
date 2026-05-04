@@ -3,7 +3,6 @@
     "title": "Imported schema inheritance resolves within import file",
     "description": "products.mxs defines TS and P:Product<TS>; users.mxs redefines TS; P should use the TS from products.mxs.",
     "category": "valid",
-    "mode": "lax",
     "tags": [
         "external-schema",
         "inheritance"

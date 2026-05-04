@@ -3,7 +3,6 @@
     "title": "Decimal Precision 5.2",
     "description": "decimal(5.2) stores intMax=5 and fracMax=2 in the constraint.",
     "category": "valid",
-    "mode": "lax",
     "tags": [
         "inline-schema",
         "constraints"

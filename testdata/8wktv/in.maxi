@@ -1,4 +1,3 @@
-@mode:strict
 F:File(id:int|name(!)|data:bytes(mime:image/*))
 ###
 F(1|photo.png|iVBORw0KGgoAAAANSUhEUg==)

@@ -3,7 +3,6 @@
     "title": "Comment lines in .maxi schema section are ignored",
     "description": "Comment lines (# ...) in the schema section of a .maxi file (before ###) must be silently ignored. Multiple comments before, between, and after type definitions must all be handled correctly.",
     "category": "valid",
-    "mode": "lax",
     "tags": [
         "inline-schema",
         "comments"

@@ -1,4 +1,3 @@
-@mode:strict
 U:User(id:int|role:enum[admin,user,guest])
 ###
 U(1|admin)

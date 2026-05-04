@@ -3,7 +3,6 @@
     "title": "Whitespace around pipe separators is trimmed",
     "description": "Values with spaces/tabs around the | field delimiter should be trimmed before parsing, e.g. ' 42 | hello ' yields int 42 and str 'hello'.",
     "category": "valid",
-    "mode": "lax",
     "tags": [
         "inline-schema",
         "quoted-strings"

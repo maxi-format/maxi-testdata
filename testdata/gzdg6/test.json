@@ -1,9 +1,8 @@
 {
     "id": "gzdg6",
-    "title": "Forward references resolved in lax mode",
-    "description": "Order appears before User in records; forward reference resolves successfully in lax mode.",
+    "title": "Forward references resolved with default parser settings",
+    "description": "Order appears before User in records; forward reference resolves successfully with default parser settings.",
     "category": "valid",
-    "mode": "lax",
     "tags": [
         "inline-schema",
         "references",

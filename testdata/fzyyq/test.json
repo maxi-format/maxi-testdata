@@ -3,7 +3,6 @@
     "title": "Bytes: raw vs base64 vs hex (+ constraints)",
     "description": "Parses bytes fields with encoding annotations (raw, @base64, @hex) and validates basic size/length constraints and mime tags.",
     "category": "valid",
-    "mode": "lax",
     "tags": [
         "inline-schema",
         "bytes",

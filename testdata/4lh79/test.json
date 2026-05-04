@@ -3,7 +3,6 @@
     "title": "Maps (typed + untyped)",
     "description": "Parses map fields including typed map<str,int> with multiple entries and an empty untyped metadata map.",
     "category": "valid",
-    "mode": "lax",
     "tags": [
         "inline-schema",
         "maps",

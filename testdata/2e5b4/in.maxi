@@ -1,4 +1,3 @@
-@mode:strict
 U:User(id:int|username(pattern:^[a-z0-9_]+$))
 ###
 U(1|julie_99)

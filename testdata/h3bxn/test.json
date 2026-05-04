@@ -3,7 +3,6 @@
     "title": "Array of object type with inline object elements",
     "description": "An I[] field (array of Item objects) must correctly parse inline object literals as array elements. Each element (e.g. (1|Widget|9.99)) is an inline Item definition; all are stored in the Item registry and the array holds their IDs.",
     "category": "valid",
-    "mode": "lax",
     "tags": [
         "inline-schema",
         "arrays",

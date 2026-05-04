@@ -3,7 +3,6 @@
     "title": "Field names with underscores (snake_case) parse correctly",
     "description": "Field names follow identifier rules that allow underscores. snake_case names like order_id, created_at, total_price, and is_paid must be parsed and accessed correctly in both schema resolution and data records.",
     "category": "valid",
-    "mode": "lax",
     "tags": [
         "inline-schema",
         "annotations"

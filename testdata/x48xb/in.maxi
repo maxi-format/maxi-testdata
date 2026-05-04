@@ -1,4 +1,3 @@
-@mode:strict
 PV:ProductVariant(sku(id)|color)
 ###
 PV(sku_001|red)

@@ -1,4 +1,3 @@
-@mode:lax
 U:User(id:int|name|role)
 ###
 U(1|Julie|admin)

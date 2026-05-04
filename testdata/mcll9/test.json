@@ -1,14 +1,15 @@
 {
     "id": "mcll9",
     "title": "Value valid for parent constraint but invalid for child override triggers E008",
-    "description": "User<Person> redefines age with (>=18,<=65), replacing the parent's (>=0,<=120). A value of 10 is valid for the parent's constraint but fails the child's >=18 constraint. Strict mode must trigger E008.",
+    "description": "User<Person> redefines age with (>=18,<=65), replacing the parent's (>=0,<=120). A value of 10 is valid for the parent's constraint but fails the child's >=18 constraint. must trigger E008.",
     "category": "error",
-    "mode": "strict",
     "tags": [
         "inline-schema",
         "inheritance",
         "constraints",
-        "error-code",
-        "strict"
-    ]
+        "error-code"
+    ],
+    "parserOptions": {
+        "allowConstraintViolations": "error"
+    }
 }

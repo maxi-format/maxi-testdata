@@ -1,13 +1,14 @@
 {
     "id": "04raa",
-    "title": "Comparison >=N violation (strict)",
-    "description": "stock:int(>=0) + record -5 throws E020 ConstraintViolationError in strict mode.",
+    "title": "Comparison >=N violation",
+    "description": "stock:int(>=0) + record -5 throws E020 ConstraintViolationError.",
     "category": "error",
-    "mode": "strict",
     "tags": [
         "inline-schema",
         "constraints",
-        "error-code",
-        "strict"
-    ]
+        "error-code"
+    ],
+    "parserOptions": {
+        "allowConstraintViolations": "error"
+    }
 }

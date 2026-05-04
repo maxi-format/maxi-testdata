@@ -1,4 +1,3 @@
-@mode:strict
 T:Ticket(id:int|status:enum["pending review","in progress","done"])
 ###
 T(1|cancelled)

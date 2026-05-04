@@ -1,4 +1,3 @@
-@mode:strict
 U:User(id:int|active:bool)
 ###
 U(1|maybe)

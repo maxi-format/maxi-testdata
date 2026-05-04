@@ -3,7 +3,6 @@
     "title": "map<map> (map-of-maps) data record parses correctly",
     "description": "A field typed map<map> (shorthand for map<str,map<str,str>>) must correctly parse nested map literals in data records. The outer map has string keys; each value is itself a string-to-string map.",
     "category": "valid",
-    "mode": "lax",
     "tags": [
         "inline-schema",
         "maps",

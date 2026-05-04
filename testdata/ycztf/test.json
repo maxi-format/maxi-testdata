@@ -3,7 +3,6 @@
     "title": "Cross-file type override (last wins)",
     "description": "Local U:User definition overrides the imported one from base.mxs; the local definition with 3 fields wins.",
     "category": "valid",
-    "mode": "lax",
     "tags": [
         "external-schema",
         "schema-override"

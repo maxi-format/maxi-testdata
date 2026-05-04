@@ -1,9 +1,8 @@
 {
     "id": "kdk0x",
-    "title": "Lax mode: extra trailing fields silently discarded",
-    "description": "In lax mode, a record that supplies more field values than the schema defines must be accepted. Extra values beyond the schema field count are silently discarded. No error and no warning are required for this case.",
+    "title": "Default settings: extra trailing fields silently discarded",
+    "description": "with default parser settings, a record that supplies more field values than the schema defines must be accepted. Extra values beyond the schema field count are silently discarded. No error and no warning are required for this case.",
     "category": "valid",
-    "mode": "lax",
     "tags": [
         "inline-schema"
     ]

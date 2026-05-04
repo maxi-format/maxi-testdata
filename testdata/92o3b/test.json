@@ -3,7 +3,6 @@
     "title": "Schema import override: second @schema import wins",
     "description": "When two @schema imports define the same alias U, the second import overrides the first in the consuming file's scope. Records must be parsed using the second definition (with 'role' field, not 'source').",
     "category": "valid",
-    "mode": "lax",
     "tags": [
         "external-schema",
         "multi-schema",

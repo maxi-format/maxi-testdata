@@ -3,7 +3,6 @@
     "title": "Empty-string default: || yields empty string, ~ yields null, \"\" explicit empty string",
     "description": "A field with default=\"\" behaves differently from a field with no default. Empty slot (||) applies the default empty string; explicit null (~) overrides the default to null; explicit quoted empty string (\"\") always yields empty string even without a default.",
     "category": "valid",
-    "mode": "lax",
     "tags": [
         "inline-schema",
         "defaults",

@@ -3,7 +3,6 @@
     "title": "Array of object type with reference ID elements",
     "description": "An I[] field (array of Item objects) must correctly parse integer reference IDs as array elements when the items are defined as standalone records. The array holds the IDs and the objects are resolvable from the registry.",
     "category": "valid",
-    "mode": "lax",
     "tags": [
         "inline-schema",
         "arrays",

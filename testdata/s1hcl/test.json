@@ -1,13 +1,14 @@
 {
     "id": "s1hcl",
-    "title": "Comparison <=N violation (strict)",
-    "description": "age:int(>=0,<=120) + record 200 throws E020 ConstraintViolationError in strict mode.",
+    "title": "Comparison <=N violation",
+    "description": "age:int(>=0,<=120) + record 200 throws E020 ConstraintViolationError.",
     "category": "error",
-    "mode": "strict",
     "tags": [
         "inline-schema",
         "constraints",
-        "error-code",
-        "strict"
-    ]
+        "error-code"
+    ],
+    "parserOptions": {
+        "allowConstraintViolations": "error"
+    }
 }
