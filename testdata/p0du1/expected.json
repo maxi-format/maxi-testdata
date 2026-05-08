@@ -5,9 +5,9 @@
         {
             "type": "Product",
             "value": {
-                "created_at": 1,
-                "id": "Widget",
-                "name": "2024-01-01"
+                "created_at": "2024-01-01",
+                "id": 1,
+                "name": "Widget"
             }
         }
     ],
@@ -18,19 +18,19 @@
             "expected_value": "Product"
         },
         {
-            "description": "created_at is 1 (first positional field)",
+            "description": "created_at is 2024-01-01 (first positional field)",
             "path": "#/records/0/value/created_at",
+            "expected_value": "2024-01-01"
+        },
+        {
+            "description": "id is 1 (second positional field)",
+            "path": "#/records/0/value/id",
             "expected_value": 1
         },
         {
-            "description": "id is Widget (second positional field)",
-            "path": "#/records/0/value/id",
-            "expected_value": "Widget"
-        },
-        {
-            "description": "name is 2024-01-01 (third positional)",
+            "description": "name is Widget (third positional)",
             "path": "#/records/0/value/name",
-            "expected_value": "2024-01-01"
+            "expected_value": "Widget"
         }
     ],
     "object_validations": [],

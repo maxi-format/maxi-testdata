@@ -4,5 +4,5 @@ E:Employee<P>(status=employed|employeeId:int|department)
 C:Contractor<P>(status=contract|contractId|endDate:str@date)
 ###
 P(1|John|~|person)
-E(2|Julie|~|1001|Engineering)
-C(3|Matt|~|C-2024-001|2024-12-31)
+E(2|Julie|~|employee|1001|Engineering)
+C(3|Matt|~|contractor|C-2024-001|2024-12-31)
