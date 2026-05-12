@@ -1,0 +1,15 @@
+{
+    "id": "vlddm",
+    "title": "Enum value aliases — duplicate alias (schema error)",
+    "description": "Two enum entries share the same alias. The parser must reject the schema with E501.",
+    "category": "error",
+    "tags": [
+        "inline-schema",
+        "enum",
+        "enum-alias",
+        "error-code"
+    ],
+    "parserOptions": {
+        "allowConstraintViolations": "error"
+    }
+}

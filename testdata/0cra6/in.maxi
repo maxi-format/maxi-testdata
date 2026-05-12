@@ -1,0 +1,6 @@
+D:Device(id:int|name|state:enum<int>[O:900,I:910,R:1000,E:999])
+###
+D(1|sensor-A|R)
+D(2|sensor-B|E)
+D(3|sensor-C|O)
+D(4|sensor-D|I)

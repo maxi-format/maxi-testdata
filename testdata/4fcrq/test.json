@@ -1,7 +1,7 @@
 {
     "id": "4fcrq",
-    "title": "Map =N constraint: wrong entry count triggers E008",
-    "description": "A map field with constraint (=2) must reject a map with only one entry, triggering ConstraintViolationError E008.",
+    "title": "Map =N constraint: wrong entry count triggers E303",
+    "description": "A map field with constraint (=2) must reject a map with only one entry, triggering ConstraintViolationError E303.",
     "category": "error",
     "tags": [
         "inline-schema",

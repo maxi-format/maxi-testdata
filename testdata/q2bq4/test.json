@@ -1,7 +1,7 @@
 {
     "id": "q2bq4",
-    "title": "@email annotation on int field \u00e2\u2020\u2019 E012",
-    "description": "Using @email annotation on an int-typed field is invalid and must produce E012.",
+    "title": "@email annotation on int field \u00e2\u2020\u2019 E302",
+    "description": "Using @email annotation on an int-typed field is invalid and must produce E302.",
     "category": "error",
     "tags": [
         "inline-schema",

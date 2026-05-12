@@ -1,7 +1,7 @@
 {
     "id": "fk976",
     "title": "Rejects Unknown Type Alias",
-    "description": "In strict validation, a record whose alias has no type definition must throw UnknownTypeError (E003).",
+    "description": "In strict validation, a record whose alias has no type definition must throw UnknownTypeError (E201).",
     "category": "error",
     "tags": [
         "no-schema",

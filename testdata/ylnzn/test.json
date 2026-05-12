@@ -1,7 +1,7 @@
 {
     "id": "ylnzn",
     "title": "Invalid enum value",
-    "description": "A value not in the enum list should error with E020.",
+    "description": "A value not in the enum list should error with E602.",
     "category": "error",
     "tags": [
         "inline-schema",

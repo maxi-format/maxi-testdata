@@ -1,0 +1,5 @@
+U:User(id:int|name|role:enum[admin,user,guest]|status:enum<int>[0,1,2])
+###
+U(1|Alice|admin|1)
+U(2|Bob|user|0)
+U(3|Carol|guest|2)

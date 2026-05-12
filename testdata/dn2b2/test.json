@@ -1,7 +1,7 @@
 {
     "id": "dn2b2",
     "title": "Explicit Null on Required Field Errors when allowMissingFields is \"error\"",
-    "description": "Setting a required field to null (~) when allowMissingFields is \"error\" must throw MissingRequiredFieldError (E019).",
+    "description": "Setting a required field to null (~) when allowMissingFields is \"error\" must throw MissingRequiredFieldError (E603).",
     "category": "error",
     "tags": [
         "inline-schema",

@@ -1,6 +1,6 @@
 {
     "id": "3eik1",
-    "title": "Cross-file duplicate in imported file errors E002",
+    "title": "Cross-file duplicate in imported file errors E102",
     "description": "Two U: definitions inside an imported .mxs file trigger a DuplicateTypeError.",
     "category": "error",
     "tags": [

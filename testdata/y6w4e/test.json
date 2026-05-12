@@ -1,0 +1,11 @@
+{
+    "id": "y6w4e",
+    "title": "Enum value aliases — basic",
+    "description": "All enum values have aliases. Parser must expand the alias to the full value when hydrating records. Wire tokens 'a', 'e', 'v' must become 'admin', 'editor', 'viewer'.",
+    "category": "valid",
+    "tags": [
+        "inline-schema",
+        "enum",
+        "enum-alias"
+    ]
+}

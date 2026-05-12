@@ -2,7 +2,7 @@
     "success": true,
     "expected_warnings": [
         {
-            "code": "E007",
+            "code": "E402",
             "description": "non-numeric string 'hello' passed to int field id"
         }
     ],

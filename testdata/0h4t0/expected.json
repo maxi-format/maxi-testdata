@@ -2,7 +2,7 @@
     "success": true,
     "expected_warnings": [
         {
-            "code": "E004",
+            "code": "E103",
             "description": "Unknown directive @debug"
         }
     ],

@@ -1,8 +1,8 @@
 {
     "success": false,
     "error_code_one_of": [
-        "E006",
-        "E011"
+        "E401",
+        "E403"
     ],
     "record_validations": [],
     "object_validations": []

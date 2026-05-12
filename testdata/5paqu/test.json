@@ -1,7 +1,7 @@
 {
     "id": "5paqu",
-    "title": "Explicit (id) field duplicate triggers E016, not the id field",
-    "description": "Two OrderItem records with distinct 'id' values but the same 'order_item_id' value (the explicit identifier) must trigger DuplicateIdentifierError E016.",
+    "title": "Explicit (id) field duplicate triggers E205, not the id field",
+    "description": "Two OrderItem records with distinct 'id' values but the same 'order_item_id' value (the explicit identifier) must trigger DuplicateIdentifierError E205.",
     "category": "error",
     "tags": [
         "inline-schema",

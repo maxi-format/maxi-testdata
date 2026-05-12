@@ -1,7 +1,7 @@
 {
     "id": "682bb",
     "title": "Pattern match violation",
-    "description": "username(pattern:^[a-z0-9_]+$) + 'Hello World!' throws E020.",
+    "description": "username(pattern:^[a-z0-9_]+$) + 'Hello World!' throws E602.",
     "category": "error",
     "tags": [
         "inline-schema",

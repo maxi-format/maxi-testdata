@@ -1,7 +1,7 @@
 {
     "id": "gllqk",
-    "title": "Unresolved reference when allowForwardReferences is false â†’ E009",
-    "description": "Order references user id 999 which does not exist; allowForwardReferences: false throws E009 UnresolvedReferenceError.",
+    "title": "Unresolved reference when allowForwardReferences is false â†’ E204",
+    "description": "Order references user id 999 which does not exist; allowForwardReferences: false throws E204 UnresolvedReferenceError.",
     "category": "error",
     "tags": [
         "inline-schema",

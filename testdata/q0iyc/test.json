@@ -1,0 +1,15 @@
+{
+    "id": "q0iyc",
+    "title": "Enum value aliases — invalid wire token",
+    "description": "Data record contains a token that is neither a valid alias nor a valid full value for the enum. Parser must reject with E303.",
+    "category": "error",
+    "tags": [
+        "inline-schema",
+        "enum",
+        "enum-alias",
+        "error-code"
+    ],
+    "parserOptions": {
+        "allowConstraintViolations": "error"
+    }
+}

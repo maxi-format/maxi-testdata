@@ -1,7 +1,7 @@
 {
     "id": "0h4t0",
-    "title": "Unknown @directive emits E004 warning with default parser settings",
-    "description": "An unrecognised directive (@debug:true) must emit an UnknownDirectiveError E004 warning but must NOT cause the parse to fail. The type definitions and data records after the unknown directive must still be parsed correctly.",
+    "title": "Unknown @directive emits E103 warning with default parser settings",
+    "description": "An unrecognised directive (@debug:true) must emit an UnknownDirectiveError E103 warning but must NOT cause the parse to fail. The type definitions and data records after the unknown directive must still be parsed correctly.",
     "category": "valid",
     "tags": [
         "inline-schema",

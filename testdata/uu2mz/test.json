@@ -1,7 +1,7 @@
 {
     "id": "uu2mz",
-    "title": "record with extra trailing fields triggers E006",
-    "description": "when allowAdditionalFields is \"error\", a record that supplies more field values than the schema defines must be rejected with SchemaMismatchError E006. The User type has 3 fields; the record supplies 5.",
+    "title": "record with extra trailing fields triggers E401",
+    "description": "when allowAdditionalFields is \"error\", a record that supplies more field values than the schema defines must be rejected with SchemaMismatchError E401. The User type has 3 fields; the record supplies 5.",
     "category": "error",
     "tags": [
         "inline-schema",

@@ -1,7 +1,7 @@
 {
     "id": "04raa",
     "title": "Comparison >=N violation",
-    "description": "stock:int(>=0) + record -5 throws E020 ConstraintViolationError.",
+    "description": "stock:int(>=0) + record -5 throws E602 ConstraintViolationError.",
     "category": "error",
     "tags": [
         "inline-schema",

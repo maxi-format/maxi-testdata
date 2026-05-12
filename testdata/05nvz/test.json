@@ -1,0 +1,15 @@
+{
+    "id": "05nvz",
+    "title": "Enum value aliases — duplicate full value (schema error)",
+    "description": "Two enum entries map to the same full value. The parser must reject the schema with E501.",
+    "category": "error",
+    "tags": [
+        "inline-schema",
+        "enum",
+        "enum-alias",
+        "error-code"
+    ],
+    "parserOptions": {
+        "allowConstraintViolations": "error"
+    }
+}

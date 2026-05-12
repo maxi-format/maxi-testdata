@@ -1,7 +1,7 @@
 {
     "id": "nr9ri",
     "title": "Default settings: Coerces Decimal to Int with Fractional Loss Warning",
-    "description": "with default parser settings, a decimal value for an int field is truncated to the integer part and a TypeMismatchError warning (E007) is emitted.",
+    "description": "with default parser settings, a decimal value for an int field is truncated to the integer part and a TypeMismatchError warning (E402) is emitted.",
     "category": "valid",
     "tags": [
         "inline-schema",

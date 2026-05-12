@@ -1,7 +1,7 @@
 {
     "id": "s1hcl",
     "title": "Comparison <=N violation",
-    "description": "age:int(>=0,<=120) + record 200 throws E020 ConstraintViolationError.",
+    "description": "age:int(>=0,<=120) + record 200 throws E602 ConstraintViolationError.",
     "category": "error",
     "tags": [
         "inline-schema",

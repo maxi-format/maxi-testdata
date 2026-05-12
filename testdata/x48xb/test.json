@@ -1,7 +1,7 @@
 {
     "id": "x48xb",
-    "title": "Str-typed explicit id: duplicate value triggers E016",
-    "description": "Two ProductVariant records with the same sku(id) string value must trigger DuplicateIdentifierError E016.",
+    "title": "Str-typed explicit id: duplicate value triggers E205",
+    "description": "Two ProductVariant records with the same sku(id) string value must trigger DuplicateIdentifierError E205.",
     "category": "error",
     "tags": [
         "inline-schema",

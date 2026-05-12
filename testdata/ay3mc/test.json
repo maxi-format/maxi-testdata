@@ -1,7 +1,7 @@
 {
     "id": "ay3mc",
-    "title": "Map value constraint int(>=0) violated triggers E008",
-    "description": "A map<str,int(>=0)> field must reject a map where one of the integer values is negative (-5), triggering ConstraintViolationError E008.",
+    "title": "Map value constraint int(>=0) violated triggers E303",
+    "description": "A map<str,int(>=0)> field must reject a map where one of the integer values is negative (-5), triggering ConstraintViolationError E303.",
     "category": "error",
     "tags": [
         "inline-schema",

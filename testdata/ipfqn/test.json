@@ -1,0 +1,15 @@
+{
+    "id": "ipfqn",
+    "title": "Enum value aliases — alias equals another entry's full value (schema error)",
+    "description": "An alias in the enum definition equals the full value of another entry. This creates ambiguity when the dump API accepts either form. The parser must reject the schema with E501.",
+    "category": "error",
+    "tags": [
+        "inline-schema",
+        "enum",
+        "enum-alias",
+        "error-code"
+    ],
+    "parserOptions": {
+        "allowConstraintViolations": "error"
+    }
+}

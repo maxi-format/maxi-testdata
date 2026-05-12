@@ -1,7 +1,7 @@
 {
     "id": "t71za",
-    "title": "@timestamp annotation on str field → E012",
-    "description": "Using @timestamp annotation on a str-typed field is invalid and must produce E012.",
+    "title": "@timestamp annotation on str field → E302",
+    "description": "Using @timestamp annotation on a str-typed field is invalid and must produce E302.",
     "category": "error",
     "tags": [
         "inline-schema",

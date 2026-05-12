@@ -2,7 +2,7 @@
     "success": true,
     "expected_warnings": [
         {
-            "code": "E007",
+            "code": "E402",
             "description": "25.7 coerced to int 25 with fractional loss"
         }
     ],

@@ -1,7 +1,7 @@
 {
     "id": "0l30t",
-    "title": "Map key constraint str(>=1) violated by empty key triggers E008",
-    "description": "A map<str(>=1),str> field must reject a map entry with an empty string key (length 0), which violates the >=1 minimum length constraint on the key type. Triggers ConstraintViolationError E008.",
+    "title": "Map key constraint str(>=1) violated by empty key triggers E303",
+    "description": "A map<str(>=1),str> field must reject a map entry with an empty string key (length 0), which violates the >=1 minimum length constraint on the key type. Triggers ConstraintViolationError E303.",
     "category": "error",
     "tags": [
         "inline-schema",

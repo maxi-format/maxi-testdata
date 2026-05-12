@@ -1,7 +1,7 @@
 {
     "id": "4edlt",
     "title": "Rejects Non-Numeric String for Decimal Field",
-    "description": "when allowTypeCoercion is \"error\", providing a non-numeric string value for a decimal field must throw TypeMismatchError (E007).",
+    "description": "when allowTypeCoercion is \"error\", providing a non-numeric string value for a decimal field must throw TypeMismatchError (E402).",
     "category": "error",
     "tags": [
         "inline-schema",

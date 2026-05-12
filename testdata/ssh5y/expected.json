@@ -2,11 +2,11 @@
     "success": true,
     "expected_warnings": [
         {
-            "code": "E003",
+            "code": "E201",
             "description": "Unknown type alias U (first record)"
         },
         {
-            "code": "E003",
+            "code": "E201",
             "description": "Unknown type alias U (second record)"
         }
     ],

@@ -1,7 +1,7 @@
 {
     "id": "d2vgi",
     "title": "Forward reference when allowForwardReferences is false (parser MAY reject)",
-    "description": "when allowForwardReferences is false, an Order record references a User that is defined later in the data section (forward reference). The spec states parsers MAY reject forward references when allowForwardReferences is false. This test is marked parser_dependent: true â€” parsers that reject forward references must return E009; parsers that support them may return success=true.",
+    "description": "when allowForwardReferences is false, an Order record references a User that is defined later in the data section (forward reference). The spec states parsers MAY reject forward references when allowForwardReferences is false. This test is marked parser_dependent: true â€” parsers that reject forward references must return E204; parsers that support them may return success=true.",
     "category": "error",
     "parser_dependent": true,
     "tags": [

@@ -1,0 +1,103 @@
+{
+    "success": true,
+    "objects": {
+        "User": {
+            "1": {
+                "id": 1,
+                "name": "Alice",
+                "role": "admin",
+                "status": 1
+            },
+            "2": {
+                "id": 2,
+                "name": "Bob",
+                "role": "user",
+                "status": 0
+            },
+            "3": {
+                "id": 3,
+                "name": "Carol",
+                "role": "guest",
+                "status": 2
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "User",
+            "value": {
+                "id": 1,
+                "name": "Alice",
+                "role": "admin",
+                "status": 1
+            }
+        },
+        {
+            "type": "User",
+            "value": {
+                "id": 2,
+                "name": "Bob",
+                "role": "user",
+                "status": 0
+            }
+        },
+        {
+            "type": "User",
+            "value": {
+                "id": 3,
+                "name": "Carol",
+                "role": "guest",
+                "status": 2
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1 role is 'admin'",
+            "path": "#/records/0/value/role",
+            "expected_value": "admin"
+        },
+        {
+            "description": "Record 1 status is integer 1",
+            "path": "#/records/0/value/status",
+            "expected_value": 1
+        },
+        {
+            "description": "Record 2 role is 'user'",
+            "path": "#/records/1/value/role",
+            "expected_value": "user"
+        },
+        {
+            "description": "Record 2 status is integer 0",
+            "path": "#/records/1/value/status",
+            "expected_value": 0
+        },
+        {
+            "description": "Record 3 role is 'guest'",
+            "path": "#/records/2/value/role",
+            "expected_value": "guest"
+        },
+        {
+            "description": "Record 3 status is integer 2",
+            "path": "#/records/2/value/status",
+            "expected_value": 2
+        }
+    ],
+    "object_validations": [
+        {
+            "description": "User 1 role is admin",
+            "path": "#/objects/User/1/role",
+            "expected_value": "admin"
+        },
+        {
+            "description": "User 2 role is user",
+            "path": "#/objects/User/2/role",
+            "expected_value": "user"
+        },
+        {
+            "description": "User 3 role is guest",
+            "path": "#/objects/User/3/role",
+            "expected_value": "guest"
+        }
+    ]
+}

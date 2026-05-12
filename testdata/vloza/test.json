@@ -1,7 +1,7 @@
 {
     "id": "vloza",
-    "title": "Type definition appearing after ### triggers E019 StreamError",
-    "description": "The ### delimiter marks the end of the schema phase. A type definition (O:Order(...)) appearing after ### is in the data section, which is a structural violation. Parsers MUST fail fast on this, triggering StreamError E019.",
+    "title": "Type definition appearing after ### triggers E603 StreamError",
+    "description": "The ### delimiter marks the end of the schema phase. A type definition (O:Order(...)) appearing after ### is in the data section, which is a structural violation. Parsers MUST fail fast on this, triggering StreamError E603.",
     "category": "error",
     "tags": [
         "inline-schema",

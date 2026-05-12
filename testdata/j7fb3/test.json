@@ -1,7 +1,7 @@
 {
     "id": "j7fb3",
-    "title": "Float constraint <=90.0 violated triggers E008",
-    "description": "A float field with constraint (>=-90.0,<=90.0) must reject a value of 200.0, triggering ConstraintViolationError E008.",
+    "title": "Float constraint <=90.0 violated triggers E303",
+    "description": "A float field with constraint (>=-90.0,<=90.0) must reject a value of 200.0, triggering ConstraintViolationError E303.",
     "category": "error",
     "tags": [
         "inline-schema",

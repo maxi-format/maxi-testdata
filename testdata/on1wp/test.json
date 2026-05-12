@@ -1,0 +1,12 @@
+{
+    "id": "on1wp",
+    "title": "Enum value aliases — backward compatibility (no aliases)",
+    "description": "Regression test: plain enum definitions without any aliases must continue to parse correctly. The alias feature must not break existing files.",
+    "category": "valid",
+    "tags": [
+        "inline-schema",
+        "enum",
+        "enum-alias",
+        "regression"
+    ]
+}

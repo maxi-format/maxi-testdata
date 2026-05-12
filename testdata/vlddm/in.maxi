@@ -1,0 +1,3 @@
+U:User(id:int|role:enum[a:admin,a:editor])
+###
+U(1|a)

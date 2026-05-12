@@ -1,0 +1,105 @@
+{
+    "success": true,
+    "objects": {
+        "Device": {
+            "1": {
+                "id": 1,
+                "name": "sensor-A",
+                "state": 1000
+            },
+            "2": {
+                "id": 2,
+                "name": "sensor-B",
+                "state": 999
+            },
+            "3": {
+                "id": 3,
+                "name": "sensor-C",
+                "state": 900
+            },
+            "4": {
+                "id": 4,
+                "name": "sensor-D",
+                "state": 910
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "Device",
+            "value": {
+                "id": 1,
+                "name": "sensor-A",
+                "state": 1000
+            }
+        },
+        {
+            "type": "Device",
+            "value": {
+                "id": 2,
+                "name": "sensor-B",
+                "state": 999
+            }
+        },
+        {
+            "type": "Device",
+            "value": {
+                "id": 3,
+                "name": "sensor-C",
+                "state": 900
+            }
+        },
+        {
+            "type": "Device",
+            "value": {
+                "id": 4,
+                "name": "sensor-D",
+                "state": 910
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1 state is integer 1000 (alias 'R' = RUNNING)",
+            "path": "#/records/0/value/state",
+            "expected_value": 1000
+        },
+        {
+            "description": "Record 2 state is integer 999 (alias 'E' = ERROR)",
+            "path": "#/records/1/value/state",
+            "expected_value": 999
+        },
+        {
+            "description": "Record 3 state is integer 900 (alias 'O' = OFF)",
+            "path": "#/records/2/value/state",
+            "expected_value": 900
+        },
+        {
+            "description": "Record 4 state is integer 910 (alias 'I' = IDLE)",
+            "path": "#/records/3/value/state",
+            "expected_value": 910
+        }
+    ],
+    "object_validations": [
+        {
+            "description": "Device 1 state is 1000",
+            "path": "#/objects/Device/1/state",
+            "expected_value": 1000
+        },
+        {
+            "description": "Device 2 state is 999",
+            "path": "#/objects/Device/2/state",
+            "expected_value": 999
+        },
+        {
+            "description": "Device 3 state is 900",
+            "path": "#/objects/Device/3/state",
+            "expected_value": 900
+        },
+        {
+            "description": "Device 4 state is 910",
+            "path": "#/objects/Device/4/state",
+            "expected_value": 910
+        }
+    ]
+}

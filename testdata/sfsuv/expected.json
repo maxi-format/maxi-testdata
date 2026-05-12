@@ -2,7 +2,7 @@
     "success": true,
     "expected_warnings": [
         {
-            "code": "E016",
+            "code": "E205",
             "description": "duplicate id 1 for type User"
         }
     ],

@@ -1,7 +1,7 @@
 {
     "id": "vj4zi",
     "title": "Exact-length array violation",
-    "description": "scores:int[](=3) + [95,87] (length 2) throws E020.",
+    "description": "scores:int[](=3) + [95,87] (length 2) throws E602.",
     "category": "error",
     "tags": [
         "inline-schema",

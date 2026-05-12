@@ -1,0 +1,12 @@
+{
+    "id": "0cra6",
+    "title": "Enum value aliases — enum<int> with string aliases",
+    "description": "String aliases for integer enum values. Wire tokens are the short string aliases; parsed values must be integers. Tests that alias expansion works correctly for enum<int>.",
+    "category": "valid",
+    "tags": [
+        "inline-schema",
+        "enum",
+        "enum-alias",
+        "enum-int"
+    ]
+}

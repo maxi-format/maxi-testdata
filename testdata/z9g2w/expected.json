@@ -2,7 +2,7 @@
     "success": true,
     "expected_warnings": [
         {
-            "code": "E011",
+            "code": "E403",
             "description": "Required field 'name' is null"
         }
     ],

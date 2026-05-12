@@ -1,0 +1,11 @@
+{
+    "id": "7ipaz",
+    "title": "Enum value aliases — mixed mode",
+    "description": "Only some enum values have aliases. Values without an alias use the value itself as the wire token. Both alias tokens and plain value tokens must be accepted.",
+    "category": "valid",
+    "tags": [
+        "inline-schema",
+        "enum",
+        "enum-alias"
+    ]
+}

@@ -1,0 +1,82 @@
+{
+    "success": true,
+    "objects": {
+        "User": {
+            "1": {
+                "id": 1,
+                "name": "Alice",
+                "role": "admin"
+            },
+            "2": {
+                "id": 2,
+                "name": "Bob",
+                "role": "user"
+            },
+            "3": {
+                "id": 3,
+                "name": "Carol",
+                "role": "guest"
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "User",
+            "value": {
+                "id": 1,
+                "name": "Alice",
+                "role": "admin"
+            }
+        },
+        {
+            "type": "User",
+            "value": {
+                "id": 2,
+                "name": "Bob",
+                "role": "user"
+            }
+        },
+        {
+            "type": "User",
+            "value": {
+                "id": 3,
+                "name": "Carol",
+                "role": "guest"
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1 role is 'admin' (alias 'a' expanded)",
+            "path": "#/records/0/value/role",
+            "expected_value": "admin"
+        },
+        {
+            "description": "Record 2 role is 'user' (plain value, no alias)",
+            "path": "#/records/1/value/role",
+            "expected_value": "user"
+        },
+        {
+            "description": "Record 3 role is 'guest' (plain value, no alias)",
+            "path": "#/records/2/value/role",
+            "expected_value": "guest"
+        }
+    ],
+    "object_validations": [
+        {
+            "description": "User 1 role is admin",
+            "path": "#/objects/User/1/role",
+            "expected_value": "admin"
+        },
+        {
+            "description": "User 2 role is user",
+            "path": "#/objects/User/2/role",
+            "expected_value": "user"
+        },
+        {
+            "description": "User 3 role is guest",
+            "path": "#/objects/User/3/role",
+            "expected_value": "guest"
+        }
+    ]
+}

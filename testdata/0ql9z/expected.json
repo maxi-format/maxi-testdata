@@ -2,7 +2,7 @@
     "success": true,
     "expected_warnings": [
         {
-            "code": "E008",
+            "code": "E303",
             "description": "age 200 violates <=120 constraint"
         }
     ],

@@ -1,0 +1,82 @@
+{
+    "success": true,
+    "objects": {
+        "User": {
+            "1": {
+                "id": 1,
+                "name": "Alice",
+                "role": "admin"
+            },
+            "2": {
+                "id": 2,
+                "name": "Bob",
+                "role": "editor"
+            },
+            "3": {
+                "id": 3,
+                "name": "Carol",
+                "role": "viewer"
+            }
+        }
+    },
+    "records": [
+        {
+            "type": "User",
+            "value": {
+                "id": 1,
+                "name": "Alice",
+                "role": "admin"
+            }
+        },
+        {
+            "type": "User",
+            "value": {
+                "id": 2,
+                "name": "Bob",
+                "role": "editor"
+            }
+        },
+        {
+            "type": "User",
+            "value": {
+                "id": 3,
+                "name": "Carol",
+                "role": "viewer"
+            }
+        }
+    ],
+    "record_validations": [
+        {
+            "description": "Record 1 role is 'admin' (alias 'a' expanded)",
+            "path": "#/records/0/value/role",
+            "expected_value": "admin"
+        },
+        {
+            "description": "Record 2 role is 'editor' (alias 'e' expanded)",
+            "path": "#/records/1/value/role",
+            "expected_value": "editor"
+        },
+        {
+            "description": "Record 3 role is 'viewer' (alias 'v' expanded)",
+            "path": "#/records/2/value/role",
+            "expected_value": "viewer"
+        }
+    ],
+    "object_validations": [
+        {
+            "description": "User 1 role is admin",
+            "path": "#/objects/User/1/role",
+            "expected_value": "admin"
+        },
+        {
+            "description": "User 2 role is editor",
+            "path": "#/objects/User/2/role",
+            "expected_value": "editor"
+        },
+        {
+            "description": "User 3 role is viewer",
+            "path": "#/objects/User/3/role",
+            "expected_value": "viewer"
+        }
+    ]
+}

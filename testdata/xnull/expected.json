@@ -11,7 +11,7 @@
     ],
     "expected_warnings": [
         {
-            "code": "E011",
+            "code": "E403",
             "description": "Explicit ~ on required+default field must emit MissingRequiredFieldError warning"
         }
     ],

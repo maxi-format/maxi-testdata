@@ -1,7 +1,7 @@
 {
     "id": "leu4l",
-    "title": "Malformed constraint with invalid token triggers E014",
-    "description": "A field constraint containing an invalid token (##invalid) that cannot be parsed as a valid constraint expression must be rejected with ConstraintSyntaxError E014.",
+    "title": "Malformed constraint with invalid token triggers E301",
+    "description": "A field constraint containing an invalid token (##invalid) that cannot be parsed as a valid constraint expression must be rejected with ConstraintSyntaxError E301.",
     "category": "error",
     "tags": [
         "inline-schema",

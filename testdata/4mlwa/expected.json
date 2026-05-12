@@ -2,7 +2,7 @@
     "success": true,
     "expected_warnings": [
         {
-            "code": "E008",
+            "code": "E303",
             "description": "'superadmin' is not a valid value for enum[admin,user,guest]"
         }
     ],

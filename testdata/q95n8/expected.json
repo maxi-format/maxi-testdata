@@ -2,7 +2,7 @@
     "success": true,
     "expected_warnings": [
         {
-            "code": "E009",
+            "code": "E204",
             "description": "reference to User id=999 cannot be resolved"
         }
     ],

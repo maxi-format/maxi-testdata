@@ -1,7 +1,7 @@
 {
     "id": "0cyr7",
     "title": "Rejects Invalid Bool Value",
-    "description": "when allowTypeCoercion is \"error\", providing a value that is not a valid boolean (0/1/true/false) for a bool field must throw TypeMismatchError (E007).",
+    "description": "when allowTypeCoercion is \"error\", providing a value that is not a valid boolean (0/1/true/false) for a bool field must throw TypeMismatchError (E402).",
     "category": "error",
     "tags": [
         "inline-schema",
