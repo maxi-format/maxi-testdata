@@ -1,4 +1,4 @@
-@version:1.0.0
+@maxi:1.0.0
 U:User(
   id:int|
   username(>=3,<=20,pattern:^[a-zA-Z0-9_]+$)|

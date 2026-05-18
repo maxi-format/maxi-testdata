@@ -1,4 +1,4 @@
-@version:1.0.0
+@maxi:1.0.0
 I:Invoice(
   id:int|
   subtotal:decimal(>=0,0:10.2)|

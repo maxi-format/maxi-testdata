@@ -1,4 +1,4 @@
-@version:1.0.0
+@maxi:1.0.0
 C:Company(id:int|name|address)
 D:Department(id:int|name|company:C)
 U:User(id:int|name|email|department:D)

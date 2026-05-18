@@ -1,4 +1,4 @@
-@version:1.0.0
+@maxi:1.0.0
 U:User(id:int|name|tags:str(>=3,<=20)[](>=1,<=5)|scores:int(>=0,<=100)[])
 ###
 U(1|Julie|[dev,backend,api]|[95,87,92])

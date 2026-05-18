@@ -1,0 +1,27 @@
+{
+    "success": true,
+    "records": [
+        {
+            "type": "User",
+            "value": {
+                "id": 1,
+                "name": "Alice"
+            }
+        }
+    ],
+    "objects": {
+        "User": {
+            "1": {
+                "id": 1,
+                "name": "Alice"
+            }
+        }
+    },
+    "schema_validations": [
+        {
+            "description": "@version:1.5.0 stored as schema.userVersion",
+            "path": "#/schema/userVersion",
+            "expected_value": "1.5.0"
+        }
+    ]
+}

@@ -1,7 +1,7 @@
 {
     "id": "tiknp",
-    "title": "Unsupported @version Directive",
-    "description": "A @version directive with an unsupported version number must throw UnsupportedVersionError (E601).",
+    "title": "Unsupported @maxi Directive",
+    "description": "A @maxi directive with an unsupported version number must throw UnsupportedVersionError (E601).",
     "category": "error",
     "tags": [
         "inline-schema",

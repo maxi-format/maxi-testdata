@@ -1,7 +1,7 @@
 {
     "id": "m520f",
-    "title": "@version and @schema directives in the same file",
-    "description": "Both directives (@version, @schema) are present in a single file. They must be processed in order before schema definitions and data records. The imported type (User from shared.mxs) must resolve and data records must validate.",
+    "title": "@maxi and @schema directives in the same file",
+    "description": "Both directives (@maxi, @schema) are present in a single file. They must be processed in order before schema definitions and data records. The imported type (User from shared.mxs) must resolve and data records must validate.",
     "category": "valid",
     "tags": [
         "external-schema",

@@ -1,0 +1,10 @@
+{
+    "id": "vld84",
+    "title": "@version directive parsed and stored as userVersion",
+    "description": "A @version directive declares the user-defined API/schema version. The parser must store it in schema.userVersion and succeed without errors.",
+    "category": "valid",
+    "tags": [
+        "inline-schema",
+        "directives"
+    ]
+}

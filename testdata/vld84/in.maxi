@@ -1,0 +1,4 @@
+@version:2.3.0
+U:User(id:int|name)
+###
+U(1|Alice)

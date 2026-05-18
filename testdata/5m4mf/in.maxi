@@ -1,4 +1,4 @@
-@version:1.0.0
+@maxi:1.0.0
 D:Data(
   id:int|
   matrix:int[][](>=2,<=10)|

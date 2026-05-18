@@ -1,4 +1,4 @@
-@version:1.0.0
+@maxi:1.0.0
 TS:TimeStamp(createdAt:str@datetime|updatedAt:str@datetime)
 P:Person(id:int|name|email)
 A:Auditable(createdBy:int|modifiedBy:int)

@@ -1,0 +1,10 @@
+{
+    "id": "4myjq",
+    "title": "@maxi and @version directives can coexist",
+    "description": "Both @maxi (format version) and @version (user API/schema version) may appear in the same file. The parser must accept both and store each in the correct schema field.",
+    "category": "valid",
+    "tags": [
+        "inline-schema",
+        "directives"
+    ]
+}

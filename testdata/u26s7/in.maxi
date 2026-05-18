@@ -1,4 +1,4 @@
-@version:1.0.0
+@maxi:1.0.0
 U:User(id:int|name|role:enum[admin,user,guest]|status:enum<int>[0,1,2])
 P:Product(id:int|name|priority:enum<str>[low,medium,high])
 ###

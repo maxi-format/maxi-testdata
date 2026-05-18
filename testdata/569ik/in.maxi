@@ -1,4 +1,4 @@
-@version:1.0.0
+@maxi:1.0.0
 P:Person(id:int|name|status=active|type)
 E:Employee<P>(status=employed|employeeId:int|department)
 C:Contractor<P>(status=contract|contractId|endDate:str@date)

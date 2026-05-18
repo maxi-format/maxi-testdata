@@ -1,4 +1,4 @@
-@version:1.0.0
+@maxi:1.0.0
 R:Record(
   id:int|
   value1|
